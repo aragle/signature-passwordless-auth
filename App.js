@@ -22,7 +22,7 @@ export default function App() {
             <View style={styles.topContainer}>
               {/* <Entypo name="lock" size={24} color={gray} /> */}
               <Octicons name="shield-check" size={20} color={gray} />
-              {/* <AntDesign name="qrcode" size={20} color={gray} /> */}
+              {/* <AntDesign name="qrcode" size={24} color={gray} /> */}
               <View>
                 <Text style={styles.title}>Signature</Text>
               </View>
