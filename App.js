@@ -20,9 +20,13 @@ export default function App() {
         <View style={[styles.header, styles.headerBottomShadow]}>
           <View style={{ marginHorizontal: 24, marginTop: 24 }}>
             <View style={styles.topContainer}>
+<<<<<<< Updated upstream
               {/* <Entypo name="lock" size={24} color={gray} /> */}
               <Octicons name="shield-check" size={20} color={gray} />
               {/* <AntDesign name="qrcode" size={24} color={gray} /> */}
+=======
+              <AntDesign name="qrcoder" size={20} color={gray} />
+>>>>>>> Stashed changes
               <View>
                 <Text style={styles.title}>Signature</Text>
               </View>
