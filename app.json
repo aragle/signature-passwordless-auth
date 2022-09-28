@@ -4,7 +4,7 @@
     "slug": "signature",
     "version": "1.0.0",
     "owner": "obsidine",
-    "id" : "dec33af1-5066-4b0a-a6f0-b8988d35d528",
+    "id": "dec33af1-5066-4b0a-a6f0-b8988d35d528",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -23,6 +23,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.aragle.signat",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
