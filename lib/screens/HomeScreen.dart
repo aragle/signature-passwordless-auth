@@ -13,29 +13,47 @@ class _HomePageState extends State<HomePage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: DefaultTabController(
-        length: 3,
+        length: 4,
         child: Scaffold(
           appBar: AppBar(
             backgroundColor: Colors.black87,
             bottom: const TabBar(
               tabs: [
-                Tab(icon: Icon(Icons.devices)),
-                Tab(icon: Icon(Icons.history)),
-                Tab(icon: Icon(Icons.qr_code)),
+                Tab(icon: Icon(Icons.local_activity_outlined)),
+                Tab(icon: Icon(Icons.devices_outlined)),
+                Tab(icon: Icon(Icons.manage_accounts_outlined)),
+                Tab(icon: Icon(Icons.history_outlined)),
               ],
             ),
-            title: Image.asset(
-              'assets/images/signature.png',
-              height: 25,
+            title: Padding(
+              padding: const EdgeInsets.only(left: 7),
+              child: Image.asset(
+                'assets/images/signature.png',
+                height: 25,
+              ),
             ),
-            centerTitle: true,
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.settings),
+                onPressed: () {},
+              ),
+              const Padding(padding: EdgeInsets.only(right: 10)),
+            ],
           ),
           body: const TabBarView(
             children: [
-              Icon(Icons.devices),
-              Icon(Icons.history),
-              Icon(Icons.qr_code),
+              Icon(Icons.local_activity_outlined),
+              Icon(Icons.devices_outlined),
+              Icon(Icons.manage_accounts_outlined),
+              Icon(Icons.history_outlined),
             ],
+          ),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              // Add your onPressed code here!
+            },
+            backgroundColor: Colors.black87,
+            child: const Icon(Icons.qr_code_scanner),
           ),
         ),
       ),

@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.anovenus.signature"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+11-->[:local_auth_android] A:\@Projects\signature\build\local_auth_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-72
+11-->[:local_auth_android] A:\@Projects\signature\build\local_auth_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-69
+12    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+12-->[androidx.biometric:biometric:1.1.0] C:\Users\ashiq\.gradle\caches\transforms-3\df85a0a5fd2057b61377281a7ecd0d0e\transformed\biometric-1.1.0\AndroidManifest.xml:27:5-74
+12-->[androidx.biometric:biometric:1.1.0] C:\Users\ashiq\.gradle\caches\transforms-3\df85a0a5fd2057b61377281a7ecd0d0e\transformed\biometric-1.1.0\AndroidManifest.xml:27:22-71
+13
+14    <application
+15        android:name="android.app.Application"
+15-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:5:9-42
+16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+16-->[androidx.core:core:1.8.0] C:\Users\ashiq\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+17        android:icon="@mipmap/ic_launcher"
+17-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:6:9-43
+18        android:label="signature" >
+18-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:4:9-34
+19        <activity
+19-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:7:9-27:20
+20            android:name="com.anovenus.signature.MainActivity"
+20-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:8:13-41
+21            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+21-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:12:13-163
+22            android:exported="true"
+22-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:9:13-36
+23            android:hardwareAccelerated="true"
+23-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:13:13-47
+24            android:launchMode="singleTop"
+24-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:10:13-43
+25            android:theme="@style/LaunchTheme"
+25-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:11:13-47
+26            android:windowSoftInputMode="adjustResize" >
+26-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:14:13-55
+27
+28            <!--
+29                 Specifies an Android theme to apply to this Activity as soon as
+30                 the Android process has started. This theme is visible to the user
+31                 while the Flutter UI initializes. After that, this theme continues
+32                 to determine the Window background behind the Flutter UI.
+33            -->
+34            <meta-data
+34-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:19:13-22:17
+35                android:name="io.flutter.embedding.android.NormalTheme"
+35-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:20:15-70
+36                android:resource="@style/NormalTheme" />
+36-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:21:15-52
+37
+38            <intent-filter>
+38-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:23:13-26:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:24:17-68
+39-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:24:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:25:17-76
+41-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:25:27-74
+42            </intent-filter>
+43        </activity>
+44        <!--
+45             Don't delete the meta-data below.
+46             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+47        -->
+48        <meta-data
+48-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:30:9-32:33
+49            android:name="flutterEmbedding"
+49-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:31:13-44
+50            android:value="2" />
+50-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:32:13-30
+51
+52        <uses-library
+52-->[androidx.window:window:1.0.0-beta04] C:\Users\ashiq\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+53            android:name="androidx.window.extensions"
+53-->[androidx.window:window:1.0.0-beta04] C:\Users\ashiq\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+54            android:required="false" />
+54-->[androidx.window:window:1.0.0-beta04] C:\Users\ashiq\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+55        <uses-library
+55-->[androidx.window:window:1.0.0-beta04] C:\Users\ashiq\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+56            android:name="androidx.window.sidecar"
+56-->[androidx.window:window:1.0.0-beta04] C:\Users\ashiq\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+57            android:required="false" />
+57-->[androidx.window:window:1.0.0-beta04] C:\Users\ashiq\.gradle\caches\transforms-3\49bc944d29f70d45aa5add8e43e3247e\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+58    </application>
+59
+60</manifest>

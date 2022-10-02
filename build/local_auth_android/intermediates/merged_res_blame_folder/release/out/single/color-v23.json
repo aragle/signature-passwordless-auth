@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_tint_seek_thumb.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_tint_btn_checkable.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_btn_colored_borderless_text_material.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_btn_colored_text_material.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_tint_default.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_tint_default.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_tint_spinner.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_tint_spinner.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_tint_edittext.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_tint_edittext.xml"
+    },
+    {
+        "merged": "A:\\@Projects\\signature\\build\\local_auth_android\\intermediates\\merged_res\\release\\color-v23\\abc_tint_switch_track.xml",
+        "source": "C:\\Users\\ashiq\\.gradle\\caches\\transforms-3\\c5e6066e343a23cadf0e84126bc54229\\transformed\\appcompat-1.2.0\\res\\color-v23\\abc_tint_switch_track.xml"
+    }
+]
