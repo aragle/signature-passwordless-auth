@@ -2,86 +2,53 @@ android.content.res.Resources#getIdentifier present: true
 Web content present: false
 Referenced Strings:
 exception
-DISMISS
 kotlinx.coroutines.debug
-TextInput.requestAutofill
+DISMISS
 suggest_intent_data
-app_flutter
-androidx.activity.result.contract.ext...
-deviceId
-kRepeat
 java.lang.Integer
 DETECT_FRAGMENT_REUSE
-music
-verticalText
-setLayoutDirection
 android.util.LongArray
+setLayoutDirection
 androidx.view.accessibility.Accessibi...
 getUncaughtExceptionPreHandler
 android.speech.extra.RESULTS_PENDINGI...
-onBackPressed
-androidx.activity.result.contract.act...
-GeneratedPluginsRegister
 adapter
-LANDSCAPE_RIGHT
-LEFT
 java.lang.CharSequence
 _handled
-givenName
 androidx.window.layout.WindowInfoTrac...
 ActivityRule
-click
 keyframe
 0
 ACTION_PRESS_AND_HOLD
+left
 kotlin.jvm.functions.
 WindowInfoTrackerImpl.kt
-left
 kotlinx.coroutines.DefaultExecutor
 onMenuKeyEvent
-TextInputClient.updateEditingStateWit...
-registerWith
-SystemSoundType.alert
 removeItemAt
 kotlinx.coroutines.stacktrace.recovery
-authenticate
-REDUCE_MOTION
 kotlin.internal.JRE7PlatformImplement...
 DECREASE
-PORTRAIT_DOWN
 $splitPairFilters
 sidecarAdapter
 android.intent.extra.PROCESS_TEXT_REA...
 mSpacingAdd
 VectorDrawableCompat
-libapp.so
 fillColor
-result
-RestorationChannel
-middleInitial
-SystemUiMode.immersiveSticky
-flutter/platform_views
-PHYSICAL_DISPLAY_PLATFORM_VIEW
-CryptoObjectUtils
 addFontWeightStyle
-TextCapitalization.words
 constructor.parameterTypes
 updateViewLayout
-codePoint
 _
 ACTION_CLEAR_ACCESSIBILITY_FOCUS
 user_query
-SystemUiOverlay.top
-destroy_engine_with_activity
 truncated
 kotlin.String
 sidecarDeviceState
 displayFeatures
-io.flutter.embedding.android.SplashSc...
-r
 component
-androidx.lifecycle.BundlableSavedStat...
+r
 java.lang.Module
+androidx.lifecycle.BundlableSavedStat...
 SUSPEND
 TypefaceCompatApi26Impl
 v
@@ -89,103 +56,63 @@ this$0
 splitPairFilters
 x
 Loaders:
-onNewIntent
-android:theme
-DEVICE_CREDENTIAL
-SystemUiMode.edgeToEdge
 acc
-isDeviceSupported
-flutter_assets
-TextInputClient.performPrivateCommand
 propertyXName
 displayFeature.rect
 DETECT_TARGET_FRAGMENT_USAGE
 currentIndex
 startColor
 isTagEnabled
-emailAddress
 addSuppressed
 CSLCompat
 ACTION_SET_PROGRESS
-android:style
 RESULT_OK
 ACTION_SCROLL_FORWARD
 componentName
 activityComponent.className
-addressCountry
 trimPathEnd
-LIGHT
 extensionCallback
-gps
 RadioButton
+gps
 LONG_PRESS
 DID_LOSE_ACCESSIBILITY_FOCUS
-HAS_CHECKED_STATE
 UNSET_PRIMARY_NAV
-FlutterEngine
 TypefaceCompatUtil
-flutter/keyevent
 mUnthemedEntries
-phoneCountryCode
-telephoneNumberCountryCode
 CheckBox
 deviceState
-decimal
 GONE
 child
-SystemChrome.setSystemUIOverlayStyle
 strokeWidth
 androidx.view.accessibility.Accessibi...
-localizedReason
-TextInput.setEditableSizeAndTransform
 repeatMode
 ACTION_CLEAR_FOCUS
-enable_state_restoration
 COMPLETING_WAITING_CHILDREN
 _invoked
 ACTION_SCROLL_BACKWARD
-locale
-cancelButton
 TooltipPopup
 provider
 android.graphics.drawable.VectorDrawable
 SET_SELECTION
-root
 strokeLineCap
 requestRelaunchActivity
 kotlinx.coroutines.main.delay
 _delayed
 android.os.Build
 owner.defaultViewModelProviderFactory
-BIOMETRIC_STRONG
 ACTION_SCROLL_UP
-io.flutter.embedding.android.OldGenHe...
 BITMAP_MASKABLE
 declaringFragment.parentFragmentManager
 MOVE_CURSOR_BACKWARD_BY_CHARACTER
-FlutterSplashView
 kotlin.collections.List
-no_biometrics_available
-IS_OBSCURED
-MOVE_CURSOR_FORWARD_BY_CHARACTER
 label
 EmbeddingBackend
-message
-scanCode
+MOVE_CURSOR_FORWARD_BY_CHARACTER
 FlutterJNI
 android:support:fragments
-args
-resizeUpLeft
-PKCS7Padding
 SearchView
 setDisplayFeatures
-HapticFeedbackType.lightImpact
-TextInputType.emailAddress
-creditCardExpirationDay
-ACTION_ARGUMENT_SET_TEXT_CHARSEQUENCE
 android.view.View$AttachInfo
-username
-FlutterActivity
 java.lang.Float
 decorate
 centerY
@@ -196,66 +123,41 @@ UNDEFINED
 ACTION_CONTEXT_CLICK
 EmptyQueue
 embeddingExtension
-SCOPES_ROUTE
 SplitPairRule
 executor
-android:cancelable
 TooltipCompatHandler
-IS_TEXT_FIELD
 kotlinx.coroutines.internal.StackTrac...
 linearInterpolator
 write
-onStop
-TextInputType.none
 kotlin.coroutines.jvm.internal.a
-TextInputAction.none
 secondaryActivityName.className
 byte
 android.content.res.ThemedResourceCache
 getNextMatch
-getDeferredComponentInstallState
-attrs
 splitRule
-resizeUp
-creditCardNumber
-onPostResume
+attrs
 doAfterTextChanged
-io.flutter.Entrypoint
 CLIP_RECT
 .xml
 other
-wait
-FlutterActivityAndFragmentDelegate
 initialState
-birthDateYear
-IS_LINK
-cell
 %s.%sParcelizer
 safeCast
 URI
-FlutterTextureView
-URL
-CHARACTERS
-AppLifecycleState.resumed
 suggest_text_1
 TypefaceCompatApi24Impl
 suggest_text_2
 androidx.view.accessibility.Accessibi...
 ACTION_PAGE_UP
-top
-it.parameterTypes
 anticipateOvershootInterpolator
+it.parameterTypes
 mNextServedView
 kotlin.Long
 androidx.view.accessibility.Accessibi...
 POLL_FAILED
 Completing
 java.lang.String
-addressRegion
-TextInput.setClient
-resizeDown
 _resumed
-TextInputType.multiline
 ADDING
 coroutine
 getChildId
@@ -263,100 +165,68 @@ android:support:lifecycle
 PRIVATE
 comparator
 LoaderManager
-framework
 NavUtils
-LIGHT_IMPACT
 android.intent.action.TIME_TICK
 DESTROYED
 New
-SystemChrome.setEnabledSystemUIOverlays
-selectionExtent
-MouseCursorChannel
 mMainThread
 ATOMIC
 kotlin.collections.Collection
 android.intent.action.TIME_SET
 scaleX
-TextInputAction.send
 scaleY
-onStart
-android.widget.CheckBox
 translateY
 translateX
 TextView
-buffer
 setEpicenterBounds
 ImageView
-HapticFeedback.vibrate
+buffer
 repeatCount
-noDrop
 $activityFilters
 void
-flutter/keydata
 read
-memoryPressure
-flutter/restoration
-touch
-BiometricPromptCompat
-onUserLeaveHint
 MenuItemWrapper
 mStableInsets
 _cur
-onResume
 mOverlapAnchor
 OFFER_SUCCESS
 java.util.List
-hybrid
 UNEXPECTED:
 kotlin.Int
 _id
-basic
-sidecarDisplayFeatures
-collect
 kotlin.Throwable
+collect
+sidecarDisplayFeatures
 parkedWorkersStack
 android.view.
 handleLifecycleEvent
-IS_IMAGE
 COMPLETING_ALREADY
-goToSetting
-PHONE
-systemNavigationBarColor
-cause
 displayCutout
+cause
 bounceInterpolator
-PlatformPlugin
 java.lang.Iterable
 androidx.appcompat.widget.LinearLayou...
 rect
 kotlinx.coroutines.DefaultExecutor.ke...
 kotlin.Annotation
-INVERT_COLORS
 packageName
-LANDSCAPE_LEFT
-synchronizeToNativeViewHierarchy
 info.displayFeatures
-direction
-androidx.activity.result.contract.ext...
 android.intent.action.SEARCH
 BITMAP
 pathInterpolator
 windowConfiguration
 newConfig
-resizeUpRight
 Array
 android.intent.action.MAIN
 application
 android:user_visible_hint
 ATTACH
-flutter/lifecycle
-activities
 WindowServer
-TextInputType.number
+activities
 setValue
 layout_inflater
-UNKNOWN
 /proc/self/fd/
+UNKNOWN
 ActivityFilter
 initialExtras
 getParentNodeId
@@ -364,161 +234,99 @@ accelerateDecelerateInterpolator
 accessibility
 endColor
 suggest_intent_extra_data
-SystemChrome.setEnabledSystemUIMode
 getAppBounds
-ringtones
 suggest_flags
-android.widget.HorizontalScrollView
 centerColor
-password
 kotlinx.coroutines.scheduler.keep.ali...
 INCREASE
-NO_TARGET
 jar
 state
 secondaryActivityStack.activities
 CompanionObject
 element
-cache
-creditCardExpirationMonth
 androidx.appcompat.app.ActionBar$Tab
-deltaText
-zoomIn
 ACTION_SCROLL_DOWN
 android.view.ViewRootImpl
-Destroying.
 owner.viewModelStore
 input
 SupportMenuInflater
-pushRoute
+REMOVE_FROZEN
 TaskStackBuilder
 anim
-REMOVE_FROZEN
 succeeded
 getHorizontallyScrolling
 PathParser
 Spinner
-POSTURE_FLAT
 androidx.savedstate.Restarter
-AndroidKeyStore
 kotlin.collections.ListIterator
 oemFeature.bounds
-dev.flutter.pigeon.PathProviderApi.ge...
 CUSTOM_ACTION
-TextInputClient.updateEditingStateWit...
 delimiters
-BIOMETRIC_WEAK
 clazz.name
 outBundle
 PROTECTED
-STANDARD
-cached_engine_id
 ACTION_SELECT
 setRemoveOnCancelPolicy
 newLayoutInfo
 viewportWidth
 gradient
-forbidden
-IS_LIVE_REGION
 windowToken
-onTrimMemory
 blockingTasksInBuffer
 getSourceNodeId
 androidx.lifecycle.ViewModelProvider....
-streetAddress
 kotlin.Char
-android:backStackId
-flutter/isolate
-ACTION_ARGUMENT_EXTEND_SELECTION_BOOLEAN
-grab
 animator
 chars
 dimen
-documents
 java.util.ListIterator
 performStopActivity
 kotlinx.coroutines.android.AndroidDis...
-DefaultDispatcher
 result_
+DefaultDispatcher
 SplitPlaceholderRule
-android.settings.SECURITY_SETTINGS
 source
-ALERT
 kotlin.Double
 AppCompatDelegate
-onActivityResult
-LocalizationChannel
 controller.handle
-CancelSignalProvider
 lifecycle
 view
-allScroll
 java.lang.Short
-SystemChrome.systemUIChange
-android.widget.Button
 ViewCompat
 androidx.view.accessibility.Accessibi...
 REPLACE
-AES/CBC/PKCS7Padding
 markState
 AvdcInflateDelegate
 PENALTY_DEATH
-addressCity
-primaryActivityName
 suggest_intent_query
-includeSubdomains
-overlay
+primaryActivityName
 search_suggest_query
-creditCardSecurityCode
 parentMetrics
 FULL
-NAME
 FragmentManager
 flutter
-phoneNumber
 startOffset
-composingBase
-auth_in_progress
 name
 NestedScrollView
-DartExecutor
-fields
-plugins.flutter.io/local_auth_android
 getDescriptor
-keymap
-FlutterLoader
 bool
 font_variation_settings
 string
-onRequestPermissionsResult
-deltaStart
 kotlin.coroutines.jvm.internal.BaseCo...
-platformViewId
 android
-EDGE_TO_EDGE
 java.lang.module.ModuleDescriptor
 description
-nameSuffix
-LEAN_BACK
 _isTerminated
 tint
 VISIBLE
 SEALED
-LifecycleChannel
 native_instance
 status_bar_height
 CREATED
-textScaleFactor
-namePrefix
 SHOW
-android.hardware.fingerprint
 android:view_state
-io.flutter.embedding.android.NormalTheme
-signInTitle
 SeekBar
 Dispatchers.Main
 rotation
-FlutterSurfaceView
 Cancelled
 mMinHeight
 RatingBar
@@ -529,161 +337,94 @@ target
 getLayoutDirection
 endY
 endX
-enableSuggestions
 primitiveFqNames.values
-DATETIME
 PASTE
 short
-IS_MULTILINE
 startY
-middleName
-window
 startX
-personFamilyName
+window
 Cancelling
 CLIP_RRECT
 VdcInflateDelegate
-IS_HEADER
 container
 COMPLETING_RETRY
-VISIBLE_PASSWORD
-IS_FOCUSABLE
-TextInput.clearClient
-AppLifecycleState.inactive
 tileMode
 SCROLL_RIGHT
 moduleName
-textCapitalization
-android.widget.ImageView
-android.widget.RadioButton
 ACCESSIBILITY_CLICKABLE_SPAN_ID
 oemFeature
 ACTION_PAGE_LEFT
 getBounds
-put
 modelClass.constructors
 EmptyCoroutineContext
-TextInputType.text
 CPU_ACQUIRED
-ACTION_ARGUMENT_SELECTION_END_INT
 embeddingCallback
 in_progress
-SCROLL_LEFT
 font_ttc_index
+SCROLL_LEFT
 propertyYName
-HapticFeedbackType.heavyImpact
-TextInputAction.search
 windowBackend
 ACTION_SHOW_ON_SCREEN
-InputConnectionAdaptor
-android:showsDialog
-deviceSupportsBiometrics
-flutter/platform
-canvas
 item
+canvas
 kotlinx.coroutines.scheduler.core.poo...
 kotlinx.coroutines.scheduler.max.pool...
-double
 CheckedTextView
+double
 KEY_COMPONENT_ACTIVITY_RANDOM_OBJECT
-POSTURE_HALF_OPENED
-newPassword
-POSTAL_ADDRESS
-smsOTPCode
-SystemChannel
-flutter_deeplinking_enabled
-viewFocused
 robolectric
 INVISIBLE
 strokeLineJoin
-HEAVY_IMPACT
-light
 kotlin.Short
-primaryActivityName.packageName
 bounds
+primaryActivityName.packageName
 PUBLIC
 RETRY_ATOMIC
 getDisplayFeatures
 BLOCKING
-uninstallDeferredComponent
 java.lang.Throwable
-BOLD_TEXT
 PENALTY_LOG
 Dispatchers.Unconfined
-BiometricFragment
 WindowInfoTrackerCallbackAdapter.kt
 FragmentManager:
 onBackPressedDispatcherOwner
 $splitsWithActivity
 flags
-SystemSound.play
-onPause
 ViewConfigCompat
 className
-SystemUiOverlay.bottom
 owner.lifecycle
-enabled
 unknown
-android.intent.action.RUN
 android.permission.ACCESS_FINE_LOCATION
-android.widget.SeekBar
-canAuthenticate
 INITIALIZED
 mContentInsets
 LAZY
 mToken
-KeyEventChannel
-PlatformViewWrapper
 producerIndex
 REMOVE
-flutter/settings
-addressLocality
-setDirection
 java.util.Map$Entry
 SendQueued
 $violation
 display
-SpellCheck.initiateSpellCheck
-composingExtent
 callbackInterface
-DeviceOrientation.landscapeLeft
-birthDateDay
 .immediate
-TextInputAction.unspecified
-libflutter.so
-width
 char
-PORTRAIT_UP
-IMMERSIVE
 kotlinx.coroutines.fast.service.loader
 TAP
 mSpacingMult
 insets
 kotlin.Any
 KEY_COMPONENT_ACTIVITY_REGISTERED_RCS
-Brightness.dark
 ThemeUtils
-no_fragment_activity
 AppCompatViewInflater
-selectionBase
-SettingsChannel
-plainCodePoint
 DETECT_FRAGMENT_TAG_USAGE
 KEY_COMPONENT_ACTIVITY_REGISTERED_KEYS
 _reusableCancellableContinuation
-android.view.View
-inputType
-biometricHint
 java.lang.Byte
-BOTH
 group
 java.lang.Cloneable
-deltaEnd
-kind
 android.speech.extra.RESULTS_PENDINGI...
 GeneratedPluginRegistrant
 SplitPairFilter
-io.flutter.embedding.android.EnableIm...
 _consensus
 SCROLL_UP
 FragmentStrictMode
@@ -693,144 +434,96 @@ kotlin.collections.Iterator
 res/
 job
 android.permission.UPDATE_DEVICE_STATS
-TextInputClient.requestExistingInputS...
-setLocale
 getUri
-Clipboard.setData
-TextInput.sendAppPrivateCommand
 rebase
-TextInputType.phone
 SET_TEXT
-SystemChrome.restoreSystemUIOverlays
-CBC
 values
 consumerIndex
 point
-sensitiveTransaction
 onCloseHandler
 _removedRef
 kotlin.Enum
 fillType
-alias
 decelerateInterpolator
-PlatformViewsChannel
-deltas
-uniqueIdentifier
 kotlin.String.Companion
 ACTION_PREVIOUS_HTML_ELEMENT
-move
 http://schemas.android.com/apk/res/an...
 SplitRuleResolution
 lifecycle.currentState
 ACTION_SHOW_TOOLTIP
 suggest_text_2_url
-alarms
-TextInput.show
 jClass
 setPosture
+addFontFromAssetManager
 doBeforeTextChanged
 ensureImeVisible
-addFontFromAssetManager
 splitInfo.primaryActivityStack
 androidx.lifecycle.savedstate.vm.tag
 primaryActivityName.className
-WindowInsetsCompat
 windowMetrics
-android.intent.action.PROCESS_TEXT
+WindowInsetsCompat
 PopupWindowCompatApi21
-systemNavigationBarDividerColor
+android.intent.action.PROCESS_TEXT
 mAttachInfo
-CLIP_PATH
 mIsChildViewEnabled
+CLIP_PATH
 $splitRule
 getModule
-extent
 mResourcesImpl
-biometricRequired
 gradientRadius
 sidecarCompat
-resizeColumn
 java.specification.version
-plugins
-tooltip
 kotlin.Cloneable
-IS_FOCUSED
-deviceCredentialsSetupDescription
 PlatformViewsController
 path
-ReceiveQueued
 Button
+ReceiveQueued
 propertyValuesHolder
-systemStatusBarContrastEnforced
 androidx.lifecycle.LifecycleDispatche...
 getSuppressed
 kotlin.reflect.jvm.internal.Reflectio...
 PARKING
 FOLD
 ACTION_UNKNOWN
-DartMessenger
 android:target_req_state
 addObserver
 modelClass
 allowedViolations
-HIGH_CONTRAST
 ON_ANY
 TwilightManager
 makeOptionalFitsSystemWindows
 MOVE_CURSOR_BACKWARD_BY_WORD
 removeViewImmediate
 kotlinx.coroutines.scheduler.resoluti...
-removeView
 kotlin.Unit
+removeView
 ON_PAUSE
-route
 web_search
 interpolator
-birthdayDay
-domain
 kotlin.jvm.internal.StringCompanionOb...
-viewType
 ACTION_CLICK
-editingValue
 OFFER_FAILED
 invokeSuspend
 android.speech.extra.LANGUAGE_MODEL
-strong
-androidxBiometric
 SidecarCompat
 getResPackage
 ordering
 DROP_LATEST
-biometricOnly
-transparent
-java.
-resizeUpDown
-SystemSoundType.click
 ImageButton
-background_mode
 REMOVING
-popRoute
-NAMES_ROUTE
-throwableMethods
 defaultDisplay
+throwableMethods
 completion
 androidx.view.accessibility.Accessibi...
 ToggleButton
 set
-clearFocus
 ACTION_IME_ENTER
 secondaryActivityIntent
-NotEnrolled
-kUp
-FRAMEWORK_CLIENT
 computeFitSystemWindows
 transition
 DETACH
 getScaledScrollFactor
-LOCALE
 accelerateInterpolator
-hintText
-personNamePrefix
 activityComponent.packageName
 ACTION_NEXT_AT_MOVEMENT_GRANULARITY
 $this$initializer
@@ -838,21 +531,16 @@ android.support.PARENT_ACTIVITY
 LayoutInflaterCompatHC
 font
 ADD
-MEDIUM_IMPACT
 setTouchModal
 feature.rect
 controlX2
-controlX1
 missingDelimiterValue
+controlX1
 listener
-FingerprintFragment
 mFactory2
-observe
-installDeferredComponent
-androidx.biometric.BiometricFragment
 secondaryActivityName
-android:menu:expandedactionview
 ruleComponent.className
+android:menu:expandedactionview
 free_form
 androidx.view.accessibility.Accessibi...
 kotlin.Boolean
@@ -862,25 +550,15 @@ autoMirrored
 setSidecarCallback
 info
 DORMANT
-image
 getRealSize
 android.speech.extra.MAX_RESULTS
-TextInputChannel
 componentName.className
 Failed
 OPACITY
 NonDisposableHandle
-dev.flutter.pigeon.PathProviderApi.ge...
-dev.flutter.pigeon.PathProviderApi.ge...
-AES
-TextInputType.name
 navigation_bar_height
 java.lang.annotation.Annotation
 ACTION_ACCESSIBILITY_FOCUS
-countryName
-FlutterImageView
-nodeId
-inputAction
 frame
 font_weight
 anticipateInterpolator
@@ -888,10 +566,7 @@ ACTION_LONG_CLICK
 TERMINATED
 ACTION_SET_SELECTION
 fm
-flutter/navigation
-Localization.getStringResource
 android.speech.extra.LANGUAGE
-extendedAddress
 timeout
 content
 primaryActivity
@@ -900,175 +575,95 @@ mButtonDrawable
 kotlin.collections.Map
 duration
 ENQUEUE_FAILED
-statusBarColor
 ListPopupWindow
 alpha
 java.lang.Boolean
 selector
-class
 continuation
+class
 owner
 classSimpleName
-DISABLE_ANIMATIONS
 pathData
-DeviceOrientation.landscapeRight
-DeferredComponentChannel
 IconCompat
-false
-FlutterEngineCxnRegstry
-keydown
 workerCtl
-activateSystemCursor
 trimPathStart
-TextInputClient.updateEditingState
-useErrorDialogs
-flutter/accessibility
-io.flutter.embedding.android.LeakVM
-resizeLeft
-resize
-TextEditingDelta
 ACTION_MOVE_WINDOW
-setInitialRoute
-TextInputAction.next
 DEFAULT
 strokeMiterLimit
 DROP_OLDEST
 splitInfoList
-TEXT
 lastScheduledTask
 viewportHeight
-clipboard
-birthdayMonth
-autocorrect
-NotAvailable
 androidx.activity.result.contract.ext...
 HINGE
 java.lang.Character
-HapticFeedbackType.selectionClick
 androidx.view.accessibility.Accessibi...
 context
 $newLayoutInfo
-action
-text
-id
-birthdayYear
-SENTENCES
 EditText
-isolate_snapshot_data
-TextInput.finishAutofillContext
-SPELLOUT
-surface
 arch_disk_io_%d
 _bounds
-signed
 it
-PlatformChannel
 params
 getLayoutAlignment
-announce
-AppCompatSpinner
-FlutterView
 UNDECIDED
+AppCompatSpinner
 SET_PRIMARY_NAV
-PLAIN_TEXT
-TextInputType.address
 getResId
-TextInputType.url
-MOVE_CURSOR_FORWARD_BY_WORD
 kotlin.jvm.internal.
-AccessibilityChannel
-fullStreetAddress
-telephoneNumber
+MOVE_CURSOR_FORWARD_BY_WORD
 ACTION_CLEAR_SELECTION
 extras
 secondaryActivityStack
 suggest_intent_action
 file
-RIGHT
-CancellableContinuation
 placeholderIntent
+CancellableContinuation
 mIncludePad
 mServedView
-onDestroy
-IS_KEYBOARD_KEY
 HIDE
 ACTION_PAGE_RIGHT
 controlY2
-personNameSuffix
 controlY1
 kotlin.jvm.functions.Function
 EmbeddingCompat
 menu
 addView
 off
-resizeLeftRight
-platformBrightness
 splitInfo.secondaryActivityStack
-TextInputAction.done
-android.widget.ScrollView
 ACTION_HIDE_TOOLTIP
 com.android.internal.view.menu.MenuBu...
 kotlin.internal.JRE8PlatformImplement...
-onSaveInstanceState
-io.flutter.EntrypointUri
 mH
-VIRTUAL_DISPLAY_PLATFORM_VIEW
-IS_SLIDER
 newIndent
-loadingUnitId
-resizeUpLeftDownRight
 AsldcInflateDelegate
-KeyboardManager
 RESUMED
 auto
-SpellCheckChannel
 KEY_COMPONENT_ACTIVITY_PENDING_RESULT
 android.speech.action.RECOGNIZE_SPEECH
-newUsername
-main
 activityFilters
 mDrawableCache
 suffix
 TypefaceCompatBaseImpl
 tintMode
 mVisibleInsets
-personMiddleInitial
-cleartextTrafficPermitted
 limit
 android.resource://
 strokeColor
 DID_GAIN_ACCESSIBILITY_FOCUS
 kotlin.Number
-DeviceOrientation.portraitDown
 TOO_LATE_TO_CANCEL
 NULL
-androidx.fragment.extra.ACTIVITY_OPTI...
-birthDateMonth
-kDown
-ListenableEditingState
 separator
-personMiddleName
 cycleInterpolator
 null
-grabbing
 font_italic
-NavigationChannel
-background
-stopAuthentication
-alwaysUse24HourFormat
-true
 androidx.lifecycle.internal.SavedStat...
-dispose
-phoneNational
 UNDISPATCHED
 nm
 objectAnimator
-TextInputType.visiblePassword
-birthday
 p0
-io.flutter.embedding.android.EnableSk...
 ComplexColorCompat
-code
 CompoundButtonCompat
 featureBounds
 keys
@@ -1076,37 +671,25 @@ android.webkit.
 ACTION_SCROLL_RIGHT
 transformer
 addFontFromBuffer
-statusBarIconBrightness
-dcim
-ON_OFF_SWITCH_LABELS
 ViewUtils
 transform
-BiometricManager
 ACTION_SCROLL_LEFT
 STARTED
 activity.windowManager.maximumWindowM...
 kotlin.Comparable
 android:view_registry_state
 consumer
-show_password
 on
 baseKey
-nativeSpellCheckServiceDefined
 MenuItemCompat
-vm_snapshot_data
 android.app.ActivityThread
-Clipboard.getData
 currentDisplay
-longPress
-keyguard
 ResourceManagerInternal
 COROUTINE_SUSPENDED
 Trace
-ACCESSIBLE_NAVIGATION
 MenuItemImpl
 ACTVAutoSizeHelper
 android.widget.
-flutter/textinput
 initializers
 _LifecycleAdapter
 Completed
@@ -1116,59 +699,38 @@ mOnKeyListener
 ACTION_PASTE
 android.graphics.FontFamily
 AutoCompleteTextView
-HAS_TOGGLED_STATE
 suggest_icon_1
 valueTo
 suggest_icon_2
-PathProviderPlugin
-IS_SELECTED
-TextInput.hide
 createAsync
 primaryActivityStack
-telephoneNumberNational
 .Companion
-character
 freeze
-dev.flutter.pigeon.PathProviderApi.ge...
-EMAIL_ADDRESS
 java.lang.Long
-metaState
 java.util.Map
 valueType
-TextInputPlugin
 INTERNAL
 TRACE_TAG_APP
 SuggestionsAdapter
-height
-deviceCredentialsRequired
 ACTION_NEXT_HTML_ELEMENT
 drawable
 CUT
-BOTTOM_OVERLAYS
 _decision
 Drawable
 kotlinx.coroutines.flow.AbstractFlow
 DETECT_RETAIN_INSTANCE_USAGE
 ACTION_COLLAPSE
-BiometricUtils
 input_method
-oldText
 defaultCreationExtras
-Clipboard.hasStrings
 CONDITION_FALSE
 setCurrentState
-androidx.activity.result.contract.ext...
 components
-IS_IN_MUTUALLY_EXCLUSIVE_GROUP
 RESULT_CANCELED
 activity
 StartIntentSenderForResult
 kotlin.Function
 fillAlpha
-RTL
-android:dialogShowing
 long
-SystemUiMode.immersive
 ToolbarWidgetWrapper
 ACTION_PAGE_DOWN
 HALF_OPENED
@@ -1180,273 +742,159 @@ vector
 audio
 $this$$receiver
 key
-email
 kotlin.Enum.Companion
 RESOURCE
-android.type.verbatim
-creditCardExpirationDate
-obscureText
 android:target_state
-texture
 secondaryActivityName.packageName
-WORDS
 ACTION_EXPAND
-SELECTION_CLICK
 windowMetricsCalculator
 store
 kotlin.Float
-systemNavigationBarIconBrightness
-androidx.biometric.FingerprintDialogF...
-contextMenu
 propertyName
 android.speech.action.WEB_SEARCH
-handled
-SystemNavigator.pop
-resizeRight
-autofill
-TextInputAction.newline
-TextCapitalization.none
-_prev
 operation
+_prev
 android.os.action.POWER_SAVE_MODE_CHA...
-android.widget.EditText
 NO_DECISION
 secondaryActivity.intent
-postalCode
-primaryColor
-getEnrolledBiometrics
 rules
 Operations:
-personGivenName
-dev.flutter.pigeon.PathProviderApi.ge...
 pairs
-TextInput.setEditingState
 ON_START
-details
 KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS
-windowMetrics.bounds
 app_data
-birthDateFull
-TOP_OVERLAYS
+windowMetrics.bounds
 ruleComponent
 FragmentContainerView
 Dispatchers.Default
 kotlinx.coroutines.io.parallelism
-NUMBER
 ResourcesCompat
 query
 java.util.Collection
 LIST_EMPTY
 constructor
 componentName.packageName
-TypefaceCompatApi21Impl
 android.resource
+TypefaceCompatApi21Impl
 collection
 action_key
-AppLifecycleState.paused
 android.view.DisplayInfo
-postalAddressExtendedPostalCode
 fragment_
 NOT_IN_STACK
 viewModel
-TextInputAction.previous
-CLICK
 _next
 androidx.lifecycle.internal.SavedStat...
-MULTILINE
 StartActivityForResult
 removeObserver
 android.graphics.Insets
-ON_DESTROY
 destination
+ON_DESTROY
 rule
-enableDeltaModel
 abortCreation
 ViewParentCompat
 android:menu:actionviewstates
-downloads
-flutter/mousecursor
-textservices
 setClipToScreenEnabled
 EMPTY
-text/plain
 getMaxAvailableHeight
+text/plain
 android.intent.action.TIMEZONE_CHANGED
 kotlinx.coroutines.test.internal.Test...
 registry
 WrappedDrawableApi21
-creditCardExpirationYear
-CUTOUT
-flutter/system
-SystemUiMode.leanBack
 filters
-HAS_IMPLICIT_SCROLLING
 MenuPopupWindow
-onWindowLayoutChangeListenerRemoved
 Dispatchers.Main.immediate
-dev.flutter.pigeon.PathProviderApi.ge...
+onWindowLayoutChangeListenerRemoved
 valueFrom
-stickyAuth
 onApplyWindowInsetsListener
 splitRules
-viewModelStoreOwner
 ON_CLOSE_HANDLER_INVOKED
-PermanentlyLockedOut
-location
+viewModelStoreOwner
 REMOVED_TASK
 java.lang.Object
+location
 splitInfo
-SystemChrome.setSystemUIChangeListener
 ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY
-base
-no_activity
-TextInput.setPlatformViewClient
-extendedPostalCode
 prefix
-zoomOut
-none
 type
-actionLabel
-movies
-TextCapitalization.sentences
-IMMERSIVE_STICKY
 getViewRootImpl
 VERTICAL
 delimiter
-HapticFeedbackType.mediumImpact
 NONE
 getTextDirectionHeuristic
 primaryActivityStack.activities
-android:savedDialogState
-goToSettingDescription
-ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT
-DeviceOrientation.portraitUp
-method
 config_showMenuShortcutsWhenKeyboardP...
 CONSUMED
-hints
 overshootInterpolator
-systemNavigationBarContrastEnforced
 onWindowLayoutChangeListenerAdded
-keyup
 java.util.Set
-ACTION_ARGUMENT_SELECTION_START_INT
-push
 intent_extra_data_key
 _state
-SHOW_ON_SCREEN
 result_code
+SHOW_ON_SCREEN
 ACTION_FOCUS
-notifications
-brieflyShowPassword
 overridingDecorator
 newDeviceState
 DETECT_WRONG_FRAGMENT_CONTAINER
-gender
 signature
 java.lang.Double
 ActivityResultRegistry
 createFromFamiliesWithDefault
-AppLifecycleState.detached
-resizeRow
 range
-usesVirtualDisplay
-flutter/spellcheck
-pictures
-IS_TOGGLED
-weak
 savedStateRegistry
 feature
 NO_THREAD_ELEMENTS
 get
 tracker
-dark
-oneTimeCode
 FLAT
 getDisplayInfo
 power
-copy
-precise
 event
 java.lang.Number
-resizeDownRight
 suggest_intent_data_id
 newLayout
-DARK
 COPY
-IS_READ_ONLY
 token
 initializer
 fraction
 filter
-SystemChrome.setPreferredOrientations
-help
 nullLayouts
-phoneNumberDevice
-podcasts
 A11yActionCompat
-flutter/deferredcomponent
 elements
 ACTION_SET_TEXT
 java.lang.Comparable
 strokeAlpha
 URI_MASKABLE
 ON_CREATE
-HAS_ENABLED_STATE
-android.widget.Switch
-data
-resizeUpRightDownLeft
 ON_RESUME
-IS_ENABLED
 isProjected
 float
 OP_SET_MAX_LIFECYCLE
-IS_BUTTON
-postalAddressExtended
-TextCapitalization.characters
 DETECT_SET_USER_VISIBLE_HINT
-LockedOut
-android.permission.ACCESS_COARSE_LOCA...
 java.lang.Enum
+android.permission.ACCESS_COARSE_LOCA...
 MultiAutoCompleteTextView
-enableIMEPersonalizedLearning
-familyName
-create
 TRANSFORM
 $policy
 Flow.kt
 action_msg
-TextInputType.datetime
 REMOVED
-TextInputAction.go
-tap
 android.speech.extra.PROMPT
-offset
 androidx.window.java.layout.WindowInf...
-SystemChrome.setApplicationSwitcherDe...
 kotlin.jvm.internal.EnumCompanionObject
-IS_HIDDEN
 ACTION_COPY
 failed
-io.flutter.InitialRoute
 controlState
-transition_animation_scale
 sequence
-keyCode
-Active
 ActivityRecreator
-postalAddress
-telephoneNumberDevice
+Active
 kotlin.collections.Iterable
 DATA
 UTF8
 file_id
-files
-flutter/localization
 HORIZONTAL
 calling_package
 DrawableCompat
-FlutterRenderer
 previousFragmentId
 mChildNodeIds
 kotlin.collections.Map.Entry
@@ -1454,11 +902,7 @@ ruleComponent.packageName
 .font
 line
 ACTION_CUT
-IS_CHECKED
-Brightness.light
 kotlinName
-LTR
-error
 kotlin.Byte
 network
 mAccessibilityDelegate
@@ -1473,30 +917,22 @@ androidx.activity.result.contract.ext...
 getWindowLayoutInfo
 factory
 REUSABLE_CLAIMED
-opaque
 java.util.Iterator
 0x%08x
-dart_entrypoint_args
-TextInputClient.performAction
 appcompat_skip_skip
 jar:file:
 ON_STOP
-addressState
 kotlin.CharSequence
 intent
 int
-observeForever
-personName
 AppCompatResources
 fragment
 boolean
-androidx.activity.result.contract.act...
 trimPathOffset
-com.google.android.inputmethod.latin
 emit
 clazz
-SCROLL_DOWN
 AccessibilityBridge
+SCROLL_DOWN
 Marking color:accent_material_dark:2131099673 used because it matches string pool constant acc
 Marking color:accent_material_light:2131099674 used because it matches string pool constant acc
 Marking id:accessibility_action_clickable_span:2131296262 used because it matches string pool constant acc
@@ -1532,10 +968,6 @@ Marking id:accessibility_custom_action_6:2131296291 used because it matches stri
 Marking id:accessibility_custom_action_7:2131296292 used because it matches string pool constant acc
 Marking id:accessibility_custom_action_8:2131296293 used because it matches string pool constant acc
 Marking id:accessibility_custom_action_9:2131296294 used because it matches string pool constant acc
-Marking id:locale:2131296363 used because it matches string pool constant locale
-Marking id:message:2131296365 used because it matches string pool constant message
-Marking id:top:2131296432 used because it matches string pool constant top
-Marking id:topPanel:2131296433 used because it matches string pool constant top
 Marking id:accessibility_action_clickable_span:2131296262 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_0:2131296263 used because it matches string pool constant accessibility
 Marking id:accessibility_custom_action_1:2131296264 used because it matches string pool constant accessibility
@@ -1596,21 +1028,6 @@ Marking attr:windowNoTitle:2130968872 used because it matches string pool consta
 Marking attr:itemPadding:2130968731 used because it matches string pool constant item
 Marking attr:displayOptions:2130968680 used because it matches string pool constant display
 Marking id:group_divider:2131296350 used because it matches string pool constant group
-Marking attr:tooltipForegroundColor:2130968854 used because it matches string pool constant tooltip
-Marking attr:tooltipFrameBackground:2130968855 used because it matches string pool constant tooltip
-Marking attr:tooltipText:2130968856 used because it matches string pool constant tooltip
-Marking color:tooltip_background_dark:2131099738 used because it matches string pool constant tooltip
-Marking color:tooltip_background_light:2131099739 used because it matches string pool constant tooltip
-Marking dimen:tooltip_corner_radius:2131165297 used because it matches string pool constant tooltip
-Marking dimen:tooltip_horizontal_padding:2131165298 used because it matches string pool constant tooltip
-Marking dimen:tooltip_margin:2131165299 used because it matches string pool constant tooltip
-Marking dimen:tooltip_precise_anchor_extra_offset:2131165300 used because it matches string pool constant tooltip
-Marking dimen:tooltip_precise_anchor_threshold:2131165301 used because it matches string pool constant tooltip
-Marking dimen:tooltip_vertical_padding:2131165302 used because it matches string pool constant tooltip
-Marking dimen:tooltip_y_offset_non_touch:2131165303 used because it matches string pool constant tooltip
-Marking dimen:tooltip_y_offset_touch:2131165304 used because it matches string pool constant tooltip
-Marking drawable:tooltip_frame_dark:2131230835 used because it matches string pool constant tooltip
-Marking drawable:tooltip_frame_light:2131230836 used because it matches string pool constant tooltip
 Marking attr:font:2130968705 used because it matches string pool constant font
 Marking attr:fontFamily:2130968706 used because it matches string pool constant font
 Marking attr:fontProviderAuthority:2130968707 used because it matches string pool constant font
@@ -1625,8 +1042,6 @@ Marking attr:fontVariationSettings:2130968715 used because it matches string poo
 Marking attr:fontWeight:2130968716 used because it matches string pool constant font
 Marking attr:secondaryActivityName:2130968789 used because it matches string pool constant secondaryActivityName
 Marking id:info:2131296357 used because it matches string pool constant info
-Marking attr:imageButtonStyle:2130968727 used because it matches string pool constant image
-Marking id:image:2131296356 used because it matches string pool constant image
 Marking attr:contentDescription:2130968667 used because it matches string pool constant content
 Marking attr:contentInsetEnd:2130968668 used because it matches string pool constant content
 Marking attr:contentInsetEndWithActions:2130968669 used because it matches string pool constant content
@@ -1641,73 +1056,6 @@ Marking attr:secondaryActivityAction:2130968788 used because it matches string p
 Marking attr:secondaryActivityName:2130968789 used because it matches string pool constant secondaryActivity
 Marking attr:alpha:2130968617 used because it matches string pool constant alpha
 Marking attr:alphabeticModifiers:2130968618 used because it matches string pool constant alpha
-Marking attr:actionBarDivider:2130968576 used because it matches string pool constant action
-Marking attr:actionBarItemBackground:2130968577 used because it matches string pool constant action
-Marking attr:actionBarPopupTheme:2130968578 used because it matches string pool constant action
-Marking attr:actionBarSize:2130968579 used because it matches string pool constant action
-Marking attr:actionBarSplitStyle:2130968580 used because it matches string pool constant action
-Marking attr:actionBarStyle:2130968581 used because it matches string pool constant action
-Marking attr:actionBarTabBarStyle:2130968582 used because it matches string pool constant action
-Marking attr:actionBarTabStyle:2130968583 used because it matches string pool constant action
-Marking attr:actionBarTabTextStyle:2130968584 used because it matches string pool constant action
-Marking attr:actionBarTheme:2130968585 used because it matches string pool constant action
-Marking attr:actionBarWidgetTheme:2130968586 used because it matches string pool constant action
-Marking attr:actionButtonStyle:2130968587 used because it matches string pool constant action
-Marking attr:actionDropDownStyle:2130968588 used because it matches string pool constant action
-Marking attr:actionLayout:2130968589 used because it matches string pool constant action
-Marking attr:actionMenuTextAppearance:2130968590 used because it matches string pool constant action
-Marking attr:actionMenuTextColor:2130968591 used because it matches string pool constant action
-Marking attr:actionModeBackground:2130968592 used because it matches string pool constant action
-Marking attr:actionModeCloseButtonStyle:2130968593 used because it matches string pool constant action
-Marking attr:actionModeCloseDrawable:2130968594 used because it matches string pool constant action
-Marking attr:actionModeCopyDrawable:2130968595 used because it matches string pool constant action
-Marking attr:actionModeCutDrawable:2130968596 used because it matches string pool constant action
-Marking attr:actionModeFindDrawable:2130968597 used because it matches string pool constant action
-Marking attr:actionModePasteDrawable:2130968598 used because it matches string pool constant action
-Marking attr:actionModePopupWindowStyle:2130968599 used because it matches string pool constant action
-Marking attr:actionModeSelectAllDrawable:2130968600 used because it matches string pool constant action
-Marking attr:actionModeShareDrawable:2130968601 used because it matches string pool constant action
-Marking attr:actionModeSplitBackground:2130968602 used because it matches string pool constant action
-Marking attr:actionModeStyle:2130968603 used because it matches string pool constant action
-Marking attr:actionModeWebSearchDrawable:2130968604 used because it matches string pool constant action
-Marking attr:actionOverflowButtonStyle:2130968605 used because it matches string pool constant action
-Marking attr:actionOverflowMenuStyle:2130968606 used because it matches string pool constant action
-Marking attr:actionProviderClass:2130968607 used because it matches string pool constant action
-Marking attr:actionViewClass:2130968608 used because it matches string pool constant action
-Marking id:action_bar:2131296295 used because it matches string pool constant action
-Marking id:action_bar_activity_content:2131296296 used because it matches string pool constant action
-Marking id:action_bar_container:2131296297 used because it matches string pool constant action
-Marking id:action_bar_root:2131296298 used because it matches string pool constant action
-Marking id:action_bar_spinner:2131296299 used because it matches string pool constant action
-Marking id:action_bar_subtitle:2131296300 used because it matches string pool constant action
-Marking id:action_bar_title:2131296301 used because it matches string pool constant action
-Marking id:action_container:2131296302 used because it matches string pool constant action
-Marking id:action_context_bar:2131296303 used because it matches string pool constant action
-Marking id:action_divider:2131296304 used because it matches string pool constant action
-Marking id:action_image:2131296305 used because it matches string pool constant action
-Marking id:action_menu_divider:2131296306 used because it matches string pool constant action
-Marking id:action_menu_presenter:2131296307 used because it matches string pool constant action
-Marking id:action_mode_bar:2131296308 used because it matches string pool constant action
-Marking id:action_mode_bar_stub:2131296309 used because it matches string pool constant action
-Marking id:action_mode_close_button:2131296310 used because it matches string pool constant action
-Marking id:action_text:2131296311 used because it matches string pool constant action
-Marking id:actions:2131296312 used because it matches string pool constant action
-Marking attr:textAllCaps:2130968820 used because it matches string pool constant text
-Marking attr:textAppearanceLargePopupMenu:2130968821 used because it matches string pool constant text
-Marking attr:textAppearanceListItem:2130968822 used because it matches string pool constant text
-Marking attr:textAppearanceListItemSecondary:2130968823 used because it matches string pool constant text
-Marking attr:textAppearanceListItemSmall:2130968824 used because it matches string pool constant text
-Marking attr:textAppearancePopupMenuHeader:2130968825 used because it matches string pool constant text
-Marking attr:textAppearanceSearchResultSubtitle:2130968826 used because it matches string pool constant text
-Marking attr:textAppearanceSearchResultTitle:2130968827 used because it matches string pool constant text
-Marking attr:textAppearanceSmallPopupMenu:2130968828 used because it matches string pool constant text
-Marking attr:textColorAlertDialogListItem:2130968829 used because it matches string pool constant text
-Marking attr:textColorSearchUrl:2130968830 used because it matches string pool constant text
-Marking attr:textLocale:2130968831 used because it matches string pool constant text
-Marking id:text:2131296424 used because it matches string pool constant text
-Marking id:text2:2131296425 used because it matches string pool constant text
-Marking id:textSpacerNoButtons:2131296426 used because it matches string pool constant text
-Marking id:textSpacerNoTitle:2131296427 used because it matches string pool constant text
 Marking attr:itemPadding:2130968731 used because it matches string pool constant it
 Marking id:italic:2131296358 used because it matches string pool constant it
 Marking attr:menu:2130968755 used because it matches string pool constant menu
@@ -1719,17 +1067,7 @@ Marking attr:autoSizePresetSizes:2130968625 used because it matches string pool 
 Marking attr:autoSizeStepGranularity:2130968626 used because it matches string pool constant auto
 Marking attr:autoSizeTextType:2130968627 used because it matches string pool constant auto
 Marking attr:tintMode:2130968841 used because it matches string pool constant tintMode
-Marking attr:background:2130968628 used because it matches string pool constant background
-Marking attr:backgroundSplit:2130968629 used because it matches string pool constant background
-Marking attr:backgroundStacked:2130968630 used because it matches string pool constant background
-Marking attr:backgroundTint:2130968631 used because it matches string pool constant background
-Marking attr:backgroundTintMode:2130968632 used because it matches string pool constant background
-Marking color:background_floating_material_dark:2131099677 used because it matches string pool constant background
-Marking color:background_floating_material_light:2131099678 used because it matches string pool constant background
-Marking color:background_material_dark:2131099679 used because it matches string pool constant background
-Marking color:background_material_light:2131099680 used because it matches string pool constant background
 Marking id:on:2131296375 used because it matches string pool constant on
-Marking attr:height:2130968719 used because it matches string pool constant height
 Marking attr:drawableBottomCompat:2130968685 used because it matches string pool constant drawable
 Marking attr:drawableEndCompat:2130968686 used because it matches string pool constant drawable
 Marking attr:drawableLeftCompat:2130968687 used because it matches string pool constant drawable
@@ -1754,12 +1092,9 @@ Marking animator:fragment_fade_exit:2130837507 used because it matches string po
 Marking animator:fragment_open_enter:2130837508 used because it matches string pool constant fragment_
 Marking animator:fragment_open_exit:2130837509 used because it matches string pool constant fragment_
 Marking id:fragment_container_view_tag:2131296348 used because it matches string pool constant fragment_
-Marking id:none:2131296369 used because it matches string pool constant none
 Marking attr:lineHeight:2130968735 used because it matches string pool constant line
 Marking id:line1:2131296359 used because it matches string pool constant line
 Marking id:line3:2131296360 used because it matches string pool constant line
-Marking color:error_color_material_dark:2131099695 used because it matches string pool constant error
-Marking color:error_color_material_light:2131099696 used because it matches string pool constant error
 Marking anim:fragment_fast_out_extra_slow_in:2130771992 used because it matches string pool constant fragment
 Marking animator:fragment_close_enter:2130837504 used because it matches string pool constant fragment
 Marking animator:fragment_close_exit:2130837505 used because it matches string pool constant fragment
@@ -1829,44 +1164,44 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
     @anim/fragment_fast_out_extra_slow_in
 @animator/fragment_open_exit : reachable=true
     @anim/fragment_fast_out_extra_slow_in
-@array/assume_strong_biometrics_models : reachable=true
-@array/crypto_fingerprint_fallback_prefixes : reachable=true
-@array/crypto_fingerprint_fallback_vendors : reachable=true
-@array/delay_showing_prompt_models : reachable=true
-@array/hide_fingerprint_instantly_prefixes : reachable=true
-@attr/actionBarDivider : reachable=true
-@attr/actionBarItemBackground : reachable=true
+@array/assume_strong_biometrics_models : reachable=false
+@array/crypto_fingerprint_fallback_prefixes : reachable=false
+@array/crypto_fingerprint_fallback_vendors : reachable=false
+@array/delay_showing_prompt_models : reachable=false
+@array/hide_fingerprint_instantly_prefixes : reachable=false
+@attr/actionBarDivider : reachable=false
+@attr/actionBarItemBackground : reachable=false
 @attr/actionBarPopupTheme : reachable=true
 @attr/actionBarSize : reachable=true
-@attr/actionBarSplitStyle : reachable=true
+@attr/actionBarSplitStyle : reachable=false
 @attr/actionBarStyle : reachable=true
-@attr/actionBarTabBarStyle : reachable=true
+@attr/actionBarTabBarStyle : reachable=false
 @attr/actionBarTabStyle : reachable=true
 @attr/actionBarTabTextStyle : reachable=true
 @attr/actionBarTheme : reachable=true
 @attr/actionBarWidgetTheme : reachable=true
-@attr/actionButtonStyle : reachable=true
+@attr/actionButtonStyle : reachable=false
 @attr/actionDropDownStyle : reachable=true
-@attr/actionLayout : reachable=true
-@attr/actionMenuTextAppearance : reachable=true
-@attr/actionMenuTextColor : reachable=true
-@attr/actionModeBackground : reachable=true
-@attr/actionModeCloseButtonStyle : reachable=true
-@attr/actionModeCloseDrawable : reachable=true
-@attr/actionModeCopyDrawable : reachable=true
-@attr/actionModeCutDrawable : reachable=true
-@attr/actionModeFindDrawable : reachable=true
-@attr/actionModePasteDrawable : reachable=true
+@attr/actionLayout : reachable=false
+@attr/actionMenuTextAppearance : reachable=false
+@attr/actionMenuTextColor : reachable=false
+@attr/actionModeBackground : reachable=false
+@attr/actionModeCloseButtonStyle : reachable=false
+@attr/actionModeCloseDrawable : reachable=false
+@attr/actionModeCopyDrawable : reachable=false
+@attr/actionModeCutDrawable : reachable=false
+@attr/actionModeFindDrawable : reachable=false
+@attr/actionModePasteDrawable : reachable=false
 @attr/actionModePopupWindowStyle : reachable=true
-@attr/actionModeSelectAllDrawable : reachable=true
-@attr/actionModeShareDrawable : reachable=true
-@attr/actionModeSplitBackground : reachable=true
+@attr/actionModeSelectAllDrawable : reachable=false
+@attr/actionModeShareDrawable : reachable=false
+@attr/actionModeSplitBackground : reachable=false
 @attr/actionModeStyle : reachable=true
-@attr/actionModeWebSearchDrawable : reachable=true
+@attr/actionModeWebSearchDrawable : reachable=false
 @attr/actionOverflowButtonStyle : reachable=true
 @attr/actionOverflowMenuStyle : reachable=true
-@attr/actionProviderClass : reachable=true
-@attr/actionViewClass : reachable=true
+@attr/actionProviderClass : reachable=false
+@attr/actionViewClass : reachable=false
 @attr/activityAction : reachable=true
 @attr/activityChooserViewStyle : reachable=true
 @attr/activityName : reachable=true
@@ -1886,11 +1221,11 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @attr/autoSizePresetSizes : reachable=true
 @attr/autoSizeStepGranularity : reachable=true
 @attr/autoSizeTextType : reachable=true
-@attr/background : reachable=true
-@attr/backgroundSplit : reachable=true
-@attr/backgroundStacked : reachable=true
-@attr/backgroundTint : reachable=true
-@attr/backgroundTintMode : reachable=true
+@attr/background : reachable=false
+@attr/backgroundSplit : reachable=false
+@attr/backgroundStacked : reachable=false
+@attr/backgroundTint : reachable=false
+@attr/backgroundTintMode : reachable=false
 @attr/barLength : reachable=false
 @attr/borderlessButtonStyle : reachable=false
 @attr/buttonBarButtonStyle : reachable=false
@@ -1920,7 +1255,7 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @attr/colorControlActivated : reachable=true
 @attr/colorControlHighlight : reachable=true
 @attr/colorControlNormal : reachable=true
-@attr/colorError : reachable=true
+@attr/colorError : reachable=false
 @attr/colorPrimary : reachable=false
 @attr/colorPrimaryDark : reachable=false
 @attr/colorSwitchThumbNormal : reachable=true
@@ -1977,7 +1312,7 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @attr/fontWeight : reachable=true
 @attr/gapBetweenBars : reachable=false
 @attr/goIcon : reachable=false
-@attr/height : reachable=true
+@attr/height : reachable=false
 @attr/hideOnContentScroll : reachable=false
 @attr/homeAsUpIndicator : reachable=false
 @attr/homeLayout : reachable=false
@@ -2078,18 +1413,18 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @attr/switchPadding : reachable=false
 @attr/switchStyle : reachable=false
 @attr/switchTextAppearance : reachable=false
-@attr/textAllCaps : reachable=true
-@attr/textAppearanceLargePopupMenu : reachable=true
-@attr/textAppearanceListItem : reachable=true
-@attr/textAppearanceListItemSecondary : reachable=true
-@attr/textAppearanceListItemSmall : reachable=true
-@attr/textAppearancePopupMenuHeader : reachable=true
-@attr/textAppearanceSearchResultSubtitle : reachable=true
-@attr/textAppearanceSearchResultTitle : reachable=true
-@attr/textAppearanceSmallPopupMenu : reachable=true
-@attr/textColorAlertDialogListItem : reachable=true
+@attr/textAllCaps : reachable=false
+@attr/textAppearanceLargePopupMenu : reachable=false
+@attr/textAppearanceListItem : reachable=false
+@attr/textAppearanceListItemSecondary : reachable=false
+@attr/textAppearanceListItemSmall : reachable=false
+@attr/textAppearancePopupMenuHeader : reachable=false
+@attr/textAppearanceSearchResultSubtitle : reachable=false
+@attr/textAppearanceSearchResultTitle : reachable=false
+@attr/textAppearanceSmallPopupMenu : reachable=false
+@attr/textColorAlertDialogListItem : reachable=false
 @attr/textColorSearchUrl : reachable=true
-@attr/textLocale : reachable=true
+@attr/textLocale : reachable=false
 @attr/theme : reachable=false
 @attr/thickness : reachable=false
 @attr/thumbTextPadding : reachable=false
@@ -2112,9 +1447,9 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @attr/titleTextStyle : reachable=false
 @attr/toolbarNavigationButtonStyle : reachable=true
 @attr/toolbarStyle : reachable=true
-@attr/tooltipForegroundColor : reachable=true
-@attr/tooltipFrameBackground : reachable=true
-@attr/tooltipText : reachable=true
+@attr/tooltipForegroundColor : reachable=false
+@attr/tooltipFrameBackground : reachable=false
+@attr/tooltipText : reachable=false
 @attr/track : reachable=false
 @attr/trackTint : reachable=false
 @attr/trackTintMode : reachable=false
@@ -2200,14 +1535,14 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
     @color/material_deep_teal_500
 @color/androidx_core_ripple_material_light : reachable=true
 @color/androidx_core_secondary_text_default_material_light : reachable=true
-@color/background_floating_material_dark : reachable=true
+@color/background_floating_material_dark : reachable=false
     @color/material_grey_800
-@color/background_floating_material_light : reachable=true
-@color/background_material_dark : reachable=true
+@color/background_floating_material_light : reachable=false
+@color/background_material_dark : reachable=false
     @color/material_grey_850
-@color/background_material_light : reachable=true
+@color/background_material_light : reachable=false
     @color/material_grey_50
-@color/biometric_error_color : reachable=true
+@color/biometric_error_color : reachable=false
 @color/black_text : reachable=false
 @color/bright_foreground_disabled_material_dark : reachable=false
 @color/bright_foreground_disabled_material_light : reachable=false
@@ -2223,8 +1558,8 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @color/dim_foreground_disabled_material_light : reachable=false
 @color/dim_foreground_material_dark : reachable=false
 @color/dim_foreground_material_light : reachable=false
-@color/error_color_material_dark : reachable=true
-@color/error_color_material_light : reachable=true
+@color/error_color_material_dark : reachable=false
+@color/error_color_material_light : reachable=false
 @color/foreground_material_dark : reachable=false
 @color/foreground_material_light : reachable=false
 @color/grey_text : reachable=false
@@ -2274,8 +1609,8 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
     @color/switch_thumb_normal_material_light
 @color/switch_thumb_normal_material_dark : reachable=false
 @color/switch_thumb_normal_material_light : reachable=false
-@color/tooltip_background_dark : reachable=true
-@color/tooltip_background_light : reachable=true
+@color/tooltip_background_dark : reachable=false
+@color/tooltip_background_light : reachable=false
 @color/warning_color : reachable=false
 @dimen/abc_action_bar_content_inset_material : reachable=false
 @dimen/abc_action_bar_content_inset_with_nav : reachable=false
@@ -2394,12 +1729,12 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @dimen/notification_subtext_size : reachable=false
 @dimen/notification_top_pad : reachable=false
 @dimen/notification_top_pad_large_text : reachable=false
-@dimen/tooltip_corner_radius : reachable=true
-@dimen/tooltip_horizontal_padding : reachable=true
-@dimen/tooltip_margin : reachable=true
+@dimen/tooltip_corner_radius : reachable=false
+@dimen/tooltip_horizontal_padding : reachable=false
+@dimen/tooltip_margin : reachable=false
 @dimen/tooltip_precise_anchor_extra_offset : reachable=true
 @dimen/tooltip_precise_anchor_threshold : reachable=true
-@dimen/tooltip_vertical_padding : reachable=true
+@dimen/tooltip_vertical_padding : reachable=false
 @dimen/tooltip_y_offset_non_touch : reachable=true
 @dimen/tooltip_y_offset_touch : reachable=true
 @drawable/abc_ab_share_pack_mtrl_alpha : reachable=true
@@ -2590,8 +1925,8 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
     @anim/btn_radio_to_off_mtrl_ring_outer_animation
     @anim/btn_radio_to_off_mtrl_ring_outer_path_animation
     @anim/btn_radio_to_off_mtrl_dot_group_animation
-@drawable/fingerprint_dialog_error : reachable=true
-@drawable/fingerprint_dialog_fp_icon : reachable=true
+@drawable/fingerprint_dialog_error : reachable=false
+@drawable/fingerprint_dialog_fp_icon : reachable=false
 @drawable/fingerprint_initial_icon : reachable=false
     @drawable/ic_fingerprint_white_24dp
 @drawable/fingerprint_success_icon : reachable=false
@@ -2628,10 +1963,10 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @drawable/notification_tile_bg : reachable=false
     @drawable/notify_panel_notification_icon_bg
 @drawable/notify_panel_notification_icon_bg : reachable=false
-@drawable/tooltip_frame_dark : reachable=true
+@drawable/tooltip_frame_dark : reachable=false
     @color/tooltip_background_dark
     @dimen/tooltip_corner_radius
-@drawable/tooltip_frame_light : reachable=true
+@drawable/tooltip_frame_light : reachable=false
     @color/tooltip_background_light
     @dimen/tooltip_corner_radius
 @id/ALT : reachable=false
@@ -2676,21 +2011,21 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @id/action_bar : reachable=true
 @id/action_bar_activity_content : reachable=true
 @id/action_bar_container : reachable=true
-@id/action_bar_root : reachable=true
-@id/action_bar_spinner : reachable=true
+@id/action_bar_root : reachable=false
+@id/action_bar_spinner : reachable=false
 @id/action_bar_subtitle : reachable=true
 @id/action_bar_title : reachable=true
-@id/action_container : reachable=true
+@id/action_container : reachable=false
 @id/action_context_bar : reachable=true
-@id/action_divider : reachable=true
-@id/action_image : reachable=true
-@id/action_menu_divider : reachable=true
+@id/action_divider : reachable=false
+@id/action_image : reachable=false
+@id/action_menu_divider : reachable=false
 @id/action_menu_presenter : reachable=true
-@id/action_mode_bar : reachable=true
+@id/action_mode_bar : reachable=false
 @id/action_mode_bar_stub : reachable=true
 @id/action_mode_close_button : reachable=true
-@id/action_text : reachable=true
-@id/actions : reachable=true
+@id/action_text : reachable=false
+@id/actions : reachable=false
 @id/activity_chooser_view_content : reachable=true
 @id/add : reachable=false
 @id/alertTitle : reachable=true
@@ -2718,36 +2053,36 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @id/end : reachable=false
 @id/expand_activities_button : reachable=false
 @id/expanded_menu : reachable=false
-@id/fingerprint_description : reachable=true
-@id/fingerprint_error : reachable=true
-@id/fingerprint_icon : reachable=true
-@id/fingerprint_required : reachable=true
+@id/fingerprint_description : reachable=false
+@id/fingerprint_error : reachable=false
+@id/fingerprint_icon : reachable=false
+@id/fingerprint_required : reachable=false
 @id/fingerprint_signin : reachable=false
 @id/fingerprint_status : reachable=false
-@id/fingerprint_subtitle : reachable=true
+@id/fingerprint_subtitle : reachable=false
 @id/forever : reachable=false
 @id/fragment_container_view_tag : reachable=true
-@id/go_to_setting_description : reachable=true
+@id/go_to_setting_description : reachable=false
 @id/group_divider : reachable=true
 @id/home : reachable=false
 @id/homeAsUp : reachable=false
 @id/icon : reachable=false
 @id/icon_group : reachable=false
 @id/ifRoom : reachable=false
-@id/image : reachable=true
+@id/image : reachable=false
 @id/info : reachable=true
 @id/italic : reachable=true
 @id/line1 : reachable=true
 @id/line3 : reachable=true
 @id/listMode : reachable=false
 @id/list_item : reachable=false
-@id/locale : reachable=true
+@id/locale : reachable=false
 @id/ltr : reachable=false
 @id/message : reachable=true
 @id/middle : reachable=false
 @id/multiply : reachable=false
 @id/never : reachable=false
-@id/none : reachable=true
+@id/none : reachable=false
 @id/normal : reachable=false
 @id/notification_background : reachable=false
 @id/notification_main_column : reachable=false
@@ -2802,15 +2137,15 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @id/tag_unhandled_key_event_manager : reachable=true
 @id/tag_unhandled_key_listeners : reachable=true
 @id/tag_window_insets_animation_callback : reachable=true
-@id/text : reachable=true
-@id/text2 : reachable=true
+@id/text : reachable=false
+@id/text2 : reachable=false
 @id/textSpacerNoButtons : reachable=true
 @id/textSpacerNoTitle : reachable=true
 @id/time : reachable=false
 @id/title : reachable=true
 @id/titleDividerNoCustom : reachable=true
 @id/title_template : reachable=true
-@id/top : reachable=true
+@id/top : reachable=false
 @id/topPanel : reachable=true
 @id/unchecked : reachable=false
 @id/uniform : reachable=false
@@ -2958,10 +2293,10 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
     @style/TextAppearance_AppCompat_Tooltip
     @attr/tooltipForegroundColor
 @layout/custom_dialog : reachable=false
-@layout/fingerprint_dialog_layout : reachable=true
+@layout/fingerprint_dialog_layout : reachable=false
     @dimen/fingerprint_icon_size
     @string/fingerprint_dialog_touch_sensor
-@layout/go_to_setting : reachable=true
+@layout/go_to_setting : reachable=false
     @color/black_text
     @dimen/huge_text_size
     @color/grey_text
@@ -3047,21 +2382,21 @@ Marking id:fragment_container_view_tag:2131296348 used because it matches string
 @string/abc_shareactionprovider_share_with : reachable=false
 @string/abc_shareactionprovider_share_with_application : reachable=false
 @string/abc_toolbar_collapse_description : reachable=false
-@string/confirm_device_credential_password : reachable=true
-@string/default_error_msg : reachable=true
-@string/fingerprint_dialog_touch_sensor : reachable=true
-@string/fingerprint_error_hw_not_available : reachable=true
-@string/fingerprint_error_hw_not_present : reachable=true
-@string/fingerprint_error_lockout : reachable=true
-@string/fingerprint_error_no_fingerprints : reachable=true
-@string/fingerprint_error_user_canceled : reachable=true
-@string/fingerprint_not_recognized : reachable=true
-@string/generic_error_no_device_credential : reachable=true
-@string/generic_error_no_keyguard : reachable=true
-@string/generic_error_user_canceled : reachable=true
+@string/confirm_device_credential_password : reachable=false
+@string/default_error_msg : reachable=false
+@string/fingerprint_dialog_touch_sensor : reachable=false
+@string/fingerprint_error_hw_not_available : reachable=false
+@string/fingerprint_error_hw_not_present : reachable=false
+@string/fingerprint_error_lockout : reachable=false
+@string/fingerprint_error_no_fingerprints : reachable=false
+@string/fingerprint_error_user_canceled : reachable=false
+@string/fingerprint_not_recognized : reachable=false
+@string/generic_error_no_device_credential : reachable=false
+@string/generic_error_no_keyguard : reachable=false
+@string/generic_error_user_canceled : reachable=false
 @string/search_menu_title : reachable=false
 @string/status_bar_notification_info_overflow : reachable=false
-@style/AlertDialogCustom : reachable=true
+@style/AlertDialogCustom : reachable=false
 @style/AlertDialog_AppCompat : reachable=false
     @style/Base_AlertDialog_AppCompat
 @style/AlertDialog_AppCompat_Light : reachable=false
@@ -4713,44 +4048,18 @@ The root reachable resources are:
  animator:fragment_fade_exit:2130837507
  animator:fragment_open_enter:2130837508
  animator:fragment_open_exit:2130837509
- array:assume_strong_biometrics_models:2130903040
- array:crypto_fingerprint_fallback_prefixes:2130903041
- array:crypto_fingerprint_fallback_vendors:2130903042
- array:delay_showing_prompt_models:2130903043
- array:hide_fingerprint_instantly_prefixes:2130903044
- attr:actionBarDivider:2130968576
- attr:actionBarItemBackground:2130968577
  attr:actionBarPopupTheme:2130968578
  attr:actionBarSize:2130968579
- attr:actionBarSplitStyle:2130968580
  attr:actionBarStyle:2130968581
- attr:actionBarTabBarStyle:2130968582
  attr:actionBarTabStyle:2130968583
  attr:actionBarTabTextStyle:2130968584
  attr:actionBarTheme:2130968585
  attr:actionBarWidgetTheme:2130968586
- attr:actionButtonStyle:2130968587
  attr:actionDropDownStyle:2130968588
- attr:actionLayout:2130968589
- attr:actionMenuTextAppearance:2130968590
- attr:actionMenuTextColor:2130968591
- attr:actionModeBackground:2130968592
- attr:actionModeCloseButtonStyle:2130968593
- attr:actionModeCloseDrawable:2130968594
- attr:actionModeCopyDrawable:2130968595
- attr:actionModeCutDrawable:2130968596
- attr:actionModeFindDrawable:2130968597
- attr:actionModePasteDrawable:2130968598
  attr:actionModePopupWindowStyle:2130968599
- attr:actionModeSelectAllDrawable:2130968600
- attr:actionModeShareDrawable:2130968601
- attr:actionModeSplitBackground:2130968602
  attr:actionModeStyle:2130968603
- attr:actionModeWebSearchDrawable:2130968604
  attr:actionOverflowButtonStyle:2130968605
  attr:actionOverflowMenuStyle:2130968606
- attr:actionProviderClass:2130968607
- attr:actionViewClass:2130968608
  attr:activityAction:2130968609
  attr:activityChooserViewStyle:2130968610
  attr:activityName:2130968611
@@ -4765,11 +4074,6 @@ The root reachable resources are:
  attr:autoSizePresetSizes:2130968625
  attr:autoSizeStepGranularity:2130968626
  attr:autoSizeTextType:2130968627
- attr:background:2130968628
- attr:backgroundSplit:2130968629
- attr:backgroundStacked:2130968630
- attr:backgroundTint:2130968631
- attr:backgroundTintMode:2130968632
  attr:buttonStyle:2130968644
  attr:checkboxStyle:2130968648
  attr:colorAccent:2130968656
@@ -4777,7 +4081,6 @@ The root reachable resources are:
  attr:colorControlActivated:2130968659
  attr:colorControlHighlight:2130968660
  attr:colorControlNormal:2130968661
- attr:colorError:2130968662
  attr:colorSwitchThumbNormal:2130968665
  attr:contentDescription:2130968667
  attr:contentInsetEnd:2130968668
@@ -4811,7 +4114,6 @@ The root reachable resources are:
  attr:fontStyle:2130968714
  attr:fontVariationSettings:2130968715
  attr:fontWeight:2130968716
- attr:height:2130968719
  attr:imageButtonStyle:2130968727
  attr:itemPadding:2130968731
  attr:lStar:2130968732
@@ -4833,25 +4135,11 @@ The root reachable resources are:
  attr:shortcutMatchRequired:2130968793
  attr:spinnerStyle:2130968801
  attr:state_above_anchor:2130968808
- attr:textAllCaps:2130968820
- attr:textAppearanceLargePopupMenu:2130968821
- attr:textAppearanceListItem:2130968822
- attr:textAppearanceListItemSecondary:2130968823
- attr:textAppearanceListItemSmall:2130968824
- attr:textAppearancePopupMenuHeader:2130968825
- attr:textAppearanceSearchResultSubtitle:2130968826
- attr:textAppearanceSearchResultTitle:2130968827
- attr:textAppearanceSmallPopupMenu:2130968828
- attr:textColorAlertDialogListItem:2130968829
  attr:textColorSearchUrl:2130968830
- attr:textLocale:2130968831
  attr:tint:2130968840
  attr:tintMode:2130968841
  attr:toolbarNavigationButtonStyle:2130968852
  attr:toolbarStyle:2130968853
- attr:tooltipForegroundColor:2130968854
- attr:tooltipFrameBackground:2130968855
- attr:tooltipText:2130968856
  attr:viewInflaterClass:2130968861
  attr:windowActionBar:2130968863
  attr:windowActionBarOverlay:2130968864
@@ -4876,15 +4164,6 @@ The root reachable resources are:
  color:accent_material_light:2131099674
  color:androidx_core_ripple_material_light:2131099675
  color:androidx_core_secondary_text_default_material_light:2131099676
- color:background_floating_material_dark:2131099677
- color:background_floating_material_light:2131099678
- color:background_material_dark:2131099679
- color:background_material_light:2131099680
- color:biometric_error_color:2131099681
- color:error_color_material_dark:2131099695
- color:error_color_material_light:2131099696
- color:tooltip_background_dark:2131099738
- color:tooltip_background_light:2131099739
  dimen:abc_action_bar_stacked_max_height:2131165193
  dimen:abc_action_bar_stacked_tab_max_width:2131165194
  dimen:abc_cascading_menus_min_smallest_width:2131165206
@@ -4893,12 +4172,8 @@ The root reachable resources are:
  dimen:abc_dropdownitem_text_padding_left:2131165226
  dimen:abc_search_view_preferred_height:2131165238
  dimen:abc_search_view_preferred_width:2131165239
- dimen:tooltip_corner_radius:2131165297
- dimen:tooltip_horizontal_padding:2131165298
- dimen:tooltip_margin:2131165299
  dimen:tooltip_precise_anchor_extra_offset:2131165300
  dimen:tooltip_precise_anchor_threshold:2131165301
- dimen:tooltip_vertical_padding:2131165302
  dimen:tooltip_y_offset_non_touch:2131165303
  dimen:tooltip_y_offset_touch:2131165304
  drawable:abc_ab_share_pack_mtrl_alpha:2131230720
@@ -4948,10 +4223,6 @@ The root reachable resources are:
  drawable:abc_textfield_search_default_mtrl_alpha:2131230803
  drawable:abc_textfield_search_material:2131230804
  drawable:abc_vector_test:2131230805
- drawable:fingerprint_dialog_error:2131230814
- drawable:fingerprint_dialog_fp_icon:2131230815
- drawable:tooltip_frame_dark:2131230835
- drawable:tooltip_frame_light:2131230836
  id:accessibility_action_clickable_span:2131296262
  id:accessibility_custom_action_0:2131296263
  id:accessibility_custom_action_1:2131296264
@@ -4988,21 +4259,12 @@ The root reachable resources are:
  id:action_bar:2131296295
  id:action_bar_activity_content:2131296296
  id:action_bar_container:2131296297
- id:action_bar_root:2131296298
- id:action_bar_spinner:2131296299
  id:action_bar_subtitle:2131296300
  id:action_bar_title:2131296301
- id:action_container:2131296302
  id:action_context_bar:2131296303
- id:action_divider:2131296304
- id:action_image:2131296305
- id:action_menu_divider:2131296306
  id:action_menu_presenter:2131296307
- id:action_mode_bar:2131296308
  id:action_mode_bar_stub:2131296309
  id:action_mode_close_button:2131296310
- id:action_text:2131296311
- id:actions:2131296312
  id:activity_chooser_view_content:2131296313
  id:alertTitle:2131296315
  id:androidx_window_activity_scope:2131296317
@@ -5013,22 +4275,13 @@ The root reachable resources are:
  id:customPanel:2131296331
  id:decor_content_parent:2131296332
  id:edit_query:2131296336
- id:fingerprint_description:2131296340
- id:fingerprint_error:2131296341
- id:fingerprint_icon:2131296342
- id:fingerprint_required:2131296343
- id:fingerprint_subtitle:2131296346
  id:fragment_container_view_tag:2131296348
- id:go_to_setting_description:2131296349
  id:group_divider:2131296350
- id:image:2131296356
  id:info:2131296357
  id:italic:2131296358
  id:line1:2131296359
  id:line3:2131296360
- id:locale:2131296363
  id:message:2131296365
- id:none:2131296369
  id:off:2131296374
  id:on:2131296375
  id:parentPanel:2131296376
@@ -5060,14 +4313,11 @@ The root reachable resources are:
  id:tag_unhandled_key_event_manager:2131296421
  id:tag_unhandled_key_listeners:2131296422
  id:tag_window_insets_animation_callback:2131296423
- id:text:2131296424
- id:text2:2131296425
  id:textSpacerNoButtons:2131296426
  id:textSpacerNoTitle:2131296427
  id:title:2131296429
  id:titleDividerNoCustom:2131296430
  id:title_template:2131296431
- id:top:2131296432
  id:topPanel:2131296433
  id:view_tree_lifecycle_owner:2131296438
  id:view_tree_on_back_pressed_dispatcher_owner:2131296439
@@ -5093,8 +4343,6 @@ The root reachable resources are:
  layout:abc_search_dropdown_item_icons_2line:2131492888
  layout:abc_search_view:2131492889
  layout:abc_tooltip:2131492891
- layout:fingerprint_dialog_layout:2131492893
- layout:go_to_setting:2131492894
  layout:support_simple_spinner_dropdown_item:2131492905
  mipmap:ic_launcher:2131558400
  string:abc_action_bar_up_description:2131623937
@@ -5109,19 +4357,6 @@ The root reachable resources are:
  string:abc_menu_sym_shortcut_label:2131623952
  string:abc_prepend_shortcut_label:2131623953
  string:abc_searchview_description_search:2131623957
- string:confirm_device_credential_password:2131623963
- string:default_error_msg:2131623964
- string:fingerprint_dialog_touch_sensor:2131623965
- string:fingerprint_error_hw_not_available:2131623966
- string:fingerprint_error_hw_not_present:2131623967
- string:fingerprint_error_lockout:2131623968
- string:fingerprint_error_no_fingerprints:2131623969
- string:fingerprint_error_user_canceled:2131623970
- string:fingerprint_not_recognized:2131623971
- string:generic_error_no_device_credential:2131623972
- string:generic_error_no_keyguard:2131623973
- string:generic_error_user_canceled:2131623974
- style:AlertDialogCustom:2131689474
  style:Animation_AppCompat_Tooltip:2131689477
  style:LaunchTheme:2131689634
  style:NormalTheme:2131689635
@@ -5138,6 +4373,7 @@ Skipped unused resource res/color/abc_background_cache_hint_selector_material_da
 Skipped unused resource res/color/abc_btn_colored_text_material.xml: 676 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/color/switch_thumb_material_dark.xml: 519 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/color-v23/abc_btn_colored_text_material.xml: 624 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/color-v26/biometric_error_color.xml: 451 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/abc_item_background_holo_dark.xml: 2030 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/abc_list_selector_background_transition_holo_dark.xml: 422 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/abc_list_selector_holo_dark.xml: 2120 bytes (replaced with small dummy file of size 9 bytes)
@@ -5148,10 +4384,12 @@ Skipped unused resource res/drawable/notification_bg.xml: 751 bytes (replaced wi
 Skipped unused resource res/drawable/notification_bg_low.xml: 753 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/notification_icon_background.xml: 314 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable/notification_tile_bg.xml: 319 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable/tooltip_frame_light.xml: 471 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-v21/notification_action_background.xml: 2250 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-ldpi-v4/ic_done_white_24dp.png: 133 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-ldpi-v4/ic_fingerprint_white_24dp.png: 416 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-ldpi-v4/ic_priority_high_white_24dp.png: 148 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-ldpi-v23/fingerprint_dialog_error.png: 431 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_pressed_holo_dark.9.png: 207 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 217 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/ic_done_white_24dp.png: 147 bytes (replaced with small dummy file of size 67 bytes)
@@ -5162,6 +4400,7 @@ Skipped unused resource res/drawable-mdpi-v4/notification_bg_low_pressed.9.png: 
 Skipped unused resource res/drawable-mdpi-v4/notification_bg_normal.9.png: 215 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png: 223 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-mdpi-v4/notify_panel_notification_icon_bg.png: 98 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-mdpi-v23/fingerprint_dialog_error.png: 565 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png: 208 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 228 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/ic_done_white_24dp.png: 174 bytes (replaced with small dummy file of size 67 bytes)
@@ -5172,6 +4411,7 @@ Skipped unused resource res/drawable-hdpi-v4/notification_bg_low_pressed.9.png: 
 Skipped unused resource res/drawable-hdpi-v4/notification_bg_normal.9.png: 212 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/notification_bg_normal_pressed.9.png: 225 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-hdpi-v4/notify_panel_notification_icon_bg.png: 107 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-hdpi-v23/fingerprint_dialog_error.png: 900 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/abc_list_pressed_holo_dark.9.png: 209 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 236 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/ic_done_white_24dp.png: 199 bytes (replaced with small dummy file of size 67 bytes)
@@ -5182,21 +4422,30 @@ Skipped unused resource res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png:
 Skipped unused resource res/drawable-xhdpi-v4/notification_bg_normal.9.png: 221 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/notification_bg_normal_pressed.9.png: 247 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xhdpi-v4/notify_panel_notification_icon_bg.png: 138 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xhdpi-v23/fingerprint_dialog_error.png: 1172 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/abc_list_pressed_holo_dark.9.png: 212 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/abc_list_selector_disabled_holo_dark.9.png: 260 bytes (replaced with small dummy file of size 77 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_done_white_24dp.png: 256 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_fingerprint_white_24dp.png: 2040 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxhdpi-v4/ic_priority_high_white_24dp.png: 203 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxhdpi-v23/fingerprint_dialog_error.png: 1484 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxxhdpi-v4/ic_done_white_24dp.png: 311 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxxhdpi-v4/ic_fingerprint_white_24dp.png: 2724 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-xxxhdpi-v4/ic_priority_high_white_24dp.png: 271 bytes (replaced with small dummy file of size 67 bytes)
+Skipped unused resource res/drawable-xxxhdpi-v23/fingerprint_dialog_error.png: 1924 bytes (replaced with small dummy file of size 67 bytes)
 Skipped unused resource res/drawable-anydpi-v21/ic_done_white_24dp.xml: 619 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-anydpi-v21/ic_fingerprint_white_24dp.xml: 2655 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/drawable-anydpi-v21/ic_priority_high_white_24dp.xml: 790 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v23/fingerprint_dialog_fp_icon.xml: 6288 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/drawable-anydpi-v24/fingerprint_dialog_error.xml: 3897 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/abc_action_bar_up_container.xml: 588 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/abc_activity_chooser_view.xml: 3884 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/abc_activity_chooser_view_list_item.xml: 2684 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/custom_dialog.xml: 828 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/fingerprint_dialog_layout.xml: 3968 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-v17/fingerprint_dialog_layout.xml: 4490 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout-v19/fingerprint_dialog_layout.xml: 4584 bytes (replaced with small dummy file of size 9 bytes)
+Skipped unused resource res/layout/go_to_setting.xml: 2328 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/notification_action.xml: 2296 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout-v17/notification_action.xml: 2458 bytes (replaced with small dummy file of size 9 bytes)
 Skipped unused resource res/layout/notification_action_tombstone.xml: 2757 bytes (replaced with small dummy file of size 9 bytes)

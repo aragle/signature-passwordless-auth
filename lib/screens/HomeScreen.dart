@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './SettingsScreen.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -35,21 +36,27 @@ class _HomePageState extends State<HomePage> {
             actions: [
               IconButton(
                 icon: const Icon(Icons.settings),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const SettingsScreen()),
+                  );
+                },
               ),
               const Padding(padding: EdgeInsets.only(right: 10)),
             ],
           ),
           body: const TabBarView(
             children: [
-              Icon(Icons.local_activity_outlined),
-              Icon(Icons.devices_outlined),
-              Icon(Icons.manage_accounts_outlined),
-              Icon(Icons.history_outlined),
+              Icon(Icons.local_activity_outlined, size: 100),
+              Icon(Icons.devices_outlined, size: 100),
+              Icon(Icons.manage_accounts_outlined, size: 100),
+              Icon(Icons.history_outlined, size: 100),
             ],
           ),
           floatingActionButton: FloatingActionButton(
-            onPressed: () {
+            onPressed: () async {
               // Add your onPressed code here!
             },
             backgroundColor: Colors.black87,

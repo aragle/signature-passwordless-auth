@@ -55,7 +55,7 @@ INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:1:
 INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:1:1-34:12
 INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:1:1-34:12
 	package
-		ADDED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:2:5-37
+		ADDED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:2:5-32
 		INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
 		INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -142,7 +142,7 @@ INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
 		INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
 		ADDED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
 		INJECTED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml
-activity#com.anovenus.signature.MainActivity
+activity#com.signature.app.MainActivity
 ADDED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:7:9-27:20
 	android:launchMode
 		ADDED from A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:10:13-43
