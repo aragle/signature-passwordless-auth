@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> {
         length: 3,
         child: Scaffold(
           appBar: AppBar(
+            backgroundColor: Colors.black87,
             bottom: const TabBar(
               tabs: [
                 Tab(icon: Icon(Icons.devices)),
@@ -25,7 +26,6 @@ class _HomePageState extends State<HomePage> {
             ),
             title: Image.asset(
               'assets/images/signature.png',
-              fit: BoxFit.cover,
               height: 25,
             ),
             centerTitle: true,
