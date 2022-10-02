@@ -1,6 +1,6 @@
 <variant
     name="release"
-    package="com.anovenus.signature"
+    package="com.signature.app"
     minSdkVersion="16"
     targetSdkVersion="31"
     shrinking="true"

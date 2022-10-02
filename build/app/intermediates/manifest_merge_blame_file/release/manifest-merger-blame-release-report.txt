@@ -24,11 +24,11 @@
 16-->[androidx.core:core:1.8.0] C:\Users\ashiq\.gradle\caches\transforms-3\d363e3b5616f580c766e3e2b3c05f27d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 17        android:icon="@mipmap/ic_launcher"
 17-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:6:9-43
-18        android:label="signature" >
+18        android:label="Signature" >
 18-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:4:9-34
 19        <activity
 19-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:7:9-27:20
-20            android:name="com.anovenus.signature.MainActivity"
+20            android:name="com.signature.app.MainActivity"
 20-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:8:13-41
 21            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
 21-->A:\@Projects\signature\android\app\src\main\AndroidManifest.xml:12:13-163

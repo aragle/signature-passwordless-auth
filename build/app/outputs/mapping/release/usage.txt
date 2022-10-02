@@ -2450,6 +2450,7 @@ androidx.biometric.AuthenticationCallbackProvider$Api30Impl:
 androidx.biometric.AuthenticatorUtils:
     private static final int BIOMETRIC_CLASS_MASK
     private void <init>()
+    static java.lang.String convertToString(int)
 androidx.biometric.BiometricFragment$Api21Impl:
     private void <init>()
 androidx.biometric.BiometricFragment$Api28Impl:
@@ -2484,8 +2485,16 @@ androidx.biometric.BiometricManager:
     public static final int BIOMETRIC_SUCCESS
     private static final java.lang.String TAG
     public int canAuthenticate()
-androidx.biometric.BiometricPrompt$PromptInfo$Builder:
-    public androidx.biometric.BiometricPrompt$PromptInfo$Builder setDeviceCredentialAllowed(boolean)
+androidx.biometric.BiometricPrompt$PromptInfo$Builder
+androidx.biometric.BiometricPrompt$PromptInfo:
+    private final int mAllowedAuthenticators
+    private final java.lang.CharSequence mDescription
+    private final boolean mIsConfirmationRequired
+    private final boolean mIsDeviceCredentialAllowed
+    private final java.lang.CharSequence mNegativeButtonText
+    private final java.lang.CharSequence mSubtitle
+    private final java.lang.CharSequence mTitle
+    void <init>(java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,java.lang.CharSequence,boolean,boolean,int)
 androidx.biometric.BiometricPrompt$ResetCallbackObserver:
     void <init>(androidx.biometric.BiometricViewModel)
 androidx.biometric.BiometricPrompt:
@@ -2514,6 +2523,7 @@ androidx.biometric.BiometricPrompt:
     public void <init>(androidx.fragment.app.FragmentActivity,androidx.biometric.BiometricPrompt$AuthenticationCallback)
     private static void addObservers(androidx.fragment.app.Fragment,androidx.biometric.BiometricViewModel)
     public void authenticate(androidx.biometric.BiometricPrompt$PromptInfo,androidx.biometric.BiometricPrompt$CryptoObject)
+    public void cancelAuthentication()
 androidx.biometric.CancellationSignalProvider$Api16Impl:
     private void <init>()
 androidx.biometric.CancellationSignalProvider:
@@ -3662,8 +3672,7 @@ androidx.core.content.ContextCompat$Api23Impl:
     private void <init>()
 androidx.core.content.ContextCompat$Api24Impl
 androidx.core.content.ContextCompat$Api26Impl
-androidx.core.content.ContextCompat$Api28Impl:
-    private void <init>()
+androidx.core.content.ContextCompat$Api28Impl
 androidx.core.content.ContextCompat$Api30Impl
 androidx.core.content.ContextCompat$LegacyServiceMapHolder
 androidx.core.content.ContextCompat:
@@ -3676,6 +3685,7 @@ androidx.core.content.ContextCompat:
     public static java.io.File getDataDir(android.content.Context)
     public static java.io.File[] getExternalCacheDirs(android.content.Context)
     public static java.io.File[] getExternalFilesDirs(android.content.Context,java.lang.String)
+    public static java.util.concurrent.Executor getMainExecutor(android.content.Context)
     public static java.io.File getNoBackupFilesDir(android.content.Context)
     public static java.io.File[] getObbDirs(android.content.Context)
     public static java.lang.Object getSystemService(android.content.Context,java.lang.Class)
@@ -4137,8 +4147,8 @@ androidx.core.os.ConfigurationCompat
 androidx.core.os.EnvironmentCompat$Api19Impl
 androidx.core.os.EnvironmentCompat$Api21Impl
 androidx.core.os.EnvironmentCompat
-androidx.core.os.ExecutorCompat:
-    private void <init>()
+androidx.core.os.ExecutorCompat$HandlerExecutor
+androidx.core.os.ExecutorCompat
 androidx.core.os.HandlerCompat$Api28Impl
 androidx.core.os.HandlerCompat$Api29Impl
 androidx.core.os.HandlerCompat
@@ -5015,59 +5025,14 @@ androidx.core.view.WindowInsetsCompat:
     public boolean isRound()
     public boolean isVisible(int)
     public androidx.core.view.WindowInsetsCompat replaceSystemWindowInsets(android.graphics.Rect)
-androidx.core.view.WindowInsetsControllerCompat$Impl20:
-    void addOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    void controlWindowInsetsAnimation(int,long,android.view.animation.Interpolator,android.os.CancellationSignal,androidx.core.view.WindowInsetsAnimationControlListenerCompat)
-    int getSystemBarsBehavior()
-    void hide(int)
-    private void hideForType(int)
-    private static synthetic void lambda$showForType$0(android.view.View)
-    void removeOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    void setSystemBarsBehavior(int)
-    void show(int)
-    private void showForType(int)
-androidx.core.view.WindowInsetsControllerCompat$Impl23:
-    public boolean isAppearanceLightStatusBars()
-androidx.core.view.WindowInsetsControllerCompat$Impl26:
-    public boolean isAppearanceLightNavigationBars()
+androidx.core.view.WindowInsetsControllerCompat$Impl20
+androidx.core.view.WindowInsetsControllerCompat$Impl23
+androidx.core.view.WindowInsetsControllerCompat$Impl26
 androidx.core.view.WindowInsetsControllerCompat$Impl30$1
-androidx.core.view.WindowInsetsControllerCompat$Impl30:
-    void addOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    void controlWindowInsetsAnimation(int,long,android.view.animation.Interpolator,android.os.CancellationSignal,androidx.core.view.WindowInsetsAnimationControlListenerCompat)
-    int getSystemBarsBehavior()
-    void hide(int)
-    public boolean isAppearanceLightNavigationBars()
-    public boolean isAppearanceLightStatusBars()
-    private synthetic void lambda$addOnControllableInsetsChangedListener$0(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener,android.view.WindowInsetsController,int)
-    void removeOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    void setSystemBarsBehavior(int)
-    void show(int)
-androidx.core.view.WindowInsetsControllerCompat$Impl:
-    void addOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    void controlWindowInsetsAnimation(int,long,android.view.animation.Interpolator,android.os.CancellationSignal,androidx.core.view.WindowInsetsAnimationControlListenerCompat)
-    int getSystemBarsBehavior()
-    void hide(int)
-    public boolean isAppearanceLightNavigationBars()
-    public boolean isAppearanceLightStatusBars()
-    void removeOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    void setSystemBarsBehavior(int)
-    void show(int)
+androidx.core.view.WindowInsetsControllerCompat$Impl30
+androidx.core.view.WindowInsetsControllerCompat$Impl
 androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener
-androidx.core.view.WindowInsetsControllerCompat:
-    public static final int BEHAVIOR_SHOW_BARS_BY_SWIPE
-    public static final int BEHAVIOR_SHOW_BARS_BY_TOUCH
-    public static final int BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-    private void <init>(android.view.WindowInsetsController)
-    public void addOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    public void controlWindowInsetsAnimation(int,long,android.view.animation.Interpolator,android.os.CancellationSignal,androidx.core.view.WindowInsetsAnimationControlListenerCompat)
-    public int getSystemBarsBehavior()
-    public void hide(int)
-    public boolean isAppearanceLightNavigationBars()
-    public boolean isAppearanceLightStatusBars()
-    public void removeOnControllableInsetsChangedListener(androidx.core.view.WindowInsetsControllerCompat$OnControllableInsetsChangedListener)
-    public void setSystemBarsBehavior(int)
-    public void show(int)
-    public static androidx.core.view.WindowInsetsControllerCompat toWindowInsetsControllerCompat(android.view.WindowInsetsController)
+androidx.core.view.WindowInsetsControllerCompat
 androidx.core.view.accessibility.AccessibilityClickableSpanCompat:
     public static final java.lang.String SPAN_ID
 androidx.core.view.accessibility.AccessibilityEventCompat$Api16Impl
@@ -6529,24 +6494,7 @@ androidx.viewpager.widget.ViewPager$SavedState
 androidx.viewpager.widget.ViewPager$SimpleOnPageChangeListener
 androidx.viewpager.widget.ViewPager$ViewPositionComparator
 androidx.viewpager.widget.ViewPager
-com.anovenus.signature.BuildConfig
-com.anovenus.signature.R$anim
-com.anovenus.signature.R$animator
-com.anovenus.signature.R$array
-com.anovenus.signature.R$attr
-com.anovenus.signature.R$bool
-com.anovenus.signature.R$color
-com.anovenus.signature.R$dimen
-com.anovenus.signature.R$drawable
-com.anovenus.signature.R$id
-com.anovenus.signature.R$integer
-com.anovenus.signature.R$interpolator
-com.anovenus.signature.R$layout
-com.anovenus.signature.R$mipmap
-com.anovenus.signature.R$string
-com.anovenus.signature.R$style
-com.anovenus.signature.R$styleable
-com.anovenus.signature.R
+com.anovenus.signature.MainActivity
 com.google.common.annotations.Beta
 com.google.common.annotations.GwtCompatible
 com.google.common.annotations.GwtIncompatible
@@ -8460,21 +8408,38 @@ com.google.j2objc.annotations.WeakOuter
 com.google.thirdparty.publicsuffix.PublicSuffixPatterns
 com.google.thirdparty.publicsuffix.PublicSuffixType
 com.google.thirdparty.publicsuffix.TrieParser
+com.signature.app.BuildConfig
+com.signature.app.R$anim
+com.signature.app.R$animator
+com.signature.app.R$array
+com.signature.app.R$attr
+com.signature.app.R$bool
+com.signature.app.R$color
+com.signature.app.R$dimen
+com.signature.app.R$drawable
+com.signature.app.R$id
+com.signature.app.R$integer
+com.signature.app.R$interpolator
+com.signature.app.R$layout
+com.signature.app.R$mipmap
+com.signature.app.R$string
+com.signature.app.R$style
+com.signature.app.R$styleable
+com.signature.app.R
 io.flutter.BuildConfig
-io.flutter.FlutterInjector$Builder:
-    public io.flutter.FlutterInjector$Builder setDeferredComponentManager(io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager)
-    public io.flutter.FlutterInjector$Builder setExecutorService(java.util.concurrent.ExecutorService)
-    public io.flutter.FlutterInjector$Builder setFlutterJNIFactory(io.flutter.embedding.engine.FlutterJNI$Factory)
-    public io.flutter.FlutterInjector$Builder setFlutterLoader(io.flutter.embedding.engine.loader.FlutterLoader)
-io.flutter.FlutterInjector:
-    public static void reset()
-    public static void setInstance(io.flutter.FlutterInjector)
+io.flutter.FlutterInjector$1
+io.flutter.FlutterInjector$Builder$NamedThreadFactory
+io.flutter.FlutterInjector$Builder
+io.flutter.FlutterInjector
 io.flutter.Log:
     public void <init>()
+    public static void d(java.lang.String,java.lang.String)
     public static void d(java.lang.String,java.lang.String,java.lang.Throwable)
+    public static void i(java.lang.String,java.lang.String)
     public static void i(java.lang.String,java.lang.String,java.lang.Throwable)
     public static void println(int,java.lang.String,java.lang.String)
     public static void setLogLevel(int)
+    public static void v(java.lang.String,java.lang.String)
     public static void v(java.lang.String,java.lang.String,java.lang.Throwable)
     public static void wtf(java.lang.String,java.lang.String)
     public static void wtf(java.lang.String,java.lang.String,java.lang.Throwable)
@@ -8492,31 +8457,20 @@ io.flutter.app.FlutterPluginRegistry
 io.flutter.embedding.android.AndroidTouchProcessor$PointerChange
 io.flutter.embedding.android.AndroidTouchProcessor$PointerDeviceKind
 io.flutter.embedding.android.AndroidTouchProcessor$PointerSignalKind
-io.flutter.embedding.android.AndroidTouchProcessor:
-    static final int BYTES_PER_FIELD
-    private static final int POINTER_DATA_FIELD_COUNT
-    private static final int POINTER_DATA_FLAG_BATCHED
-io.flutter.embedding.android.DrawableSplashScreen$DrawableSplashScreenView:
-    public void <init>(android.content.Context,android.util.AttributeSet)
+io.flutter.embedding.android.AndroidTouchProcessor
+io.flutter.embedding.android.DrawableSplashScreen$1
+io.flutter.embedding.android.DrawableSplashScreen$DrawableSplashScreenView
+io.flutter.embedding.android.DrawableSplashScreen
+io.flutter.embedding.android.ExclusiveAppComponent
 io.flutter.embedding.android.FlutterActivity$CachedEngineIntentBuilder
 io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder
-io.flutter.embedding.android.FlutterActivity:
-    private static final java.lang.String TAG
-    public static android.content.Intent createDefaultIntent(android.content.Context)
-    public io.flutter.embedding.android.ExclusiveAppComponent getExclusiveAppComponent()
-    void setDelegate(io.flutter.embedding.android.FlutterActivityAndFragmentDelegate)
-    public void updateSystemUiOverlays()
-    public static io.flutter.embedding.android.FlutterActivity$CachedEngineIntentBuilder withCachedEngine(java.lang.String)
-    public static io.flutter.embedding.android.FlutterActivity$NewEngineIntentBuilder withNewEngine()
+io.flutter.embedding.android.FlutterActivity
+io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$1
+io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$2
 io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$DelegateFactory
-io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$Host:
-    public abstract io.flutter.embedding.android.ExclusiveAppComponent getExclusiveAppComponent()
-    public abstract void updateSystemUiOverlays()
-io.flutter.embedding.android.FlutterActivityAndFragmentDelegate:
-    private static final int FLUTTER_SPLASH_VIEW_FALLBACK_ID
-    private static final java.lang.String FRAMEWORK_RESTORATION_BUNDLE_KEY
-    private static final java.lang.String PLUGINS_RESTORATION_BUNDLE_KEY
-    private static final java.lang.String TAG
+io.flutter.embedding.android.FlutterActivityAndFragmentDelegate$Host
+io.flutter.embedding.android.FlutterActivityAndFragmentDelegate
+io.flutter.embedding.android.FlutterActivityLaunchConfigs$BackgroundMode
 io.flutter.embedding.android.FlutterActivityLaunchConfigs
 io.flutter.embedding.android.FlutterEngineConfigurator
 io.flutter.embedding.android.FlutterEngineProvider
@@ -8528,270 +8482,179 @@ io.flutter.embedding.android.FlutterFragment
 io.flutter.embedding.android.FlutterFragmentActivity$CachedEngineIntentBuilder
 io.flutter.embedding.android.FlutterFragmentActivity$NewEngineIntentBuilder
 io.flutter.embedding.android.FlutterFragmentActivity
-io.flutter.embedding.android.FlutterImageView:
-    private static final java.lang.String TAG
-    public void <init>(android.content.Context)
-    public void <init>(android.content.Context,android.util.AttributeSet)
+io.flutter.embedding.android.FlutterImageView$1
+io.flutter.embedding.android.FlutterImageView$SurfaceKind
+io.flutter.embedding.android.FlutterImageView
 io.flutter.embedding.android.FlutterPlayStoreSplitApplication
-io.flutter.embedding.android.FlutterSplashView:
-    public void <init>(android.content.Context,android.util.AttributeSet)
-io.flutter.embedding.android.FlutterSurfaceView:
-    private static final java.lang.String TAG
-    public void <init>(android.content.Context)
-    public void <init>(android.content.Context,android.util.AttributeSet)
-io.flutter.embedding.android.FlutterTextureView:
-    private static final java.lang.String TAG
-io.flutter.embedding.android.FlutterView:
-    private static final java.lang.String TAG
-    public void <init>(android.content.Context)
-    public void <init>(android.content.Context,android.util.AttributeSet)
-    private void <init>(android.content.Context,android.util.AttributeSet,io.flutter.embedding.android.FlutterImageView)
-    public void <init>(android.content.Context,io.flutter.embedding.android.FlutterImageView)
-    public void <init>(android.content.Context,io.flutter.embedding.android.RenderMode)
-    public void <init>(android.content.Context,io.flutter.embedding.android.RenderMode,io.flutter.embedding.android.TransparencyMode)
-    public void <init>(android.content.Context,io.flutter.embedding.android.TransparencyMode)
-    private android.view.View findViewByAccessibilityIdRootedAtCurrentView(int,android.view.View)
-    public android.view.View findViewByAccessibilityIdTraversal(int)
-io.flutter.embedding.android.KeyChannelResponder:
-    private static final java.lang.String TAG
-io.flutter.embedding.android.KeyData$Type:
-    static io.flutter.embedding.android.KeyData$Type fromLong(long)
-io.flutter.embedding.android.KeyData:
-    private static final int BYTES_PER_FIELD
-    public static final java.lang.String CHANNEL
-    private static final int FIELD_COUNT
-    private static final java.lang.String TAG
-    public void <init>(java.nio.ByteBuffer)
-io.flutter.embedding.android.KeyEmbedderResponder:
-    private static final java.lang.String TAG
-io.flutter.embedding.android.KeyboardManager:
-    private static final java.lang.String TAG
-io.flutter.embedding.android.KeyboardMap$1:
-    private static final long serialVersionUID
-io.flutter.embedding.android.KeyboardMap$2:
-    private static final long serialVersionUID
-io.flutter.embedding.android.KeyboardMap:
-    public static final long kAndroidPlane
-    public static final long kUnicodePlane
-    public static final long kValueMask
-    public void <init>()
+io.flutter.embedding.android.FlutterSplashView$1
+io.flutter.embedding.android.FlutterSplashView$2
+io.flutter.embedding.android.FlutterSplashView$3
+io.flutter.embedding.android.FlutterSplashView
+io.flutter.embedding.android.FlutterSurfaceView$1
+io.flutter.embedding.android.FlutterSurfaceView$2
+io.flutter.embedding.android.FlutterSurfaceView
+io.flutter.embedding.android.FlutterTextureView$1
+io.flutter.embedding.android.FlutterTextureView
+io.flutter.embedding.android.FlutterView$1
+io.flutter.embedding.android.FlutterView$2
+io.flutter.embedding.android.FlutterView$3
+io.flutter.embedding.android.FlutterView$4
+io.flutter.embedding.android.FlutterView$5
+io.flutter.embedding.android.FlutterView$FlutterEngineAttachmentListener
+io.flutter.embedding.android.FlutterView$ZeroSides
+io.flutter.embedding.android.FlutterView
+io.flutter.embedding.android.KeyChannelResponder
+io.flutter.embedding.android.KeyData$Type
+io.flutter.embedding.android.KeyData
+io.flutter.embedding.android.KeyEmbedderResponder$1
+io.flutter.embedding.android.KeyEmbedderResponder
+io.flutter.embedding.android.KeyboardManager$1
+io.flutter.embedding.android.KeyboardManager$CharacterCombiner
+io.flutter.embedding.android.KeyboardManager$PerEventCallbackBuilder$Callback
+io.flutter.embedding.android.KeyboardManager$PerEventCallbackBuilder
+io.flutter.embedding.android.KeyboardManager$Responder$OnKeyEventHandledCallback
+io.flutter.embedding.android.KeyboardManager$Responder
+io.flutter.embedding.android.KeyboardManager$ViewDelegate
+io.flutter.embedding.android.KeyboardManager
+io.flutter.embedding.android.KeyboardMap$1
+io.flutter.embedding.android.KeyboardMap$2
+io.flutter.embedding.android.KeyboardMap$KeyPair
+io.flutter.embedding.android.KeyboardMap$PressingGoal
+io.flutter.embedding.android.KeyboardMap$TogglingGoal
+io.flutter.embedding.android.KeyboardMap
+io.flutter.embedding.android.MotionEventTracker$MotionEventId
+io.flutter.embedding.android.MotionEventTracker
+io.flutter.embedding.android.RenderMode
+io.flutter.embedding.android.SplashScreen$-CC
+io.flutter.embedding.android.SplashScreen
 io.flutter.embedding.android.SplashScreenProvider
+io.flutter.embedding.android.TransparencyMode
+io.flutter.embedding.android.WindowInfoRepositoryCallbackAdapterWrapper
+io.flutter.embedding.engine.FlutterEngine$1
+io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener:
+    public abstract void onEngineWillDestroy()
 io.flutter.embedding.engine.FlutterEngine:
     private static final java.lang.String TAG
+    private final io.flutter.embedding.engine.systemchannels.AccessibilityChannel accessibilityChannel
+    private final io.flutter.embedding.engine.dart.DartExecutor dartExecutor
+    private final io.flutter.embedding.engine.systemchannels.DeferredComponentChannel deferredComponentChannel
+    private final io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener engineLifecycleListener
+    private final java.util.Set engineLifecycleListeners
+    private final io.flutter.embedding.engine.FlutterJNI flutterJNI
+    private final io.flutter.embedding.engine.systemchannels.LifecycleChannel lifecycleChannel
+    private final io.flutter.embedding.engine.systemchannels.LocalizationChannel localizationChannel
+    private final io.flutter.plugin.localization.LocalizationPlugin localizationPlugin
+    private final io.flutter.embedding.engine.systemchannels.MouseCursorChannel mouseCursorChannel
+    private final io.flutter.embedding.engine.systemchannels.NavigationChannel navigationChannel
+    private final io.flutter.embedding.engine.systemchannels.PlatformChannel platformChannel
+    private final io.flutter.plugin.platform.PlatformViewsController platformViewsController
+    private final io.flutter.embedding.engine.FlutterEngineConnectionRegistry pluginRegistry
+    private final io.flutter.embedding.engine.renderer.FlutterRenderer renderer
+    private final io.flutter.embedding.engine.systemchannels.RestorationChannel restorationChannel
+    private final io.flutter.embedding.engine.systemchannels.SettingsChannel settingsChannel
+    private final io.flutter.embedding.engine.systemchannels.SpellCheckChannel spellCheckChannel
+    private final io.flutter.embedding.engine.systemchannels.SystemChannel systemChannel
+    private final io.flutter.embedding.engine.systemchannels.TextInputChannel textInputChannel
     public void <init>(android.content.Context)
     public void <init>(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader,io.flutter.embedding.engine.FlutterJNI)
     public void <init>(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader,io.flutter.embedding.engine.FlutterJNI,io.flutter.plugin.platform.PlatformViewsController,java.lang.String[],boolean)
+    public void <init>(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader,io.flutter.embedding.engine.FlutterJNI,io.flutter.plugin.platform.PlatformViewsController,java.lang.String[],boolean,boolean)
     public void <init>(android.content.Context,io.flutter.embedding.engine.loader.FlutterLoader,io.flutter.embedding.engine.FlutterJNI,java.lang.String[],boolean)
     public void <init>(android.content.Context,java.lang.String[])
     public void <init>(android.content.Context,java.lang.String[],boolean)
+    public void <init>(android.content.Context,java.lang.String[],boolean,boolean)
+    static synthetic java.util.Set access$000(io.flutter.embedding.engine.FlutterEngine)
+    static synthetic io.flutter.plugin.platform.PlatformViewsController access$100(io.flutter.embedding.engine.FlutterEngine)
+    static synthetic io.flutter.embedding.engine.systemchannels.RestorationChannel access$200(io.flutter.embedding.engine.FlutterEngine)
     public void addEngineLifecycleListener(io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener)
+    private void attachToJni()
+    public void destroy()
+    public io.flutter.embedding.engine.systemchannels.AccessibilityChannel getAccessibilityChannel()
+    public io.flutter.embedding.engine.plugins.activity.ActivityControlSurface getActivityControlSurface()
     public io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverControlSurface getBroadcastReceiverControlSurface()
     public io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface getContentProviderControlSurface()
+    public io.flutter.embedding.engine.dart.DartExecutor getDartExecutor()
     public io.flutter.embedding.engine.systemchannels.DeferredComponentChannel getDeferredComponentChannel()
+    public io.flutter.embedding.engine.systemchannels.LifecycleChannel getLifecycleChannel()
     public io.flutter.embedding.engine.systemchannels.LocalizationChannel getLocalizationChannel()
+    public io.flutter.plugin.localization.LocalizationPlugin getLocalizationPlugin()
+    public io.flutter.embedding.engine.systemchannels.MouseCursorChannel getMouseCursorChannel()
+    public io.flutter.embedding.engine.systemchannels.NavigationChannel getNavigationChannel()
+    public io.flutter.embedding.engine.systemchannels.PlatformChannel getPlatformChannel()
+    public io.flutter.plugin.platform.PlatformViewsController getPlatformViewsController()
+    public io.flutter.embedding.engine.renderer.FlutterRenderer getRenderer()
+    public io.flutter.embedding.engine.systemchannels.RestorationChannel getRestorationChannel()
     public io.flutter.embedding.engine.plugins.service.ServiceControlSurface getServiceControlSurface()
+    public io.flutter.embedding.engine.systemchannels.SettingsChannel getSettingsChannel()
+    public io.flutter.embedding.engine.systemchannels.SpellCheckChannel getSpellCheckChannel()
+    public io.flutter.embedding.engine.systemchannels.SystemChannel getSystemChannel()
+    public io.flutter.embedding.engine.systemchannels.TextInputChannel getTextInputChannel()
+    private boolean isAttachedToJni()
     public void removeEngineLifecycleListener(io.flutter.embedding.engine.FlutterEngine$EngineLifecycleListener)
     io.flutter.embedding.engine.FlutterEngine spawn(android.content.Context,io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint,java.lang.String,java.util.List)
-io.flutter.embedding.engine.FlutterEngineCache:
-    public void clear()
-    public boolean contains(java.lang.String)
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets:
-    public java.lang.String getAssetFilePathByName(java.lang.String)
-    public java.lang.String getAssetFilePathByName(java.lang.String,java.lang.String)
-    public java.lang.String getAssetFilePathBySubpath(java.lang.String)
-    public java.lang.String getAssetFilePathBySubpath(java.lang.String,java.lang.String)
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivityPluginBinding:
-    public void addOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
-    public void addOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
-    public void addOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
-    public void addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
-    public void removeActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
-    public void removeOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
-    public void removeOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
-    public void removeOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
-    public void removeRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadcastReceiverPluginBinding:
-    private final android.content.BroadcastReceiver broadcastReceiver
-    void <init>(android.content.BroadcastReceiver)
-    public android.content.BroadcastReceiver getBroadcastReceiver()
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding:
-    private final android.content.ContentProvider contentProvider
-    void <init>(android.content.ContentProvider)
-    public android.content.ContentProvider getContentProvider()
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineServicePluginBinding:
-    private final io.flutter.embedding.engine.plugins.lifecycle.HiddenLifecycleReference hiddenLifecycleReference
-    private final java.util.Set onModeChangeListeners
-    private final android.app.Service service
-    void <init>(android.app.Service,androidx.lifecycle.Lifecycle)
-    public void addOnModeChangeListener(io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener)
-    public java.lang.Object getLifecycle()
-    public android.app.Service getService()
-    void onMoveToBackground()
-    void onMoveToForeground()
-    public void removeOnModeChangeListener(io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener)
-io.flutter.embedding.engine.FlutterEngineConnectionRegistry:
-    private static final java.lang.String TAG
-    public void add(java.util.Set)
-    public void attachToBroadcastReceiver(android.content.BroadcastReceiver,androidx.lifecycle.Lifecycle)
-    public void attachToContentProvider(android.content.ContentProvider,androidx.lifecycle.Lifecycle)
-    public void attachToService(android.app.Service,androidx.lifecycle.Lifecycle,boolean)
-    private android.app.Activity attachedActivity()
-    public io.flutter.embedding.engine.plugins.FlutterPlugin get(java.lang.Class)
-    public void onMoveToBackground()
-    public void onMoveToForeground()
+io.flutter.embedding.engine.FlutterEngineCache
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$1
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$DefaultFlutterAssets
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineActivityPluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineBroadcastReceiverPluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineContentProviderPluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry$FlutterEngineServicePluginBinding
+io.flutter.embedding.engine.FlutterEngineConnectionRegistry
 io.flutter.embedding.engine.FlutterEngineGroup$1
 io.flutter.embedding.engine.FlutterEngineGroup$Options
 io.flutter.embedding.engine.FlutterEngineGroup
-io.flutter.embedding.engine.FlutterShellArgs:
-    public static final java.lang.String ARG_CACHE_SKSL
-    public static final java.lang.String ARG_DART_FLAGS
-    public static final java.lang.String ARG_DISABLE_SERVICE_AUTH_CODES
-    public static final java.lang.String ARG_DUMP_SHADER_SKP_ON_SHADER_COMPILATION
-    public static final java.lang.String ARG_ENABLE_DART_PROFILING
-    public static final java.lang.String ARG_ENABLE_IMPELLER
-    public static final java.lang.String ARG_ENABLE_SOFTWARE_RENDERING
-    public static final java.lang.String ARG_ENDLESS_TRACE_BUFFER
-    public static final java.lang.String ARG_KEY_CACHE_SKSL
-    public static final java.lang.String ARG_KEY_DART_FLAGS
-    public static final java.lang.String ARG_KEY_DISABLE_SERVICE_AUTH_CODES
-    public static final java.lang.String ARG_KEY_DUMP_SHADER_SKP_ON_SHADER_COMPILATION
-    public static final java.lang.String ARG_KEY_ENABLE_DART_PROFILING
-    public static final java.lang.String ARG_KEY_ENABLE_IMPELLER
-    public static final java.lang.String ARG_KEY_ENABLE_SOFTWARE_RENDERING
-    public static final java.lang.String ARG_KEY_ENDLESS_TRACE_BUFFER
-    public static final java.lang.String ARG_KEY_MSAA_SAMPLES
-    public static final java.lang.String ARG_KEY_OBSERVATORY_PORT
-    public static final java.lang.String ARG_KEY_PURGE_PERSISTENT_CACHE
-    public static final java.lang.String ARG_KEY_SKIA_DETERMINISTIC_RENDERING
-    public static final java.lang.String ARG_KEY_START_PAUSED
-    public static final java.lang.String ARG_KEY_TRACE_SKIA
-    public static final java.lang.String ARG_KEY_TRACE_SKIA_ALLOWLIST
-    public static final java.lang.String ARG_KEY_TRACE_STARTUP
-    public static final java.lang.String ARG_KEY_TRACE_SYSTRACE
-    public static final java.lang.String ARG_KEY_USE_TEST_FONTS
-    public static final java.lang.String ARG_KEY_VERBOSE_LOGGING
-    public static final java.lang.String ARG_MSAA_SAMPLES
-    public static final java.lang.String ARG_OBSERVATORY_PORT
-    public static final java.lang.String ARG_PURGE_PERSISTENT_CACHE
-    public static final java.lang.String ARG_SKIA_DETERMINISTIC_RENDERING
-    public static final java.lang.String ARG_START_PAUSED
-    public static final java.lang.String ARG_TRACE_SKIA
-    public static final java.lang.String ARG_TRACE_SKIA_ALLOWLIST
-    public static final java.lang.String ARG_TRACE_STARTUP
-    public static final java.lang.String ARG_TRACE_SYSTRACE
-    public static final java.lang.String ARG_USE_TEST_FONTS
-    public static final java.lang.String ARG_VERBOSE_LOGGING
-    public void <init>(java.util.Set)
-    public void <init>(java.lang.String[])
-    public void add(java.lang.String)
-    public void remove(java.lang.String)
+io.flutter.embedding.engine.FlutterJNI$Factory
+io.flutter.embedding.engine.FlutterShellArgs
+io.flutter.embedding.engine.dart.DartExecutor$1
 io.flutter.embedding.engine.dart.DartExecutor$DartCallback
-io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint:
-    public static io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint createDefault()
-io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger:
-    public void disableBufferingIncomingMessages()
-    public void enableBufferingIncomingMessages()
-    public void send(java.lang.String,java.nio.ByteBuffer)
-io.flutter.embedding.engine.dart.DartExecutor:
-    private static final java.lang.String TAG
-    public void disableBufferingIncomingMessages()
-    public void enableBufferingIncomingMessages()
-    public void executeDartCallback(io.flutter.embedding.engine.dart.DartExecutor$DartCallback)
-    public void executeDartEntrypoint(io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint)
-    public io.flutter.plugin.common.BinaryMessenger getBinaryMessenger()
-    public int getPendingChannelResponseCount()
-    public void send(java.lang.String,java.nio.ByteBuffer)
-    public void setIsolateServiceIdListener(io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener)
-io.flutter.embedding.engine.dart.DartMessenger:
-    private static final java.lang.String TAG
-    public void disableBufferingIncomingMessages()
-    public void enableBufferingIncomingMessages()
-    public int getPendingChannelResponseCount()
-    public void send(java.lang.String,java.nio.ByteBuffer)
+io.flutter.embedding.engine.dart.DartExecutor$DartEntrypoint
+io.flutter.embedding.engine.dart.DartExecutor$DefaultBinaryMessenger
+io.flutter.embedding.engine.dart.DartExecutor$IsolateServiceIdListener
+io.flutter.embedding.engine.dart.DartExecutor
+io.flutter.embedding.engine.dart.DartMessenger$1
+io.flutter.embedding.engine.dart.DartMessenger$BufferedMessageInfo
+io.flutter.embedding.engine.dart.DartMessenger$ConcurrentTaskQueue
+io.flutter.embedding.engine.dart.DartMessenger$DartMessengerTaskQueue
+io.flutter.embedding.engine.dart.DartMessenger$DefaultTaskQueueFactory
+io.flutter.embedding.engine.dart.DartMessenger$HandlerInfo
+io.flutter.embedding.engine.dart.DartMessenger$Reply
+io.flutter.embedding.engine.dart.DartMessenger$SerialTaskQueue
+io.flutter.embedding.engine.dart.DartMessenger$TaskQueueFactory
+io.flutter.embedding.engine.dart.DartMessenger$TaskQueueToken
+io.flutter.embedding.engine.dart.DartMessenger
+io.flutter.embedding.engine.dart.PlatformTaskQueue
 io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager:
+    public abstract void destroy()
+    public abstract java.lang.String getDeferredComponentInstallState(int,java.lang.String)
     public abstract void loadAssets(int,java.lang.String)
     public abstract void loadDartLibrary(int,java.lang.String)
+    public abstract void setDeferredComponentChannel(io.flutter.embedding.engine.systemchannels.DeferredComponentChannel)
+    public abstract boolean uninstallDeferredComponent(int,java.lang.String)
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$1
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager$FeatureInstallStateUpdatedListener
 io.flutter.embedding.engine.deferredcomponents.PlayStoreDeferredComponentManager
-io.flutter.embedding.engine.loader.ApplicationInfoLoader:
-    public static final java.lang.String NETWORK_POLICY_METADATA_KEY
-    public static final java.lang.String PUBLIC_AUTOMATICALLY_REGISTER_PLUGINS_METADATA_KEY
-    public void <init>()
-io.flutter.embedding.engine.loader.FlutterApplicationInfo:
-    private static final java.lang.String DEFAULT_AOT_SHARED_LIBRARY_NAME
-    private static final java.lang.String DEFAULT_FLUTTER_ASSETS_DIR
-    private static final java.lang.String DEFAULT_ISOLATE_SNAPSHOT_DATA
-    private static final java.lang.String DEFAULT_VM_SNAPSHOT_DATA
-io.flutter.embedding.engine.loader.FlutterLoader$Settings:
-    public void setLogTag(java.lang.String)
-io.flutter.embedding.engine.loader.FlutterLoader:
-    static final java.lang.String AOT_SHARED_LIBRARY_NAME
-    static final java.lang.String AOT_VMSERVICE_SHARED_LIBRARY_NAME
-    static final java.lang.String AUTOMATICALLY_REGISTER_PLUGINS_KEY
-    private static final java.lang.String DEFAULT_KERNEL_BLOB
-    private static final java.lang.String DEFAULT_LIBRARY
-    private static final java.lang.String ENABLE_IMPELLER_META_DATA_KEY
-    private static final java.lang.String ENABLE_SKPARAGRAPH_META_DATA_KEY
-    static final java.lang.String FLUTTER_ASSETS_DIR_KEY
-    static final java.lang.String ISOLATE_SNAPSHOT_DATA_KEY
-    private static final java.lang.String LEAK_VM_META_DATA_KEY
-    private static final java.lang.String OLD_GEN_HEAP_SIZE_META_DATA_KEY
-    static final java.lang.String SNAPSHOT_ASSET_PATH_KEY
-    private static final java.lang.String TAG
-    private static final java.lang.String VMSERVICE_SNAPSHOT_LIBRARY
-    static final java.lang.String VM_SNAPSHOT_DATA_KEY
-    private static io.flutter.embedding.engine.loader.FlutterLoader instance
-    public void ensureInitializationCompleteAsync(android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)
-    private java.lang.String fullAssetPathFrom(java.lang.String)
-    public java.lang.String getLookupKeyForAsset(java.lang.String)
-    public java.lang.String getLookupKeyForAsset(java.lang.String,java.lang.String)
-    public boolean initialized()
-    private synthetic void lambda$ensureInitializationCompleteAsync$0(android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)
-    private synthetic void lambda$ensureInitializationCompleteAsync$1(android.content.Context,java.lang.String[],android.os.Handler,java.lang.Runnable)
+io.flutter.embedding.engine.loader.ApplicationInfoLoader
+io.flutter.embedding.engine.loader.FlutterApplicationInfo
+io.flutter.embedding.engine.loader.FlutterLoader$1
+io.flutter.embedding.engine.loader.FlutterLoader$InitResult
+io.flutter.embedding.engine.loader.FlutterLoader$Settings
+io.flutter.embedding.engine.loader.FlutterLoader
 io.flutter.embedding.engine.loader.ResourceExtractor$1
 io.flutter.embedding.engine.loader.ResourceExtractor$ExtractTask
-io.flutter.embedding.engine.loader.ResourceExtractor:
-    private static final java.lang.String[] SUPPORTED_ABIS
-    private static final java.lang.String TAG
-    private static final java.lang.String TIMESTAMP_PREFIX
-    private final android.content.res.AssetManager mAssetManager
-    private final java.lang.String mDataDirPath
-    private io.flutter.embedding.engine.loader.ResourceExtractor$ExtractTask mExtractTask
-    private final android.content.pm.PackageManager mPackageManager
-    private final java.lang.String mPackageName
-    private final java.util.HashSet mResources
-    static void <clinit>()
-    void <init>(java.lang.String,java.lang.String,android.content.pm.PackageManager,android.content.res.AssetManager)
-    static synthetic java.lang.String access$000(java.io.File,android.content.pm.PackageManager,java.lang.String)
-    static synthetic void access$100(java.lang.String,java.util.HashSet)
-    static synthetic void access$200(java.io.InputStream,java.io.OutputStream)
-    io.flutter.embedding.engine.loader.ResourceExtractor addResource(java.lang.String)
-    io.flutter.embedding.engine.loader.ResourceExtractor addResources(java.util.Collection)
-    private static java.lang.String checkTimestamp(java.io.File,android.content.pm.PackageManager,java.lang.String)
-    private static void copy(java.io.InputStream,java.io.OutputStream)
-    private static void deleteFiles(java.lang.String,java.util.HashSet)
-    private static java.lang.String[] getExistingTimestamps(java.io.File)
-    private static java.lang.String[] getSupportedAbis()
-    static long getVersionCode(android.content.pm.PackageInfo)
-    io.flutter.embedding.engine.loader.ResourceExtractor start()
-io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView:
-    public void <init>(android.content.Context)
+io.flutter.embedding.engine.loader.ResourceExtractor
+io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView$1
+io.flutter.embedding.engine.mutatorsstack.FlutterMutatorView
 io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutator:
     private android.graphics.Path path
     public void <init>(io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack,android.graphics.Path)
     public android.graphics.Path getPath()
     public android.graphics.Rect getRect()
     public io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack$FlutterMutatorType getType()
-io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets:
-    public abstract java.lang.String getAssetFilePathByName(java.lang.String)
-    public abstract java.lang.String getAssetFilePathByName(java.lang.String,java.lang.String)
-    public abstract java.lang.String getAssetFilePathBySubpath(java.lang.String)
-    public abstract java.lang.String getAssetFilePathBySubpath(java.lang.String,java.lang.String)
-io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding:
-    public io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets getFlutterAssets()
-    public io.flutter.plugin.platform.PlatformViewRegistry getPlatformViewRegistry()
-    public io.flutter.view.TextureRegistry getTextureRegistry()
+io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterAssets
+io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding
+io.flutter.embedding.engine.plugins.FlutterPlugin:
+    public abstract void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
+    public abstract void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
 io.flutter.embedding.engine.plugins.PluginRegistry:
     public abstract void add(java.util.Set)
     public abstract io.flutter.embedding.engine.plugins.FlutterPlugin get(java.lang.Class)
@@ -8799,108 +8662,109 @@ io.flutter.embedding.engine.plugins.PluginRegistry:
     public abstract void remove(java.lang.Class)
     public abstract void remove(java.util.Set)
     public abstract void removeAll()
-io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding:
-    public abstract void addOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
-    public abstract void addOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
-    public abstract void addOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
-    public abstract void addRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
-    public abstract void removeActivityResultListener(io.flutter.plugin.common.PluginRegistry$ActivityResultListener)
-    public abstract void removeOnNewIntentListener(io.flutter.plugin.common.PluginRegistry$NewIntentListener)
-    public abstract void removeOnSaveStateListener(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener)
-    public abstract void removeOnUserLeaveHintListener(io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener)
-    public abstract void removeRequestPermissionsResultListener(io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener)
+io.flutter.embedding.engine.plugins.activity.ActivityAware
+io.flutter.embedding.engine.plugins.activity.ActivityControlSurface
+io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding$OnSaveInstanceStateListener
+io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding
+io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverAware
 io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverControlSurface
-io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverPluginBinding:
-    public abstract android.content.BroadcastReceiver getBroadcastReceiver()
+io.flutter.embedding.engine.plugins.broadcastreceiver.BroadcastReceiverPluginBinding
+io.flutter.embedding.engine.plugins.contentprovider.ContentProviderAware
 io.flutter.embedding.engine.plugins.contentprovider.ContentProviderControlSurface
-io.flutter.embedding.engine.plugins.contentprovider.ContentProviderPluginBinding:
-    public abstract android.content.ContentProvider getContentProvider()
-io.flutter.embedding.engine.plugins.lifecycle.FlutterLifecycleAdapter:
-    private static final java.lang.String TAG
-    public void <init>()
+io.flutter.embedding.engine.plugins.contentprovider.ContentProviderPluginBinding
+io.flutter.embedding.engine.plugins.lifecycle.FlutterLifecycleAdapter
 io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener
+io.flutter.embedding.engine.plugins.service.ServiceAware
 io.flutter.embedding.engine.plugins.service.ServiceControlSurface
-io.flutter.embedding.engine.plugins.service.ServicePluginBinding:
-    public abstract void addOnModeChangeListener(io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener)
-    public abstract java.lang.Object getLifecycle()
-    public abstract android.app.Service getService()
-    public abstract void removeOnModeChangeListener(io.flutter.embedding.engine.plugins.service.ServiceAware$OnModeChangeListener)
+io.flutter.embedding.engine.plugins.service.ServicePluginBinding
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry$1
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry$ShimRegistrarAggregate
 io.flutter.embedding.engine.plugins.shim.ShimPluginRegistry
 io.flutter.embedding.engine.plugins.shim.ShimRegistrar
-io.flutter.embedding.engine.plugins.util.GeneratedPluginRegister:
-    private static final java.lang.String TAG
-    public void <init>()
-io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry:
-    public void release()
-    private void removeListener()
-io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics:
-    public static final int unsetValue
-io.flutter.embedding.engine.renderer.FlutterRenderer:
-    private static final java.lang.String TAG
-    static synthetic void access$600(io.flutter.embedding.engine.renderer.FlutterRenderer,long)
-    public void dispatchSemanticsAction(int,int,java.nio.ByteBuffer,int)
-    public android.graphics.Bitmap getBitmap()
-    void removeOnTrimMemoryListener(io.flutter.view.TextureRegistry$OnTrimMemoryListener)
-    public void setAccessibilityFeatures(int)
-    private void unregisterTexture(long)
-io.flutter.embedding.engine.systemchannels.AccessibilityChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.DeferredComponentChannel:
-    private static final java.lang.String TAG
-    public void completeInstallError(java.lang.String,java.lang.String)
-    public void completeInstallSuccess(java.lang.String)
-io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent:
-    public void <init>(android.view.KeyEvent)
-io.flutter.embedding.engine.systemchannels.KeyEventChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.LifecycleChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.LocalizationChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.MouseCursorChannel:
-    private static final java.lang.String TAG
-    public void synthesizeMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result)
-io.flutter.embedding.engine.systemchannels.NavigationChannel:
-    private static final java.lang.String TAG
-    public void setMethodCallHandler(io.flutter.plugin.common.MethodChannel$MethodCallHandler)
-io.flutter.embedding.engine.systemchannels.PlatformChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.PlatformViewsChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.RestorationChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.SettingsChannel:
-    private static final java.lang.String ALWAYS_USE_24_HOUR_FORMAT
-    private static final java.lang.String BRIEFLY_SHOW_PASSWORD
-    public static final java.lang.String CHANNEL_NAME
-    private static final java.lang.String NATIVE_SPELL_CHECK_SERVICE_DEFINED
-    private static final java.lang.String PLATFORM_BRIGHTNESS
-    private static final java.lang.String TAG
-    private static final java.lang.String TEXT_SCALE_FACTOR
-io.flutter.embedding.engine.systemchannels.SpellCheckChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.SystemChannel:
-    private static final java.lang.String TAG
-io.flutter.embedding.engine.systemchannels.TextInputChannel:
-    private static final java.lang.String TAG
+io.flutter.embedding.engine.plugins.util.GeneratedPluginRegister
+io.flutter.embedding.engine.renderer.FlutterRenderer$1
+io.flutter.embedding.engine.renderer.FlutterRenderer$DisplayFeature
+io.flutter.embedding.engine.renderer.FlutterRenderer$DisplayFeatureState
+io.flutter.embedding.engine.renderer.FlutterRenderer$DisplayFeatureType
+io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureFinalizerRunnable
+io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry$1
+io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry$2
+io.flutter.embedding.engine.renderer.FlutterRenderer$SurfaceTextureRegistryEntry
+io.flutter.embedding.engine.renderer.FlutterRenderer$ViewportMetrics
+io.flutter.embedding.engine.renderer.FlutterRenderer
+io.flutter.embedding.engine.renderer.RenderSurface
+io.flutter.embedding.engine.systemchannels.AccessibilityChannel$1
+io.flutter.embedding.engine.systemchannels.AccessibilityChannel$AccessibilityMessageHandler
+io.flutter.embedding.engine.systemchannels.AccessibilityChannel
+io.flutter.embedding.engine.systemchannels.DeferredComponentChannel$1
+io.flutter.embedding.engine.systemchannels.DeferredComponentChannel
+io.flutter.embedding.engine.systemchannels.KeyEventChannel$EventResponseHandler
+io.flutter.embedding.engine.systemchannels.KeyEventChannel$FlutterKeyEvent
+io.flutter.embedding.engine.systemchannels.KeyEventChannel
+io.flutter.embedding.engine.systemchannels.LifecycleChannel
+io.flutter.embedding.engine.systemchannels.LocalizationChannel$1
+io.flutter.embedding.engine.systemchannels.LocalizationChannel$LocalizationMessageHandler
+io.flutter.embedding.engine.systemchannels.LocalizationChannel
+io.flutter.embedding.engine.systemchannels.MouseCursorChannel$1
+io.flutter.embedding.engine.systemchannels.MouseCursorChannel$MouseCursorMethodHandler
+io.flutter.embedding.engine.systemchannels.MouseCursorChannel
+io.flutter.embedding.engine.systemchannels.NavigationChannel$1
+io.flutter.embedding.engine.systemchannels.NavigationChannel
+io.flutter.embedding.engine.systemchannels.PlatformChannel$1
+io.flutter.embedding.engine.systemchannels.PlatformChannel$2
+io.flutter.embedding.engine.systemchannels.PlatformChannel$AppSwitcherDescription
+io.flutter.embedding.engine.systemchannels.PlatformChannel$Brightness
+io.flutter.embedding.engine.systemchannels.PlatformChannel$ClipboardContentFormat
+io.flutter.embedding.engine.systemchannels.PlatformChannel$DeviceOrientation
+io.flutter.embedding.engine.systemchannels.PlatformChannel$HapticFeedbackType
+io.flutter.embedding.engine.systemchannels.PlatformChannel$PlatformMessageHandler
+io.flutter.embedding.engine.systemchannels.PlatformChannel$SoundType
+io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemChromeStyle
+io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiMode
+io.flutter.embedding.engine.systemchannels.PlatformChannel$SystemUiOverlay
+io.flutter.embedding.engine.systemchannels.PlatformChannel
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$1
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewBufferResized
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewBufferSize
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewCreationRequest
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewResizeRequest
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewTouch
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewsHandler
+io.flutter.embedding.engine.systemchannels.PlatformViewsChannel
+io.flutter.embedding.engine.systemchannels.RestorationChannel$1
+io.flutter.embedding.engine.systemchannels.RestorationChannel$2
+io.flutter.embedding.engine.systemchannels.RestorationChannel
+io.flutter.embedding.engine.systemchannels.SettingsChannel$MessageBuilder
+io.flutter.embedding.engine.systemchannels.SettingsChannel$PlatformBrightness
+io.flutter.embedding.engine.systemchannels.SettingsChannel
+io.flutter.embedding.engine.systemchannels.SpellCheckChannel$1
+io.flutter.embedding.engine.systemchannels.SpellCheckChannel$SpellCheckMethodHandler
+io.flutter.embedding.engine.systemchannels.SpellCheckChannel
+io.flutter.embedding.engine.systemchannels.SystemChannel
+io.flutter.embedding.engine.systemchannels.TextInputChannel$1
+io.flutter.embedding.engine.systemchannels.TextInputChannel$Configuration$Autofill
+io.flutter.embedding.engine.systemchannels.TextInputChannel$Configuration
+io.flutter.embedding.engine.systemchannels.TextInputChannel$InputType
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextCapitalization
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextEditState
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputMethodHandler
+io.flutter.embedding.engine.systemchannels.TextInputChannel$TextInputType
+io.flutter.embedding.engine.systemchannels.TextInputChannel
 io.flutter.plugin.common.ActivityLifecycleListener
-io.flutter.plugin.common.BasicMessageChannel:
-    public static final java.lang.String CHANNEL_BUFFERS_CHANNEL
-    private static final java.lang.String TAG
-    public void resizeChannelBuffer(int)
-    static void resizeChannelBuffer(io.flutter.plugin.common.BinaryMessenger,java.lang.String,int)
+io.flutter.plugin.common.BasicMessageChannel$1
+io.flutter.plugin.common.BasicMessageChannel$IncomingMessageHandler$1
+io.flutter.plugin.common.BasicMessageChannel$IncomingMessageHandler
+io.flutter.plugin.common.BasicMessageChannel$IncomingReplyHandler
+io.flutter.plugin.common.BasicMessageChannel$MessageHandler
+io.flutter.plugin.common.BasicMessageChannel$Reply
+io.flutter.plugin.common.BasicMessageChannel
 io.flutter.plugin.common.BinaryCodec
-io.flutter.plugin.common.BinaryMessenger$-CC:
-    public static void $default$disableBufferingIncomingMessages(io.flutter.plugin.common.BinaryMessenger)
-    public static void $default$enableBufferingIncomingMessages(io.flutter.plugin.common.BinaryMessenger)
-io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions:
-    public io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions setIsSerial(boolean)
-io.flutter.plugin.common.BinaryMessenger:
-    public void disableBufferingIncomingMessages()
-    public void enableBufferingIncomingMessages()
-    public abstract void send(java.lang.String,java.nio.ByteBuffer)
+io.flutter.plugin.common.BinaryMessenger$-CC
+io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler
+io.flutter.plugin.common.BinaryMessenger$BinaryReply
+io.flutter.plugin.common.BinaryMessenger$TaskQueue
+io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions
+io.flutter.plugin.common.BinaryMessenger
 io.flutter.plugin.common.ErrorLogResult
 io.flutter.plugin.common.EventChannel$1
 io.flutter.plugin.common.EventChannel$EventSink
@@ -8908,18 +8772,31 @@ io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler$EventSinkImpl
 io.flutter.plugin.common.EventChannel$IncomingStreamRequestHandler
 io.flutter.plugin.common.EventChannel$StreamHandler
 io.flutter.plugin.common.EventChannel
-io.flutter.plugin.common.FlutterException:
-    private static final java.lang.String TAG
-io.flutter.plugin.common.JSONUtil:
-    private void <init>()
-    public static java.lang.Object unwrap(java.lang.Object)
+io.flutter.plugin.common.FlutterException
+io.flutter.plugin.common.JSONMessageCodec
+io.flutter.plugin.common.JSONMethodCodec
+io.flutter.plugin.common.JSONUtil
+io.flutter.plugin.common.MessageCodec
 io.flutter.plugin.common.MethodCall:
+    public final java.lang.Object arguments
+    public final java.lang.String method
+    public void <init>(java.lang.String,java.lang.Object)
+    public java.lang.Object arguments()
     public boolean hasArgument(java.lang.String)
-io.flutter.plugin.common.MethodChannel:
-    private static final java.lang.String TAG
-    public void resizeChannelBuffer(int)
+io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler$1
+io.flutter.plugin.common.MethodChannel$IncomingMethodCallHandler
+io.flutter.plugin.common.MethodChannel$IncomingResultHandler
+io.flutter.plugin.common.MethodChannel$MethodCallHandler
+io.flutter.plugin.common.MethodChannel$Result
+io.flutter.plugin.common.MethodChannel
+io.flutter.plugin.common.MethodCodec
+io.flutter.plugin.common.PluginRegistry$ActivityResultListener:
+    public abstract boolean onActivityResult(int,int,android.content.Intent)
+io.flutter.plugin.common.PluginRegistry$NewIntentListener
 io.flutter.plugin.common.PluginRegistry$PluginRegistrantCallback
 io.flutter.plugin.common.PluginRegistry$Registrar
+io.flutter.plugin.common.PluginRegistry$RequestPermissionsResultListener
+io.flutter.plugin.common.PluginRegistry$UserLeaveHintListener
 io.flutter.plugin.common.PluginRegistry$ViewDestroyListener
 io.flutter.plugin.common.PluginRegistry
 io.flutter.plugin.common.StandardMessageCodec:
@@ -8939,58 +8816,159 @@ io.flutter.plugin.common.StandardMessageCodec:
     private static final byte STRING
     private static final java.lang.String TAG
     private static final byte TRUE
-io.flutter.plugin.editing.FlutterTextUtils:
-    public static final int CANCEL_TAG
-    public static final int CARRIAGE_RETURN
-    public static final int COMBINING_ENCLOSING_KEYCAP
-    public static final int LINE_FEED
-    public static final int ZERO_WIDTH_JOINER
-io.flutter.plugin.editing.InputConnectionAdaptor:
-    private static final java.lang.String TAG
-    private static int clampIndexToEditable(int,android.text.Editable)
-io.flutter.plugin.editing.ListenableEditingState:
-    private static final java.lang.String TAG
-io.flutter.plugin.editing.SpellCheckPlugin:
-    private static final int MAX_SPELL_CHECK_SUGGESTIONS
-io.flutter.plugin.editing.TextEditingDelta:
-    private static final java.lang.String TAG
-    public int getDeltaEnd()
-    public int getDeltaStart()
-    public java.lang.CharSequence getDeltaText()
-    public int getNewComposingEnd()
-    public int getNewComposingStart()
-    public int getNewSelectionEnd()
-    public int getNewSelectionStart()
-    public java.lang.CharSequence getOldText()
-io.flutter.plugin.editing.TextInputPlugin:
-    private static final java.lang.String TAG
-    android.text.Editable getEditable()
-    io.flutter.plugin.editing.ImeSyncDeferringInsetsCallback getImeSyncCallback()
-    public android.view.inputmethod.InputConnection getLastInputConnection()
-io.flutter.plugin.mouse.MouseCursorPlugin$2:
-    private static final long serialVersionUID
-io.flutter.plugin.platform.PlatformPlugin:
-    public static final int DEFAULT_SYSTEM_UI
-    private static final java.lang.String TAG
-    public void <init>(android.app.Activity,io.flutter.embedding.engine.systemchannels.PlatformChannel)
-io.flutter.plugin.platform.PlatformViewFactory:
-    public void <init>(io.flutter.plugin.common.MessageCodec)
-io.flutter.plugin.platform.PlatformViewRegistry:
-    public abstract boolean registerViewFactory(java.lang.String,io.flutter.plugin.platform.PlatformViewFactory)
-io.flutter.plugin.platform.PlatformViewRegistryImpl:
-    public boolean registerViewFactory(java.lang.String,io.flutter.plugin.platform.PlatformViewFactory)
-io.flutter.plugin.platform.PlatformViewWrapper:
-    private static final java.lang.String TAG
-    public android.graphics.SurfaceTexture getTexture()
+    public java.lang.Object decodeMessage(java.nio.ByteBuffer)
+    protected static final void readAlignment(java.nio.ByteBuffer,int)
+    protected static final byte[] readBytes(java.nio.ByteBuffer)
+    protected static final int readSize(java.nio.ByteBuffer)
+    protected final java.lang.Object readValue(java.nio.ByteBuffer)
+    protected java.lang.Object readValueOfType(byte,java.nio.ByteBuffer)
+io.flutter.plugin.common.StandardMethodCodec
+io.flutter.plugin.common.StringCodec
+io.flutter.plugin.editing.FlutterTextUtils
+io.flutter.plugin.editing.InputConnectionAdaptor$KeyboardDelegate
+io.flutter.plugin.editing.InputConnectionAdaptor
+io.flutter.plugin.editing.ListenableEditingState$1
+io.flutter.plugin.editing.ListenableEditingState$EditingStateWatcher
+io.flutter.plugin.editing.ListenableEditingState
+io.flutter.plugin.editing.SpellCheckPlugin
+io.flutter.plugin.editing.TextEditingDelta
+io.flutter.plugin.editing.TextInputPlugin$1
+io.flutter.plugin.editing.TextInputPlugin$2
+io.flutter.plugin.editing.TextInputPlugin$InputTarget$Type
+io.flutter.plugin.editing.TextInputPlugin$InputTarget
+io.flutter.plugin.editing.TextInputPlugin$MinMax
+io.flutter.plugin.editing.TextInputPlugin
+io.flutter.plugin.localization.LocalizationPlugin$1
+io.flutter.plugin.localization.LocalizationPlugin:
+    private final android.content.Context context
+    private final io.flutter.embedding.engine.systemchannels.LocalizationChannel localizationChannel
+    final io.flutter.embedding.engine.systemchannels.LocalizationChannel$LocalizationMessageHandler localizationMessageHandler
+    public void <init>(android.content.Context,io.flutter.embedding.engine.systemchannels.LocalizationChannel)
+    static synthetic android.content.Context access$000(io.flutter.plugin.localization.LocalizationPlugin)
+    public static java.util.Locale localeFromString(java.lang.String)
+    public void sendLocalesToFlutter(android.content.res.Configuration)
+io.flutter.plugin.mouse.MouseCursorPlugin$1
+io.flutter.plugin.mouse.MouseCursorPlugin$2
+io.flutter.plugin.mouse.MouseCursorPlugin$MouseCursorViewDelegate
+io.flutter.plugin.mouse.MouseCursorPlugin
+io.flutter.plugin.platform.AccessibilityEventsDelegate:
+    private io.flutter.view.AccessibilityBridge accessibilityBridge
+    void <init>()
+    void setAccessibilityBridge(io.flutter.view.AccessibilityBridge)
+io.flutter.plugin.platform.PlatformPlugin$1
+io.flutter.plugin.platform.PlatformPlugin$2
+io.flutter.plugin.platform.PlatformPlugin$3
+io.flutter.plugin.platform.PlatformPlugin$PlatformPluginDelegate
+io.flutter.plugin.platform.PlatformPlugin
+io.flutter.plugin.platform.PlatformView$-CC
+io.flutter.plugin.platform.PlatformView:
+    public abstract void dispose()
+    public void onFlutterViewAttached(android.view.View)
+    public void onFlutterViewDetached()
+    public void onInputConnectionLocked()
+    public void onInputConnectionUnlocked()
+io.flutter.plugin.platform.PlatformViewFactory
+io.flutter.plugin.platform.PlatformViewRegistry
+io.flutter.plugin.platform.PlatformViewRegistryImpl
+io.flutter.plugin.platform.PlatformViewWrapper$1
+io.flutter.plugin.platform.PlatformViewWrapper$2
+io.flutter.plugin.platform.PlatformViewWrapper$3
+io.flutter.plugin.platform.PlatformViewWrapper
+io.flutter.plugin.platform.PlatformViewsAccessibilityDelegate
+io.flutter.plugin.platform.PlatformViewsController$1
 io.flutter.plugin.platform.PlatformViewsController:
     private static final java.lang.String TAG
+    private static java.lang.Class[] VIEW_TYPES_REQUIRE_VIRTUAL_DISPLAY
+    private final io.flutter.plugin.platform.AccessibilityEventsDelegate accessibilityEventsDelegate
+    private io.flutter.embedding.android.AndroidTouchProcessor androidTouchProcessor
+    private final io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewsHandler channelHandler
+    private android.content.Context context
+    final java.util.HashMap contextToEmbeddedView
+    private final java.util.HashSet currentFrameUsedOverlayLayerIds
+    private final java.util.HashSet currentFrameUsedPlatformViewIds
+    private io.flutter.embedding.android.FlutterView flutterView
+    private boolean flutterViewConvertedToImageView
+    private final io.flutter.embedding.android.MotionEventTracker motionEventTracker
+    private int nextOverlayLayerId
+    private final android.util.SparseArray overlayLayerViews
+    private final android.util.SparseArray platformViewParent
+    private final android.util.SparseArray platformViews
+    private io.flutter.embedding.engine.systemchannels.PlatformViewsChannel platformViewsChannel
+    private final io.flutter.plugin.platform.PlatformViewRegistryImpl registry
+    private boolean synchronizeToNativeViewHierarchy
+    private io.flutter.plugin.editing.TextInputPlugin textInputPlugin
+    private io.flutter.view.TextureRegistry textureRegistry
+    private boolean usesSoftwareRendering
+    final java.util.HashMap vdControllers
+    private final android.util.SparseArray viewWrappers
+    static void <clinit>()
+    public void <init>()
+    static synthetic boolean access$000(int)
+    static synthetic io.flutter.plugin.platform.PlatformViewRegistryImpl access$100(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic io.flutter.plugin.platform.AccessibilityEventsDelegate access$1000(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic io.flutter.embedding.android.AndroidTouchProcessor access$1100(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic android.util.SparseArray access$1200(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic void access$1300(io.flutter.plugin.platform.PlatformViewsController,io.flutter.plugin.platform.VirtualDisplayController)
+    static synthetic int access$1400(io.flutter.plugin.platform.PlatformViewsController,double)
+    static synthetic boolean access$1502(io.flutter.plugin.platform.PlatformViewsController,boolean)
+    static synthetic void access$1600(io.flutter.plugin.platform.PlatformViewsController,io.flutter.plugin.platform.VirtualDisplayController)
+    static synthetic io.flutter.embedding.engine.systemchannels.PlatformViewsChannel access$1700(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic io.flutter.plugin.editing.TextInputPlugin access$1800(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic android.content.Context access$200(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic android.util.SparseArray access$300(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic android.util.SparseArray access$400(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic io.flutter.view.TextureRegistry access$500(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic io.flutter.embedding.android.FlutterView access$600(io.flutter.plugin.platform.PlatformViewsController)
+    static synthetic int access$700(io.flutter.plugin.platform.PlatformViewsController,double)
+    static synthetic java.lang.Class[] access$800()
+    static synthetic boolean access$900(io.flutter.plugin.platform.PlatformViewsController)
+    public void attach(android.content.Context,io.flutter.view.TextureRegistry,io.flutter.embedding.engine.dart.DartExecutor)
+    public void attachAccessibilityBridge(io.flutter.view.AccessibilityBridge)
+    public void attachTextInputPlugin(io.flutter.plugin.editing.TextInputPlugin)
+    public void attachToFlutterRenderer(io.flutter.embedding.engine.renderer.FlutterRenderer)
+    public void attachToView(io.flutter.embedding.android.FlutterView)
+    public boolean checkInputConnectionProxy(android.view.View)
+    public io.flutter.embedding.engine.FlutterOverlaySurface createOverlaySurface(io.flutter.embedding.android.FlutterImageView)
+    public void detach()
+    public void detachAccessibilityBridge()
+    public void detachFromView()
+    public void detachTextInputPlugin()
+    private void diposeAllViews()
+    private void finishFrame(boolean)
+    private float getDisplayDensity()
+    public android.view.View getPlatformViewById(int)
+    public io.flutter.plugin.platform.PlatformViewRegistry getRegistry()
+    void initializePlatformViewIfNeeded(int)
+    private void initializeRootImageViewIfNeeded()
+    private synthetic void lambda$initializePlatformViewIfNeeded$0(int,android.view.View,boolean)
+    private synthetic void lambda$onEndFrame$1()
+    private void lockInputConnection(io.flutter.plugin.platform.VirtualDisplayController)
+    public void onAttachedToJNI()
+    public void onDetachedFromJNI()
+    public void onPreEngineRestart()
+    private static android.view.MotionEvent$PointerCoords parsePointerCoords(java.lang.Object,float)
+    private static java.util.List parsePointerCoordsList(java.lang.Object,float)
+    private static android.view.MotionEvent$PointerProperties parsePointerProperties(java.lang.Object)
+    private static java.util.List parsePointerPropertiesList(java.lang.Object)
+    private void removeOverlaySurfaces()
+    public void setSoftwareRendering(boolean)
+    private int toLogicalPixels(double)
+    public android.view.MotionEvent toMotionEvent(float,io.flutter.embedding.engine.systemchannels.PlatformViewsChannel$PlatformViewTouch,boolean)
+    private int toPhysicalPixels(double)
+    private void unlockInputConnection(io.flutter.plugin.platform.VirtualDisplayController)
+    public boolean usesVirtualDisplay(int)
+    private static boolean validateDirection(int)
 io.flutter.plugin.platform.SingleViewPresentation$WindowManagerHandler:
     private static final java.lang.String TAG
-io.flutter.plugin.platform.VirtualDisplayController:
-    public void dispose()
-    void onFlutterViewDetached()
+io.flutter.plugin.platform.VirtualDisplayController$1$1
+io.flutter.plugin.platform.VirtualDisplayController$1
+io.flutter.plugin.platform.VirtualDisplayController$OneTimeOnDrawListener$1
+io.flutter.plugin.platform.VirtualDisplayController$OneTimeOnDrawListener
+io.flutter.plugin.platform.VirtualDisplayController
 io.flutter.plugins.flutter_plugin_android_lifecycle.BuildConfig
 io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin:
+    public void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
+    public void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
     public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
 io.flutter.plugins.flutter_plugin_android_lifecycle.R$attr
 io.flutter.plugins.flutter_plugin_android_lifecycle.R$color
@@ -9003,14 +8981,58 @@ io.flutter.plugins.flutter_plugin_android_lifecycle.R$string
 io.flutter.plugins.flutter_plugin_android_lifecycle.R$style
 io.flutter.plugins.flutter_plugin_android_lifecycle.R$styleable
 io.flutter.plugins.flutter_plugin_android_lifecycle.R
+io.flutter.plugins.localauth.AuthenticationHelper$UiThreadExecutor:
+    private void <init>()
+    synthetic void <init>(io.flutter.plugins.localauth.AuthenticationHelper$1)
+    public void execute(java.lang.Runnable)
+io.flutter.plugins.localauth.AuthenticationHelper:
+    private androidx.biometric.BiometricPrompt biometricPrompt
+    void <init>(androidx.lifecycle.Lifecycle,androidx.fragment.app.FragmentActivity,io.flutter.plugin.common.MethodCall,io.flutter.plugins.localauth.AuthenticationHelper$AuthCompletionHandler,boolean)
+    void authenticate()
+    void stopAuthentication()
 io.flutter.plugins.localauth.BuildConfig
+io.flutter.plugins.localauth.LocalAuthPlugin$1:
+    public boolean onActivityResult(int,int,android.content.Intent)
+io.flutter.plugins.localauth.LocalAuthPlugin$2
 io.flutter.plugins.localauth.LocalAuthPlugin:
     private static final java.lang.String CHANNEL_NAME
     private static final int LOCK_REQUEST_CODE
+    private android.app.Activity activity
+    private io.flutter.plugins.localauth.AuthenticationHelper authHelper
+    private androidx.biometric.BiometricManager biometricManager
+    private io.flutter.plugin.common.MethodChannel channel
+    private android.app.KeyguardManager keyguardManager
+    private androidx.lifecycle.Lifecycle lifecycle
+    private io.flutter.plugin.common.MethodChannel$Result lockRequestResult
+    static synthetic io.flutter.plugin.common.MethodChannel$Result access$000(io.flutter.plugins.localauth.LocalAuthPlugin)
+    static synthetic io.flutter.plugin.common.MethodChannel$Result access$002(io.flutter.plugins.localauth.LocalAuthPlugin,io.flutter.plugin.common.MethodChannel$Result)
+    static synthetic void access$100(io.flutter.plugins.localauth.LocalAuthPlugin,io.flutter.plugin.common.MethodChannel$Result)
+    static synthetic void access$200(io.flutter.plugins.localauth.LocalAuthPlugin,io.flutter.plugin.common.MethodChannel$Result)
+    private void authenticate(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result)
+    private void authenticateFail(io.flutter.plugin.common.MethodChannel$Result)
+    private void authenticateSuccess(io.flutter.plugin.common.MethodChannel$Result)
     private boolean canAuthenticateWithBiometrics()
+    private boolean canAuthenticateWithDeviceCredential()
+    public io.flutter.plugins.localauth.AuthenticationHelper$AuthCompletionHandler createAuthCompletionHandler(io.flutter.plugin.common.MethodChannel$Result)
+    private void deviceSupportsBiometrics(io.flutter.plugin.common.MethodChannel$Result)
     final android.app.Activity getActivity()
+    public java.util.ArrayList getEnrolledBiometrics()
+    private void getEnrolledBiometrics(io.flutter.plugin.common.MethodChannel$Result)
+    private boolean hasBiometricHardware()
+    private void isDeviceSupported(io.flutter.plugin.common.MethodChannel$Result)
+    public boolean isDeviceSupported()
+    public void onAttachedToActivity(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding)
+    public void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
+    public void onDetachedFromActivity()
+    public void onDetachedFromActivityForConfigChanges()
+    public void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
+    public void onMethodCall(io.flutter.plugin.common.MethodCall,io.flutter.plugin.common.MethodChannel$Result)
+    public void onReattachedToActivityForConfigChanges(io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding)
     public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    public void sendAuthenticationRequest(io.flutter.plugin.common.MethodCall,io.flutter.plugins.localauth.AuthenticationHelper$AuthCompletionHandler,boolean)
     void setBiometricManager(androidx.biometric.BiometricManager)
+    private void setServicesFromActivity(android.app.Activity)
+    private void stopAuthentication(io.flutter.plugin.common.MethodChannel$Result)
 io.flutter.plugins.localauth.R$anim
 io.flutter.plugins.localauth.R$animator
 io.flutter.plugins.localauth.R$array
@@ -9586,11 +9608,32 @@ io.flutter.plugins.localauth.R$style:
 io.flutter.plugins.localauth.R$styleable
 io.flutter.plugins.localauth.R
 io.flutter.plugins.pathprovider.BuildConfig
-io.flutter.plugins.pathprovider.Messages:
-    public void <init>()
+io.flutter.plugins.pathprovider.Messages$PathProviderApi$-CC
+io.flutter.plugins.pathprovider.Messages$PathProviderApi
+io.flutter.plugins.pathprovider.Messages$PathProviderApiCodec
+io.flutter.plugins.pathprovider.Messages$StorageDirectory
+io.flutter.plugins.pathprovider.Messages
+io.flutter.plugins.pathprovider.PathProviderPlugin$1
 io.flutter.plugins.pathprovider.PathProviderPlugin:
     static final java.lang.String TAG
+    private android.content.Context context
+    public java.lang.String getApplicationDocumentsPath()
+    private java.lang.String getApplicationSupportDirectory()
+    public java.lang.String getApplicationSupportPath()
+    public java.util.List getExternalCachePaths()
+    public java.lang.String getExternalStoragePath()
+    public java.util.List getExternalStoragePaths(io.flutter.plugins.pathprovider.Messages$StorageDirectory)
+    private java.lang.String getPathProviderApplicationDocumentsDirectory()
+    private java.util.List getPathProviderExternalCacheDirectories()
+    private java.util.List getPathProviderExternalStorageDirectories(io.flutter.plugins.pathprovider.Messages$StorageDirectory)
+    private java.lang.String getPathProviderStorageDirectory()
+    private java.lang.String getPathProviderTemporaryDirectory()
+    private java.lang.String getStorageDirectoryString(io.flutter.plugins.pathprovider.Messages$StorageDirectory)
+    public java.lang.String getTemporaryPath()
+    public void onAttachedToEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
+    public void onDetachedFromEngine(io.flutter.embedding.engine.plugins.FlutterPlugin$FlutterPluginBinding)
     public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
+    private void setup(io.flutter.plugin.common.BinaryMessenger,android.content.Context)
 io.flutter.plugins.pathprovider.R$attr
 io.flutter.plugins.pathprovider.R$color
 io.flutter.plugins.pathprovider.R$dimen
@@ -9603,29 +9646,32 @@ io.flutter.plugins.pathprovider.R$style
 io.flutter.plugins.pathprovider.R$styleable
 io.flutter.plugins.pathprovider.R
 io.flutter.plugins.pathprovider.StorageDirectoryMapper
-io.flutter.util.HandlerCompat:
-    public void <init>()
-io.flutter.util.PathUtils:
-    public void <init>()
+io.flutter.util.HandlerCompat
+io.flutter.util.PathUtils
 io.flutter.util.Preconditions:
     private void <init>()
     public static java.lang.Object checkNotNull(java.lang.Object)
     public static void checkState(boolean)
-io.flutter.util.TraceSection:
-    public void <init>()
-io.flutter.util.ViewUtils:
-    public void <init>()
-io.flutter.view.AccessibilityBridge$SemanticsNode:
-    private void log(java.lang.String,boolean)
-io.flutter.view.AccessibilityBridge:
-    private static final int ACTION_SHOW_ON_SCREEN
-    private static final int MIN_ENGINE_GENERATED_NODE_ID
-    private static final int ROOT_NODE_ID
-    private static final float SCROLL_EXTENT_FOR_INFINITY
-    private static final float SCROLL_POSITION_CAP_FOR_INFINITY
-    private static final java.lang.String TAG
-    public int getHoveredObjectId()
-    public void reset()
+io.flutter.util.Predicate
+io.flutter.util.TraceSection
+io.flutter.util.ViewUtils$ViewVisitor
+io.flutter.util.ViewUtils
+io.flutter.view.AccessibilityBridge$1
+io.flutter.view.AccessibilityBridge$2
+io.flutter.view.AccessibilityBridge$3
+io.flutter.view.AccessibilityBridge$4
+io.flutter.view.AccessibilityBridge$5
+io.flutter.view.AccessibilityBridge$AccessibilityFeature
+io.flutter.view.AccessibilityBridge$CustomAccessibilityAction
+io.flutter.view.AccessibilityBridge$Flag
+io.flutter.view.AccessibilityBridge$LocaleStringAttribute
+io.flutter.view.AccessibilityBridge$OnAccessibilityChangeListener
+io.flutter.view.AccessibilityBridge$SemanticsNode
+io.flutter.view.AccessibilityBridge$SpellOutStringAttribute
+io.flutter.view.AccessibilityBridge$StringAttribute
+io.flutter.view.AccessibilityBridge$StringAttributeType
+io.flutter.view.AccessibilityBridge$TextDirection
+io.flutter.view.AccessibilityBridge
 io.flutter.view.FlutterMain$Settings
 io.flutter.view.FlutterMain
 io.flutter.view.FlutterNativeView$1
@@ -9643,13 +9689,15 @@ io.flutter.view.FlutterView$ViewportMetrics
 io.flutter.view.FlutterView$ZeroSides
 io.flutter.view.FlutterView
 io.flutter.view.TextureRegistry$-CC
-io.flutter.view.TextureRegistry$SurfaceTextureEntry:
-    public abstract void release()
-io.flutter.view.TextureRegistry:
-    public void onTrimMemory(int)
-    public abstract io.flutter.view.TextureRegistry$SurfaceTextureEntry registerSurfaceTexture(android.graphics.SurfaceTexture)
-io.flutter.view.VsyncWaiter:
-    public static void reset()
+io.flutter.view.TextureRegistry$OnFrameConsumedListener
+io.flutter.view.TextureRegistry$OnTrimMemoryListener
+io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
+io.flutter.view.TextureRegistry$SurfaceTextureEntry
+io.flutter.view.TextureRegistry
+io.flutter.view.VsyncWaiter$1$1
+io.flutter.view.VsyncWaiter$1
+io.flutter.view.VsyncWaiter$DisplayListener
+io.flutter.view.VsyncWaiter
 javax.annotation.CheckForNull
 javax.annotation.CheckForSigned
 javax.annotation.CheckReturnValue
@@ -15913,16 +15961,240 @@ org.jetbrains.annotations.NotNull
 org.jetbrains.annotations.Nullable
 org.jetbrains.annotations.PropertyKey
 org.jetbrains.annotations.TestOnly
+androidx.activity.ComponentActivity$2$1
+androidx.activity.ComponentActivity$2$2
+androidx.activity.ComponentActivity$2:
+    public void onLaunch(int,androidx.activity.result.contract.ActivityResultContract,java.lang.Object,androidx.core.app.ActivityOptionsCompat)
+androidx.activity.ComponentDialog$$InternalSyntheticLambda$0$8341ec398ad298947ab5e44b040f2ade4d702bc1f05e7519796d8d43ac089abe$0
+androidx.activity.ComponentDialog
+androidx.activity.result.ActivityResultLauncher:
+    public void launch(java.lang.Object)
+    public abstract void launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat)
+androidx.activity.result.ActivityResultRegistry$3:
+    public void launch(java.lang.Object,androidx.core.app.ActivityOptionsCompat)
+androidx.activity.result.ActivityResultRegistry:
+    public final boolean dispatchResult(int,java.lang.Object)
+    public abstract void onLaunch(int,androidx.activity.result.contract.ActivityResultContract,java.lang.Object,androidx.core.app.ActivityOptionsCompat)
+androidx.activity.result.IntentSenderRequest$1
+androidx.activity.result.IntentSenderRequest$Builder
+androidx.activity.result.IntentSenderRequest
+androidx.activity.result.contract.ActivityResultContract$SynchronousResult
+androidx.activity.result.contract.ActivityResultContract:
+    public abstract android.content.Intent createIntent(android.content.Context,java.lang.Object)
+    public androidx.activity.result.contract.ActivityResultContract$SynchronousResult getSynchronousResult(android.content.Context,java.lang.Object)
+androidx.activity.result.contract.ActivityResultContracts$RequestMultiplePermissions$Companion:
+    public final android.content.Intent createIntent$activity_release(java.lang.String[])
+androidx.activity.result.contract.ActivityResultContracts$RequestMultiplePermissions:
+    public synthetic bridge android.content.Intent createIntent(android.content.Context,java.lang.Object)
+    public android.content.Intent createIntent(android.content.Context,java.lang.String[])
+    public synthetic bridge androidx.activity.result.contract.ActivityResultContract$SynchronousResult getSynchronousResult(android.content.Context,java.lang.Object)
+    public androidx.activity.result.contract.ActivityResultContract$SynchronousResult getSynchronousResult(android.content.Context,java.lang.String[])
+androidx.activity.result.contract.ActivityResultContracts$StartActivityForResult:
+    public android.content.Intent createIntent(android.content.Context,android.content.Intent)
+    public synthetic bridge android.content.Intent createIntent(android.content.Context,java.lang.Object)
+androidx.appcompat.app.AlertDialog$Builder:
+    public androidx.appcompat.app.AlertDialog$Builder setNegativeButton(java.lang.CharSequence,android.content.DialogInterface$OnClickListener)
+    public androidx.appcompat.app.AlertDialog$Builder setView(android.view.View)
 androidx.appcompat.app.ToolbarActionBar
-androidx.core.app.ActivityOptionsCompat:
-    public android.os.Bundle toBundle()
+androidx.biometric.AuthenticationCallbackProvider$1
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl$1
+androidx.biometric.AuthenticationCallbackProvider$Api28Impl
+androidx.biometric.AuthenticationCallbackProvider$Api30Impl
+androidx.biometric.AuthenticationCallbackProvider$Listener
+androidx.biometric.AuthenticationCallbackProvider
+androidx.biometric.AuthenticatorUtils
+androidx.biometric.BiometricErrorData
+androidx.biometric.BiometricFragment$10
+androidx.biometric.BiometricFragment$11
+androidx.biometric.BiometricFragment$1
+androidx.biometric.BiometricFragment$2
+androidx.biometric.BiometricFragment$3
+androidx.biometric.BiometricFragment$4
+androidx.biometric.BiometricFragment$5
+androidx.biometric.BiometricFragment$6
+androidx.biometric.BiometricFragment$7
+androidx.biometric.BiometricFragment$8
+androidx.biometric.BiometricFragment$9
+androidx.biometric.BiometricFragment$Api21Impl
+androidx.biometric.BiometricFragment$Api28Impl
+androidx.biometric.BiometricFragment$Api29Impl
+androidx.biometric.BiometricFragment$Api30Impl
+androidx.biometric.BiometricFragment$PromptExecutor
+androidx.biometric.BiometricFragment$ShowPromptForAuthenticationRunnable
+androidx.biometric.BiometricFragment$StopDelayingPromptRunnable
+androidx.biometric.BiometricFragment$StopIgnoringCancelRunnable
+androidx.biometric.BiometricFragment
+androidx.biometric.BiometricManager$Api29Impl
+androidx.biometric.BiometricManager$Api30Impl
+androidx.biometric.BiometricManager$DefaultInjector
+androidx.biometric.BiometricManager$Injector
+androidx.biometric.BiometricManager
+androidx.biometric.BiometricPrompt$AuthenticationCallback:
+    public void onAuthenticationError(int,java.lang.CharSequence)
+    public void onAuthenticationFailed()
+    public void onAuthenticationSucceeded(androidx.biometric.BiometricPrompt$AuthenticationResult)
+androidx.biometric.BiometricPrompt$AuthenticationResult
+androidx.biometric.BiometricPrompt$CryptoObject
+androidx.biometric.BiometricPrompt$PromptInfo
+androidx.biometric.BiometricPrompt:
+    public void authenticate(androidx.biometric.BiometricPrompt$PromptInfo)
+    private void authenticateInternal(androidx.biometric.BiometricPrompt$PromptInfo,androidx.biometric.BiometricPrompt$CryptoObject)
+    private static androidx.biometric.BiometricFragment findBiometricFragment(androidx.fragment.app.FragmentManager)
+    private static androidx.biometric.BiometricFragment findOrAddBiometricFragment(androidx.fragment.app.FragmentManager)
+androidx.biometric.BiometricViewModel$1
+androidx.biometric.BiometricViewModel$CallbackListener
+androidx.biometric.BiometricViewModel$DefaultExecutor
+androidx.biometric.BiometricViewModel$NegativeButtonListener
+androidx.biometric.BiometricViewModel:
+    private androidx.biometric.AuthenticationCallbackProvider mAuthenticationCallbackProvider
+    private androidx.lifecycle.MutableLiveData mAuthenticationError
+    private androidx.lifecycle.MutableLiveData mAuthenticationHelpMessage
+    private androidx.lifecycle.MutableLiveData mAuthenticationResult
+    private androidx.biometric.CancellationSignalProvider mCancellationSignalProvider
+    private androidx.biometric.BiometricPrompt$CryptoObject mCryptoObject
+    private androidx.lifecycle.MutableLiveData mFingerprintDialogHelpMessage
+    private androidx.lifecycle.MutableLiveData mFingerprintDialogState
+    private androidx.lifecycle.MutableLiveData mIsAuthenticationFailurePending
+    private boolean mIsAwaitingResult
+    private boolean mIsConfirmingDeviceCredential
+    private boolean mIsDelayingPrompt
+    private androidx.lifecycle.MutableLiveData mIsFingerprintDialogCancelPending
+    private boolean mIsIgnoringCancel
+    private androidx.lifecycle.MutableLiveData mIsNegativeButtonPressPending
+    private boolean mIsPromptShowing
+    private android.content.DialogInterface$OnClickListener mNegativeButtonListener
+    private java.lang.CharSequence mNegativeButtonTextOverride
+    private androidx.biometric.BiometricPrompt$PromptInfo mPromptInfo
+    int getAllowedAuthenticators()
+    androidx.biometric.AuthenticationCallbackProvider getAuthenticationCallbackProvider()
+    androidx.lifecycle.MutableLiveData getAuthenticationError()
+    androidx.lifecycle.LiveData getAuthenticationHelpMessage()
+    androidx.lifecycle.LiveData getAuthenticationResult()
+    int getCanceledFrom()
+    androidx.biometric.CancellationSignalProvider getCancellationSignalProvider()
+    androidx.biometric.BiometricPrompt$AuthenticationCallback getClientCallback()
+    java.util.concurrent.Executor getClientExecutor()
+    androidx.biometric.BiometricPrompt$CryptoObject getCryptoObject()
+    java.lang.CharSequence getDescription()
+    androidx.lifecycle.LiveData getFingerprintDialogHelpMessage()
+    int getFingerprintDialogPreviousState()
+    androidx.lifecycle.LiveData getFingerprintDialogState()
+    int getInferredAuthenticationResultType()
+    android.content.DialogInterface$OnClickListener getNegativeButtonListener()
+    java.lang.CharSequence getNegativeButtonText()
+    java.lang.CharSequence getSubtitle()
+    java.lang.CharSequence getTitle()
+    androidx.lifecycle.LiveData isAuthenticationFailurePending()
+    boolean isAwaitingResult()
+    boolean isConfirmationRequired()
+    boolean isConfirmingDeviceCredential()
+    boolean isDelayingPrompt()
+    androidx.lifecycle.LiveData isFingerprintDialogCancelPending()
+    boolean isFingerprintDialogDismissedInstantly()
+    boolean isIgnoringCancel()
+    androidx.lifecycle.LiveData isNegativeButtonPressPending()
+    boolean isPromptShowing()
+    void setAuthenticationError(androidx.biometric.BiometricErrorData)
+    void setAuthenticationFailurePending(boolean)
+    void setAuthenticationHelpMessage(java.lang.CharSequence)
+    void setAuthenticationResult(androidx.biometric.BiometricPrompt$AuthenticationResult)
+    void setAwaitingResult(boolean)
+    void setCanceledFrom(int)
+    void setConfirmingDeviceCredential(boolean)
+    void setCryptoObject(androidx.biometric.BiometricPrompt$CryptoObject)
+    void setDelayingPrompt(boolean)
+    void setFingerprintDialogCancelPending(boolean)
+    void setFingerprintDialogDismissedInstantly(boolean)
+    void setFingerprintDialogHelpMessage(java.lang.CharSequence)
+    void setFingerprintDialogPreviousState(int)
+    void setFingerprintDialogState(int)
+    void setIgnoringCancel(boolean)
+    void setNegativeButtonPressPending(boolean)
+    void setNegativeButtonTextOverride(java.lang.CharSequence)
+    void setPromptInfo(androidx.biometric.BiometricPrompt$PromptInfo)
+    void setPromptShowing(boolean)
+    private static void updateValue(androidx.lifecycle.MutableLiveData,java.lang.Object)
+androidx.biometric.CancellationSignalProvider$1
+androidx.biometric.CancellationSignalProvider$Api16Impl
+androidx.biometric.CancellationSignalProvider$Injector
+androidx.biometric.CancellationSignalProvider
+androidx.biometric.CryptoObjectUtils$Api23Impl
+androidx.biometric.CryptoObjectUtils$Api28Impl
+androidx.biometric.CryptoObjectUtils$Api30Impl
+androidx.biometric.CryptoObjectUtils
+androidx.biometric.DeviceUtils
+androidx.biometric.ErrorUtils
+androidx.biometric.FingerprintDialogFragment$1
+androidx.biometric.FingerprintDialogFragment$2
+androidx.biometric.FingerprintDialogFragment$3
+androidx.biometric.FingerprintDialogFragment$4
+androidx.biometric.FingerprintDialogFragment$Api21Impl
+androidx.biometric.FingerprintDialogFragment$Api26Impl
+androidx.biometric.FingerprintDialogFragment
+androidx.biometric.KeyguardUtils$Api16Impl
+androidx.biometric.KeyguardUtils$Api23Impl
+androidx.biometric.KeyguardUtils
+androidx.biometric.PackageUtils$Api23Impl
+androidx.biometric.PackageUtils
+androidx.biometric.R$array
+androidx.biometric.R$attr
+androidx.biometric.R$color
+androidx.biometric.R$drawable
+androidx.biometric.R$id
+androidx.biometric.R$layout
+androidx.biometric.R$string
+androidx.core.app.ActivityCompat$1
+androidx.core.app.ActivityCompat$Api23Impl
+androidx.core.app.ActivityCompat$OnRequestPermissionsResultCallback
+androidx.core.app.ActivityCompat$PermissionCompatDelegate
+androidx.core.app.ActivityCompat$RequestPermissionsRequestCodeValidator
+androidx.core.app.ActivityCompat:
+    private static androidx.core.app.ActivityCompat$PermissionCompatDelegate sDelegate
+    public static void requestPermissions(android.app.Activity,java.lang.String[],int)
+    public static void startActivityForResult(android.app.Activity,android.content.Intent,int,android.os.Bundle)
+    public static void startIntentSenderForResult(android.app.Activity,android.content.IntentSender,int,android.content.Intent,int,int,int,android.os.Bundle)
+androidx.core.app.ActivityOptionsCompat
 androidx.core.app.SharedElementCallback:
     public abstract void onMapSharedElements(java.util.List,java.util.Map)
     public abstract void onSharedElementEnd(java.util.List,java.util.List,java.util.List)
     public abstract void onSharedElementStart(java.util.List,java.util.List,java.util.List)
+androidx.core.content.ContextCompat:
+    public static void startActivity(android.content.Context,android.content.Intent,android.os.Bundle)
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$1
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$Api23Impl
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationCallback
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$AuthenticationResult
+androidx.core.hardware.fingerprint.FingerprintManagerCompat$CryptoObject
+androidx.core.hardware.fingerprint.FingerprintManagerCompat
+androidx.core.os.CancellationSignal:
+    public java.lang.Object getCancellationSignalObject()
 androidx.core.text.PrecomputedTextCompat:
     private static java.util.concurrent.Executor sExecutor
 androidx.core.view.MenuProvider$-CC
+androidx.fragment.app.BackStackRecord:
+    public int commit()
+    public int commitAllowingStateLoss()
+    int commitInternal(boolean)
+    public void commitNow()
+    public androidx.fragment.app.FragmentTransaction remove(androidx.fragment.app.Fragment)
+androidx.fragment.app.DialogFragment$1
+androidx.fragment.app.DialogFragment$2
+androidx.fragment.app.DialogFragment$3
+androidx.fragment.app.DialogFragment$4
+androidx.fragment.app.DialogFragment$5
+androidx.fragment.app.DialogFragment
+androidx.fragment.app.Fragment:
+    public final java.lang.String getString(int)
+    public androidx.lifecycle.LiveData getViewLifecycleOwnerLiveData()
+    public void startActivityForResult(android.content.Intent,int)
+    public void startActivityForResult(android.content.Intent,int,android.os.Bundle)
+androidx.fragment.app.FragmentActivity:
+    public final void validateRequestPermissionsRequestCode(int)
+androidx.fragment.app.FragmentHostCallback:
+    public void onStartActivityFromFragment(androidx.fragment.app.Fragment,android.content.Intent,int,android.os.Bundle)
+androidx.fragment.app.FragmentManager$FragmentIntentSenderContract:
+    public android.content.Intent createIntent(android.content.Context,androidx.activity.result.IntentSenderRequest)
+    public synthetic bridge android.content.Intent createIntent(android.content.Context,java.lang.Object)
 androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks:
     public abstract void onFragmentActivityCreated(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.os.Bundle)
     public abstract void onFragmentAttached(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.content.Context)
@@ -15938,6 +16210,23 @@ androidx.fragment.app.FragmentManager$FragmentLifecycleCallbacks:
     public abstract void onFragmentStopped(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
     public abstract void onFragmentViewCreated(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment,android.view.View,android.os.Bundle)
     public abstract void onFragmentViewDestroyed(androidx.fragment.app.FragmentManager,androidx.fragment.app.Fragment)
+androidx.fragment.app.FragmentManager$LaunchedFragmentInfo:
+    void <init>(java.lang.String,int)
+androidx.fragment.app.FragmentManager$PopBackStackState
+androidx.fragment.app.FragmentManager:
+    int allocBackStackIndex()
+    void enqueueAction(androidx.fragment.app.FragmentManager$OpGenerator,boolean)
+    public boolean executePendingTransactions()
+    void launchStartActivityForResult(androidx.fragment.app.Fragment,android.content.Intent,int,android.os.Bundle)
+    void popBackStack(int,int,boolean)
+    public boolean popBackStackImmediate(int,int)
+    void scheduleCommit()
+androidx.fragment.app.FragmentTransaction:
+    public androidx.fragment.app.FragmentTransaction add(androidx.fragment.app.Fragment,java.lang.String)
+    public abstract int commit()
+    public abstract int commitAllowingStateLoss()
+    public abstract void commitNow()
+    public androidx.fragment.app.FragmentTransaction remove(androidx.fragment.app.Fragment)
 androidx.fragment.app.FragmentTransition:
     static java.lang.String findKeyForValue(androidx.collection.ArrayMap,java.lang.String)
 androidx.lifecycle.DefaultLifecycleObserver$-CC
@@ -15952,9 +16241,21 @@ androidx.lifecycle.HasDefaultViewModelProviderFactory$-CC
 androidx.lifecycle.LifecycleRegistryOwner$-CC
 androidx.lifecycle.LifecycleRegistryOwner:
     public synthetic bridge abstract androidx.lifecycle.Lifecycle getLifecycle()
+androidx.lifecycle.LiveData$AlwaysActiveObserver
+androidx.lifecycle.LiveData$LifecycleBoundObserver:
+    void <init>(androidx.lifecycle.LiveData,androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
+    boolean isAttachedTo(androidx.lifecycle.LifecycleOwner)
+androidx.lifecycle.LiveData$ObserverWrapper:
+    void <init>(androidx.lifecycle.LiveData,androidx.lifecycle.Observer)
+    boolean isAttachedTo(androidx.lifecycle.LifecycleOwner)
 androidx.lifecycle.LiveData:
     public java.lang.Object getValue()
     public boolean hasActiveObservers()
+    public void observe(androidx.lifecycle.LifecycleOwner,androidx.lifecycle.Observer)
+    public void observeForever(androidx.lifecycle.Observer)
+    protected void postValue(java.lang.Object)
+androidx.lifecycle.MutableLiveData:
+    public void postValue(java.lang.Object)
 androidx.loader.app.LoaderManagerImpl$LoaderInfo:
     private androidx.loader.app.LoaderManagerImpl$LoaderObserver mObserver
     private androidx.loader.content.Loader mPriorLoader
@@ -15978,15 +16279,52 @@ io.flutter.Log:
     public static int VERBOSE
     public static int WARN
     private static int logLevel
-io.flutter.embedding.engine.loader.ResourceExtractor:
-    void waitForCompletion()
-io.flutter.plugin.common.BinaryMessenger$-CC:
-    public static io.flutter.plugin.common.BinaryMessenger$TaskQueue $default$makeBackgroundTaskQueue(io.flutter.plugin.common.BinaryMessenger,io.flutter.plugin.common.BinaryMessenger$TaskQueueOptions)
-    public static void $default$setMessageHandler(io.flutter.plugin.common.BinaryMessenger,java.lang.String,io.flutter.plugin.common.BinaryMessenger$BinaryMessageHandler,io.flutter.plugin.common.BinaryMessenger$TaskQueue)
-io.flutter.plugin.platform.PlatformView$-CC
-io.flutter.plugin.platform.VirtualDisplayController:
-    private static java.lang.String TAG
-io.flutter.view.TextureRegistry$SurfaceTextureEntry$-CC
+io.flutter.embedding.engine.FlutterEngine:
+    public io.flutter.embedding.engine.plugins.PluginRegistry getPlugins()
+io.flutter.embedding.engine.plugins.FlutterPlugin
+io.flutter.embedding.engine.plugins.PluginRegistry
+io.flutter.plugin.common.MethodCall
+io.flutter.plugin.common.PluginRegistry$ActivityResultListener
+io.flutter.plugin.localization.LocalizationPlugin:
+    public java.util.Locale resolveNativeLocale(java.util.List)
+io.flutter.plugin.platform.AccessibilityEventsDelegate:
+    public boolean requestSendAccessibilityEvent(android.view.View,android.view.View,android.view.accessibility.AccessibilityEvent)
+io.flutter.plugin.platform.PlatformViewsController:
+    public io.flutter.embedding.engine.FlutterOverlaySurface createOverlaySurface()
+    public void destroyOverlaySurfaces()
+    public void onBeginFrame()
+    public void onDisplayOverlaySurface(int,int,int,int,int)
+    public void onDisplayPlatformView(int,int,int,int,int,int,int,io.flutter.embedding.engine.mutatorsstack.FlutterMutatorsStack)
+    public void onEndFrame()
+io.flutter.plugin.platform.SingleViewPresentation$AccessibilityDelegatingFrameLayout:
+    private final io.flutter.plugin.platform.AccessibilityEventsDelegate accessibilityEventsDelegate
+io.flutter.plugins.flutter_plugin_android_lifecycle.FlutterAndroidLifecyclePlugin
+io.flutter.plugins.localauth.AuthenticationHelper$1
+io.flutter.plugins.localauth.AuthenticationHelper$2
+io.flutter.plugins.localauth.AuthenticationHelper$3
+io.flutter.plugins.localauth.AuthenticationHelper$AuthCompletionHandler
+io.flutter.plugins.localauth.AuthenticationHelper$UiThreadExecutor:
+    final android.os.Handler handler
+io.flutter.plugins.localauth.AuthenticationHelper:
+    private final io.flutter.plugin.common.MethodCall call
+    private final io.flutter.plugins.localauth.AuthenticationHelper$AuthCompletionHandler completionHandler
+    private final androidx.lifecycle.Lifecycle lifecycle
+    private final androidx.biometric.BiometricPrompt$PromptInfo promptInfo
+    static synthetic androidx.biometric.BiometricPrompt$PromptInfo access$100(io.flutter.plugins.localauth.AuthenticationHelper)
+    static synthetic io.flutter.plugins.localauth.AuthenticationHelper$AuthCompletionHandler access$200(io.flutter.plugins.localauth.AuthenticationHelper)
+    static synthetic void access$300(io.flutter.plugins.localauth.AuthenticationHelper)
+    static synthetic androidx.fragment.app.FragmentActivity access$400(io.flutter.plugins.localauth.AuthenticationHelper)
+    public void onAuthenticationError(int,java.lang.CharSequence)
+    public void onAuthenticationFailed()
+    public void onAuthenticationSucceeded(androidx.biometric.BiometricPrompt$AuthenticationResult)
+    private void showGoToSettingsDialog(java.lang.String,java.lang.String)
+    private void stop()
+io.flutter.plugins.localauth.LocalAuthPlugin$1
+io.flutter.plugins.localauth.LocalAuthPlugin
+io.flutter.plugins.localauth.R$id
+io.flutter.plugins.localauth.R$layout
+io.flutter.plugins.localauth.R$style
+io.flutter.plugins.pathprovider.PathProviderPlugin
 kotlin.TypeCastException
 kotlin.random.AbstractPlatformRandom:
     public int nextBits(int)

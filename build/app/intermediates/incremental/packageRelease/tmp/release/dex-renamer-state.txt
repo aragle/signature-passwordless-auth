@@ -1,4 +1,4 @@
-#Sun Oct 02 23:14:24 BDT 2022
+#Mon Oct 03 00:18:43 BDT 2022
 base.0=A\:\\@Projects\\signature\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex
