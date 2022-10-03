@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './SettingsScreen.dart';
+import 'settings.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -55,12 +55,18 @@ class _HomePageState extends State<HomePage> {
               Icon(Icons.history_outlined, size: 100),
             ],
           ),
-          floatingActionButton: FloatingActionButton(
-            onPressed: () async {
-              // Add your onPressed code here!
-            },
-            backgroundColor: Colors.black87,
-            child: const Icon(Icons.qr_code_scanner),
+          floatingActionButton: SizedBox(
+            width: 50,
+            height: 50,
+            child: FloatingActionButton(
+              shape: const RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(16.0))),
+              onPressed: () async {
+                // Add your onPressed code here!
+              },
+              backgroundColor: Colors.black87,
+              child: const Icon(Icons.qr_code_scanner),
+            ),
           ),
         ),
       ),
