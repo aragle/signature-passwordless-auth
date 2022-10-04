@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:signature/views/tokens.dart';
 import 'settings.dart';
 
 class HomePage extends StatefulWidget {
@@ -49,24 +50,12 @@ class _HomePageState extends State<HomePage> {
           ),
           body: const TabBarView(
             children: [
-              Icon(Icons.local_activity_outlined, size: 100),
+              TokenPage(),
+              // Icon(Icons.local_activity_outlined, size: 100),
               Icon(Icons.devices_outlined, size: 100),
               Icon(Icons.manage_accounts_outlined, size: 100),
               Icon(Icons.history_outlined, size: 100),
             ],
-          ),
-          floatingActionButton: SizedBox(
-            width: 50,
-            height: 50,
-            child: FloatingActionButton(
-              shape: const RoundedRectangleBorder(
-                  borderRadius: BorderRadius.all(Radius.circular(16.0))),
-              onPressed: () async {
-                // Add your onPressed code here!
-              },
-              backgroundColor: Colors.black87,
-              child: const Icon(Icons.qr_code_scanner),
-            ),
           ),
         ),
       ),
