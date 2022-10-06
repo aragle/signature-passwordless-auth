@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'main_pages/tokens_page.dart';
+import 'package:signature/views/main_pages/tokens_page.dart';
 import 'main_pages/settings_page.dart';
 import '../models/cards/token_card.dart';
 

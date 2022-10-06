@@ -16,6 +16,8 @@ class _TokenPageState extends State<TokenPage> {
     return Scaffold(
       body: SingleChildScrollView(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             ListView.builder(
               shrinkWrap: true,
