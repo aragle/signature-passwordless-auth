@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/cards/token_card.dart';
-import 'settings.dart';
+import 'pages/settings_page.dart';
 
 class TokenPage extends StatefulWidget {
   const TokenPage({super.key});

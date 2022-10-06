@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:signature/views/tokens.dart';
-import 'settings.dart';
+import 'pages/settings_page.dart';
 import '../models/cards/token_card.dart';
 
 class HomePage extends StatefulWidget {
