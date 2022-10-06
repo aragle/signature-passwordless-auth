@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:signature/views/tokens.dart';
 import 'settings.dart';
+import '../models/token_card.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -51,9 +52,10 @@ class _HomePageState extends State<HomePage> {
           body: const TabBarView(
             children: [
               TokenPage(),
+              TokenCard(),
               // Icon(Icons.local_activity_outlined, size: 100),
               Icon(Icons.devices_outlined, size: 100),
-              Icon(Icons.manage_accounts_outlined, size: 100),
+              // Icon(Icons.manage_accounts_outlined, size: 100),
               Icon(Icons.history_outlined, size: 100),
             ],
           ),

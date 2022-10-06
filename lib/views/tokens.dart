@@ -1,7 +1,5 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
+import '../models/cards/token_card.dart';
 import 'settings.dart';
 
 class TokenPage extends StatefulWidget {
@@ -15,49 +13,28 @@ class _TokenPageState extends State<TokenPage> {
   @override
   Widget build(BuildContext context) {
     bool isFABVisible = true;
-    var items = List<String>.generate(50, (i) => "Token Name ${i + 1}");
     return Scaffold(
-      body: NotificationListener<UserScrollNotification>(
-        onNotification: (notification) {
-          if (notification.direction == ScrollDirection.forward) {
-            setState(() => isFABVisible = true);
-          } else if (notification.direction == ScrollDirection.reverse) {
-            setState(() => isFABVisible = true);
-          }
-          return true;
-        },
-        child: ListView.builder(
-          itemCount: items.length,
-          prototypeItem: ListTile(
-            title: Text(items.first),
-          ),
-          itemBuilder: (context, index) {
-            return ListTile(
-              title: SizedBox(
-                height: 500,
-                child: Card(
-                  child: Text(
-                    "${items[index]}\nToken: ${Random().nextInt(1000000)}",
-                    textAlign: TextAlign.left,
-                    style: const TextStyle(
-                      color: Colors.black45,
-                      fontSize: 18,
-                    ),
-                  ),
-                ),
-              ),
-            );
-          },
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            ListView.builder(
+              shrinkWrap: true,
+              itemCount: 100,
+              itemBuilder: (context, index) {
+                return const TokenCard();
+              },
+            ),
+          ],
         ),
       ),
       floatingActionButton: Visibility(
         visible: isFABVisible,
         child: SizedBox(
-          width: 50,
-          height: 50,
+          width: 35,
+          height: 35,
           child: FloatingActionButton(
             shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(16.0))),
+                borderRadius: BorderRadius.all(Radius.circular(7.0))),
             onPressed: () {
               Navigator.push(
                 context,
@@ -65,7 +42,7 @@ class _TokenPageState extends State<TokenPage> {
               );
             },
             backgroundColor: Colors.black87,
-            child: const Icon(Icons.qr_code_scanner_outlined),
+            child: const Icon(Icons.add_outlined),
           ),
         ),
       ),
