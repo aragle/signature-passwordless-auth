@@ -18,7 +18,7 @@ class _TokenCardState extends State<TokenCard> {
         title: Padding(
           padding: EdgeInsets.only(top: 2.0),
           child: Text(
-            "12345678",
+            "123456",
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Color.fromARGB(255, 172, 35, 103),
