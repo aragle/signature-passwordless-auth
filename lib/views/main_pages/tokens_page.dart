@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../models/cards/token_card.dart';
-import 'pages/settings_page.dart';
+import '../../models/cards/token_card.dart';
+import '../sub_pages/add_code_manual_page.dart';
 
 class TokenPage extends StatefulWidget {
   const TokenPage({super.key});
@@ -30,15 +30,15 @@ class _TokenPageState extends State<TokenPage> {
       floatingActionButton: Visibility(
         visible: isFABVisible,
         child: SizedBox(
-          width: 35,
-          height: 35,
+          width: 50,
+          height: 50,
           child: FloatingActionButton(
             shape: const RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(Radius.circular(7.0))),
+                borderRadius: BorderRadius.all(Radius.circular(16.0))),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const SettingsPage()),
+                MaterialPageRoute(builder: (context) => const AddCodeManual()),
               );
             },
             backgroundColor: Colors.black87,
