@@ -39,6 +39,11 @@ dependencies:
   get_storage: ^2.0.3
   local_auth: ^2.1.2
   settings_ui: ^2.0.2
+  awesome_card: ^1.1.7
+  barcode_scan: ^3.0.1
+  countdown: ^0.1.0
+  crypto: ^3.0.2
+  base32: ^2.1.3
 
 dev_dependencies:
   flutter_test:
