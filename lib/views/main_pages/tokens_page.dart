@@ -1,7 +1,10 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import '../sub_pages/add_code_manual_page.dart';
+import '../sub_pages/token_page/add_code_manual_page.dart';
+import 'package:otp/otp.dart';
+import 'package:circular_countdown_timer/circular_countdown_timer.dart';
+import 'package:auto_reload/auto_reload.dart';
 
 class TokenPage extends StatefulWidget {
   const TokenPage({super.key});
@@ -11,6 +14,13 @@ class TokenPage extends StatefulWidget {
 }
 
 class _TokenPageState extends State<TokenPage> {
+  var hash = 'JBSWY3DPEHPK3PXP';
+
+  final code = OTP.generateTOTPCodeString(
+      'JBSWY3DPEHPK3PXP', DateTime.now().millisecondsSinceEpoch);
+
+  final int remainingTime = OTP.remainingSeconds();
+
   @override
   Widget build(BuildContext context) {
     bool isFABVisible = true;
@@ -20,7 +30,7 @@ class _TokenPageState extends State<TokenPage> {
         itemCount: 100,
         itemBuilder: (BuildContext context, int index) {
           return Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               border: Border(
                 bottom: BorderSide(
                   color: Colors.black12,
@@ -29,21 +39,55 @@ class _TokenPageState extends State<TokenPage> {
               ),
             ),
             child: ListTile(
-              contentPadding: EdgeInsets.all(5),
+              contentPadding: const EdgeInsets.all(5),
               leading: Padding(
-                padding: EdgeInsets.only(top: 10.0, left: 12.0),
-                child: Icon(
-                  Icons.timer_outlined,
-                  size: 25,
-                  color: Colors.black45,
+                padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+                child: CircularCountDownTimer(
+                  duration: 30,
+                  initialDuration: 30 - remainingTime,
+                  width: 20,
+                  height: 35,
+                  ringColor: Colors.white,
+                  fillColor: Colors.black45,
+                  backgroundColor: Colors.white,
+                  strokeWidth: 3.0,
+                  strokeCap: StrokeCap.round,
+
+                  textStyle: const TextStyle(
+                    fontSize: 10.0,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold,
+                  ),
+
+                  textFormat: CountdownTextFormat.S,
+                  isReverse: true,
+                  isReverseAnimation: true,
+                  isTimerTextShown: true,
+                  autoStart: true,
+                  onComplete: () {},
+
+                  // This Callback will execute when the Countdown Changes.
+                  onChange: (String timeStamp) {
+                    // Here, do whatever you want
+                  },
                 ),
               ),
+
+              // Padding(
+              //   padding: EdgeInsets.only(top: 10.0, left: 12.0),
+              //   child: Icon(
+              //     Icons.timer_outlined,
+              //     size: 25,
+              //     color: Colors.black45,
+              //   ),
+              // ),
               title: Padding(
-                padding: EdgeInsets.only(top: 4.0),
+                padding: const EdgeInsets.only(top: 4.0),
                 child: Text(
-                  "${Random().nextInt(1000000)}",
+                  "$code ${OTP.remainingSeconds()}",
+                  // "${Random().nextInt(1000000)}",
                   textAlign: TextAlign.left,
-                  style: TextStyle(
+                  style: const TextStyle(
                     // color: Color.fromARGB(255, 172, 35, 103),
                     color: Colors.blueGrey,
                     fontWeight: FontWeight.w500,
@@ -52,20 +96,20 @@ class _TokenPageState extends State<TokenPage> {
                 ),
               ),
               subtitle: Padding(
-                padding: EdgeInsets.only(left: 4.0, bottom: 6.0),
+                padding: const EdgeInsets.only(left: 4.0, bottom: 6.0),
                 child: Text(
                   "Facebook (account${Random().nextInt(100)})",
                   textAlign: TextAlign.left,
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black38,
                     fontSize: 14,
                   ),
                 ),
               ),
               trailing: Padding(
-                padding: EdgeInsets.all(10.0),
+                padding: const EdgeInsets.all(10.0),
                 child: IconButton(
-                  icon: Icon(
+                  icon: const Icon(
                     Icons.copy_outlined,
                     size: 20.0,
                     color: Colors.black45,
@@ -106,8 +150,8 @@ class _TokenPageState extends State<TokenPage> {
   void _showToast(BuildContext context) {
     final scaffold = ScaffoldMessenger.of(context);
     scaffold.showSnackBar(
-      SnackBar(
-        content: const Text('Copied to clipboard', textAlign: TextAlign.center),
+      const SnackBar(
+        content: Text('Copied to clipboard', textAlign: TextAlign.center),
       ),
     );
   }

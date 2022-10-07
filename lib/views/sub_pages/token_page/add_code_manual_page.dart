@@ -10,6 +10,6 @@ class AddCodeManual extends StatefulWidget {
 class _AddCodeManualState extends State<AddCodeManual> {
   @override
   Widget build(BuildContext context) {
-    return const Text('AddCodeManual');
+    return Text('AddCodeManual');
   }
 }
