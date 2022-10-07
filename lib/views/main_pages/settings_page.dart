@@ -57,16 +57,21 @@ class _SettingsPageState extends State<SettingsPage> {
                   value: const Text('E9C0K-285KJ-LY7E9-0XM35'),
                 ),
                 SettingsTile.navigation(
-                  leading: const Icon(Icons.language_outlined),
-                  title: const Text('Language'),
-                  value: const Text('English'),
+                  leading: const Icon(Icons.backup_outlined),
+                  title: const Text('Backup (Daily)'),
+                  value: const Text('Enable (Google Drive: mail@google.com)'),
                 ),
-                SettingsTile.switchTile(
-                  onToggle: (value) {},
-                  initialValue: false,
-                  leading: const Icon(Icons.dark_mode_outlined),
-                  title: const Text('Dark Mode'),
+                SettingsTile.navigation(
+                  leading: const Icon(Icons.lock_outlined),
+                  title: const Text('App Lock'),
+                  value: const Text('Disabled'),
                 ),
+                // SettingsTile.switchTile(
+                //   onToggle: (value) {},
+                //   initialValue: false,
+                //   leading: const Icon(Icons.dark_mode_outlined),
+                //   title: const Text('Dark Mode'),
+                // ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.private_connectivity_outlined),
                   title: const Text('Privacy Policy'),
@@ -78,6 +83,10 @@ class _SettingsPageState extends State<SettingsPage> {
                 SettingsTile.navigation(
                   leading: const Icon(Icons.support_outlined),
                   title: const Text('Support'),
+                ),
+                SettingsTile.navigation(
+                  leading: const Icon(Icons.book_outlined),
+                  title: const Text('User Manual'),
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.info_outline),
