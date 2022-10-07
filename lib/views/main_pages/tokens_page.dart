@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import '../sub_pages/token_page/add_code_manual_page.dart';
 import 'package:otp/otp.dart';
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
-import 'package:auto_reload/auto_reload.dart';
+import 'package:clipboard/clipboard.dart';
 
 class TokenPage extends StatefulWidget {
   const TokenPage({super.key});
@@ -14,8 +14,6 @@ class TokenPage extends StatefulWidget {
 }
 
 class _TokenPageState extends State<TokenPage> {
-  var hash = 'JBSWY3DPEHPK3PXP';
-
   final code = OTP.generateTOTPCodeString(
       'JBSWY3DPEHPK3PXP', DateTime.now().millisecondsSinceEpoch);
 
@@ -27,7 +25,7 @@ class _TokenPageState extends State<TokenPage> {
     return Scaffold(
       body: ListView.builder(
         shrinkWrap: true,
-        itemCount: 100,
+        itemCount: 15,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             decoration: const BoxDecoration(
@@ -52,24 +50,18 @@ class _TokenPageState extends State<TokenPage> {
                   backgroundColor: Colors.white,
                   strokeWidth: 3.0,
                   strokeCap: StrokeCap.round,
-
                   textStyle: const TextStyle(
                     fontSize: 10.0,
-                    color: Colors.black,
+                    color: Colors.black45,
                     fontWeight: FontWeight.bold,
                   ),
-
                   textFormat: CountdownTextFormat.S,
                   isReverse: true,
                   isReverseAnimation: true,
                   isTimerTextShown: true,
                   autoStart: true,
                   onComplete: () {},
-
-                  // This Callback will execute when the Countdown Changes.
-                  onChange: (String timeStamp) {
-                    // Here, do whatever you want
-                  },
+                  onChange: (String timeStamp) {},
                 ),
               ),
 
@@ -84,7 +76,7 @@ class _TokenPageState extends State<TokenPage> {
               title: Padding(
                 padding: const EdgeInsets.only(top: 4.0),
                 child: Text(
-                  "$code ${OTP.remainingSeconds()}",
+                  code,
                   // "${Random().nextInt(1000000)}",
                   textAlign: TextAlign.left,
                   style: const TextStyle(
@@ -95,12 +87,12 @@ class _TokenPageState extends State<TokenPage> {
                   ),
                 ),
               ),
-              subtitle: Padding(
-                padding: const EdgeInsets.only(left: 4.0, bottom: 6.0),
+              subtitle: const Padding(
+                padding: EdgeInsets.only(left: 4.0, bottom: 6.0),
                 child: Text(
-                  "Facebook (account${Random().nextInt(100)})",
+                  'Company (user_account)',
                   textAlign: TextAlign.left,
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: Colors.black38,
                     fontSize: 14,
                   ),
@@ -115,9 +107,8 @@ class _TokenPageState extends State<TokenPage> {
                     color: Colors.black45,
                   ),
                   onPressed: () {
+                    FlutterClipboard.copy(code);
                     _showToast(context);
-                    const Text('Show toast');
-                    //   _onDeleteItemPressed(index);
                   },
                 ),
               ),
