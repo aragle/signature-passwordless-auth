@@ -37,6 +37,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_launcher_icons: ^0.10.0
   settings_ui: ^2.0.2
+  otp: ^3.1.1
+  circular_countdown_timer: ^0.2.2
+  auto_reload: ^1.1.0
+  refresh_widget: ^0.0.2
 
 flutter_icons:
   android: true
