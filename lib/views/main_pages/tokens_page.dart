@@ -44,7 +44,8 @@ class _TokenPageState extends State<TokenPage> {
                   "${Random().nextInt(1000000)}",
                   textAlign: TextAlign.left,
                   style: TextStyle(
-                    color: Color.fromARGB(255, 172, 35, 103),
+                    // color: Color.fromARGB(255, 172, 35, 103),
+                    color: Colors.blueGrey,
                     fontWeight: FontWeight.w500,
                     fontSize: 28,
                   ),
