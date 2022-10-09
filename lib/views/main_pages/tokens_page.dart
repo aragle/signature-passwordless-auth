@@ -25,7 +25,7 @@ class _TokenPageState extends State<TokenPage> {
     return Scaffold(
       body: ListView.builder(
         shrinkWrap: true,
-        itemCount: 15,
+        itemCount: 10,
         itemBuilder: (BuildContext context, int index) {
           return Container(
             decoration: const BoxDecoration(
