@@ -1,10 +1,11 @@
-import 'dart:math';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
-import '../sub_pages/token_page/add_code_manual_page.dart';
 import 'package:otp/otp.dart';
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:clipboard/clipboard.dart';
+import 'package:signature/views/homepage.dart';
+import 'tokens_add_manual.dart';
 
 class TokenPage extends StatefulWidget {
   const TokenPage({super.key});
@@ -17,11 +18,16 @@ class _TokenPageState extends State<TokenPage> {
   final code = OTP.generateTOTPCodeString(
       'JBSWY3DPEHPK3PXP', DateTime.now().millisecondsSinceEpoch);
 
-  final int remainingTime = OTP.remainingSeconds();
+  int remainingTime = OTP.remainingSeconds();
+
+  Future<bool> onBackPressed() {
+    return exit(0);
+  }
 
   @override
   Widget build(BuildContext context) {
     bool isFABVisible = true;
+
     return Scaffold(
       body: ListView.builder(
         shrinkWrap: true,
@@ -60,8 +66,13 @@ class _TokenPageState extends State<TokenPage> {
                   isReverseAnimation: true,
                   isTimerTextShown: true,
                   autoStart: true,
-                  onComplete: () {},
-                  onChange: (String timeStamp) {},
+                  onComplete: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const HomePage()),
+                    );
+                  },
+                  onChange: (String remainingTime) {},
                 ),
               ),
 

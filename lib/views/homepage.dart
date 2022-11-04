@@ -1,6 +1,9 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
-import 'package:signature/views/main_pages/tokens_page.dart';
-import 'main_pages/settings_page.dart';
+import 'package:flutter/services.dart';
+import 'tokens_main.dart';
+import 'settings_main.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -10,6 +13,22 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  @override
+  void initState() {
+    super.initState();
+    _updateTokenList();
+  }
+
+  _updateTokenList() {
+    setState(() {
+      //_tokenList = LocalDB.instance.getTaskList();
+    });
+  }
+
+  Future<bool> onBackPressed() {
+    return exit(0);
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
