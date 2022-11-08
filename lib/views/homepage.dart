@@ -17,6 +17,18 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   @override
+  void initState() {
+    super.initState();
+    _updateTokenList();
+  }
+
+  _updateTokenList() {
+    setState(() {
+      //_tokenList = LocalDB.instance.getTaskList();
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: onBackPressed,
