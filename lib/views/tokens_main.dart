@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:otp/otp.dart';
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:clipboard/clipboard.dart';
-import 'package:signature/views/homepage.dart';
 import 'tokens_add_manual.dart';
 
 class TokenPage extends StatefulWidget {
@@ -21,7 +20,7 @@ class _TokenPageState extends State<TokenPage> {
   int remainingTime = OTP.remainingSeconds();
 
   Future<bool> onBackPressed() {
-    return exit(0);
+    return exit(1);
   }
 
   @override
