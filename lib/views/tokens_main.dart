@@ -67,10 +67,10 @@ class _TokenPageState extends State<TokenPage> {
                   isTimerTextShown: true,
                   autoStart: true,
                   onComplete: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => const HomePage()),
-                    );
+                    // Navigator.push(
+                    //   context,
+                    //   MaterialPageRoute(builder: (context) => const HomePage()),
+                    // );
                   },
                   onChange: (String remainingTime) {},
                 ),
