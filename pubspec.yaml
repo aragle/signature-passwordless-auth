@@ -46,6 +46,7 @@ dependencies:
   local_auth: ^2.1.2
   card_swiper: ^2.0.4
   scaled_list: ^2.0.0
+  webview_flutter: ^3.0.4
 
 flutter_icons:
   android: true

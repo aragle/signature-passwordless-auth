@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:settings_ui/settings_ui.dart';
+import 'package:signature/models/browser.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -75,6 +76,15 @@ class _SettingsPageState extends State<SettingsPage> {
                 SettingsTile.navigation(
                   leading: const Icon(Icons.private_connectivity_outlined),
                   title: const Text('Privacy Policy'),
+                  onPressed: ((context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Browser(
+                            title: 'Privacy', url: 'https://www.google.com'),
+                      ),
+                    );
+                  }),
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.toc_outlined),

@@ -1,6 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aragle.signature">
    <application
+        android:permission="android.permission.INTERNET"
         android:label="Signature"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
