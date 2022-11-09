@@ -81,7 +81,9 @@ class _SettingsPageState extends State<SettingsPage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) => const Browser(
-                            title: 'Privacy', url: 'https://www.google.com'),
+                            title: 'Privacy Policy',
+                            url:
+                                'https://signature-auth.web.app/policies/privacy.html'),
                       ),
                     );
                   }),
@@ -89,18 +91,60 @@ class _SettingsPageState extends State<SettingsPage> {
                 SettingsTile.navigation(
                   leading: const Icon(Icons.toc_outlined),
                   title: const Text('Terms and Conditions'),
+                  onPressed: ((context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Browser(
+                            title: 'Terms and Conditions',
+                            url:
+                                'https://signature-auth.web.app/policies/terms-and-conditions.html'),
+                      ),
+                    );
+                  }),
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.support_outlined),
                   title: const Text('Support'),
+                  onPressed: ((context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Browser(
+                            title: 'Support',
+                            url: 'https://signature-auth.web.app/support.html'),
+                      ),
+                    );
+                  }),
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.book_outlined),
                   title: const Text('User Manual'),
+                  onPressed: ((context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Browser(
+                            title: 'User Manual',
+                            url:
+                                'https://signature-auth.web.app/user-manual.html'),
+                      ),
+                    );
+                  }),
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.info_outline),
                   title: const Text('About Us'),
+                  onPressed: ((context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Browser(
+                            title: 'About Us',
+                            url: 'https://signature-auth.web.app/about.html'),
+                      ),
+                    );
+                  }),
                 ),
               ],
             ),

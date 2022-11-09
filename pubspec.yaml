@@ -47,6 +47,7 @@ dependencies:
   card_swiper: ^2.0.4
   scaled_list: ^2.0.0
   webview_flutter: ^3.0.4
+  mailto: ^2.0.0
 
 flutter_icons:
   android: true
