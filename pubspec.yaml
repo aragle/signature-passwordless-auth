@@ -44,6 +44,8 @@ dependencies:
   path_provider: ^2.0.11
   firebase_core: ^2.1.1
   local_auth: ^2.1.2
+  card_swiper: ^2.0.4
+  scaled_list: ^2.0.0
 
 flutter_icons:
   android: true

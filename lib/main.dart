@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:signature/views/homepage.dart';
 import 'package:signature/views/applock_main.dart';
+// import 'package:signature/views/history_main.dart';
 
 void main() {
   runApp(const MyApp());
