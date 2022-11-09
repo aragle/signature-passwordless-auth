@@ -1,4 +1,4 @@
-package com.anovenus.signature;
+package com.aragle.signature;
 
 import io.flutter.embedding.android.FlutterActivity;
 
