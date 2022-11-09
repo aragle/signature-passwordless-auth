@@ -2,7 +2,7 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:signature/views/devices_main.dart';
-import 'package:signature/views/history_main.dart';
+import 'package:signature/views/histories_main.dart';
 import 'package:signature/views/tokens_main.dart';
 import 'package:signature/views/settings_main.dart';
 
