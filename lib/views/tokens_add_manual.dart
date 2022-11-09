@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'add_code_via_qr_page.dart';
+import 'tokens_add_via_qr.dart';
 
 class AddCodeManual extends StatefulWidget {
   const AddCodeManual({super.key});

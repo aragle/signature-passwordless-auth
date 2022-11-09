@@ -1,8 +1,10 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'tokens_main.dart';
-import 'settings_main.dart';
+import 'package:signature/views/devices_main.dart';
+import 'package:signature/views/history_main.dart';
+import 'package:signature/views/tokens_main.dart';
+import 'package:signature/views/settings_main.dart';
 
 Future<bool> onBackPressed() {
   return exit(1);
@@ -72,9 +74,11 @@ class _HomePageState extends State<HomePage> {
               children: [
                 TokenPage(),
                 // Icon(Icons.local_activity_outlined, size: 100),
-                Icon(Icons.devices_outlined, size: 100),
+                Device(),
+                // Icon(Icons.devices_outlined, size: 100),
                 Icon(Icons.manage_accounts_outlined, size: 100),
-                Icon(Icons.history_outlined, size: 100),
+                History(),
+                // Icon(Icons.history_outlined, size: 100),
               ],
             ),
           ),
