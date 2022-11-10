@@ -46,7 +46,7 @@ class _BrowserState extends State<Browser> {
           ),
           title: Text(title),
           backgroundColor: Colors.black87,
-          elevation: 0,
+          // elevation: 0,
           // shape: const RoundedRectangleBorder(
           //   borderRadius: BorderRadius.vertical(
           //     bottom: Radius.circular(10),

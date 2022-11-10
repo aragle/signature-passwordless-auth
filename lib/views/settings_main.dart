@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mailto/mailto.dart';
 import 'package:settings_ui/settings_ui.dart';
 import 'package:signature/models/browser.dart';
+import 'package:signature/views/settings_about.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -10,11 +13,22 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
+  // ignore: non_constant_identifier_names
+  SendFeedback() async {
+    final mailtoLink = Mailto(
+      to: ['signature.wecare@gmail.com'],
+      // cc: ['cc1@example.com', 'cc2@example.com'],
+      subject: 'Feedback for Signature App',
+      body: '',
+    );
+    // ignore: deprecated_member_use
+    await launch('$mailtoLink');
+  }
+
   void handleClick(String value) {
     switch (value) {
-      case 'Logout':
-        break;
-      case 'Settings':
+      case 'Feedback':
+        SendFeedback();
         break;
     }
   }
@@ -139,9 +153,7 @@ class _SettingsPageState extends State<SettingsPage> {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const Browser(
-                            title: 'About Us',
-                            url: 'https://signature-auth.web.app/about.html'),
+                        builder: (context) => const About(),
                       ),
                     );
                   }),
