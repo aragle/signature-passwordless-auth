@@ -1,7 +1,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.aragle.signature">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
    <application
-        android:permission="android.permission.INTERNET"
         android:label="Signature"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
