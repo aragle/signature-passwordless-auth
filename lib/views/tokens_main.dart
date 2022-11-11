@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:otp/otp.dart';
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:clipboard/clipboard.dart';
+import 'package:signature/views/homepage.dart';
 import 'tokens_add_manual.dart';
 
 class TokenPage extends StatefulWidget {
@@ -66,12 +67,15 @@ class _TokenPageState extends State<TokenPage> {
                   isTimerTextShown: true,
                   autoStart: true,
                   onComplete: () {
-                    // Navigator.push(
-                    //   context,
-                    //   MaterialPageRoute(builder: (context) => const HomePage()),
-                    // );
+                    Navigator.pushAndRemoveUntil(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) =>
+                              const HomePage()), // this mymainpage is your page to refresh
+                      (Route<dynamic> route) => false,
+                    );
                   },
-                  onChange: (String remainingTime) {},
+                  // onChange: () {},
                 ),
               ),
 
