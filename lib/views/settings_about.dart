@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 
 class About extends StatefulWidget {
   const About({super.key});
@@ -55,7 +53,7 @@ class _AboutState extends State<About> {
             // ignore: prefer_const_literals_to_create_immutables
             children: [
               Container(
-                margin: const EdgeInsets.only(top: 20),
+                margin: const EdgeInsets.only(top: 30),
                 child: const Text(
                   'Signature',
                   style: TextStyle(
@@ -74,7 +72,7 @@ class _AboutState extends State<About> {
             // ignore: prefer_const_literals_to_create_immutables
             children: [
               Container(
-                margin: const EdgeInsets.only(top: 10),
+                margin: const EdgeInsets.only(top: 20),
                 child: const Text(
                   'Version 1.0.0',
                   style: TextStyle(

@@ -36,7 +36,7 @@ class _DeviceState extends State<Device> {
                         Container(
                           alignment: Alignment.topLeft,
                           margin: EdgeInsets.only(
-                            bottom: selectedIndex == index ? 100 : 80,
+                            bottom: selectedIndex == index ? 180 : 80,
                             left: selectedIndex == index ? 30 : 25,
                           ),
                           child: SizedBox(

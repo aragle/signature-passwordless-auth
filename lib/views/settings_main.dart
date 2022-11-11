@@ -3,6 +3,9 @@ import 'package:mailto/mailto.dart';
 import 'package:settings_ui/settings_ui.dart';
 import 'package:signature/features/browser.dart';
 import 'package:signature/views/settings_about.dart';
+import 'package:signature/views/settings_applock.dart';
+import 'package:signature/views/settings_backup.dart';
+import 'package:signature/views/settings_devicekey.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -70,16 +73,40 @@ class _SettingsPageState extends State<SettingsPage> {
                   leading: const Icon(Icons.key_outlined),
                   title: const Text('Device Public Key'),
                   value: const Text('E9C0K-285KJ-LY7E9-0XM35'),
+                  onPressed: (BuildContext context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const DeviceKey(),
+                      ),
+                    );
+                  },
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.backup_outlined),
-                  title: const Text('Backup (Daily)'),
-                  value: const Text('Enable (Google Drive: mail@google.com)'),
+                  title: const Text('Backup and Restore'),
+                  value: const Text('Enabled (Google Drive: mail@google.com)'),
+                  onPressed: (BuildContext context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const Backup(),
+                      ),
+                    );
+                  },
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.lock_outlined),
                   title: const Text('App Lock'),
                   value: const Text('Disabled'),
+                  onPressed: (BuildContext context) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const AppLockSetup(),
+                      ),
+                    );
+                  },
                 ),
                 // SettingsTile.switchTile(
                 //   onToggle: (value) {},
@@ -148,7 +175,7 @@ class _SettingsPageState extends State<SettingsPage> {
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.info_outline),
-                  title: const Text('About Us'),
+                  title: const Text('About'),
                   onPressed: ((context) {
                     Navigator.push(
                       context,
