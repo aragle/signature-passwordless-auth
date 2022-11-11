@@ -6,6 +6,8 @@ import 'package:signature/views/histories_main.dart';
 import 'package:signature/views/tokens_main.dart';
 import 'package:signature/views/settings_main.dart';
 
+import 'accounts_main.dart';
+
 Future<bool> onBackPressed() {
   return exit(1);
 }
@@ -76,7 +78,8 @@ class _HomePageState extends State<HomePage> {
                 // Icon(Icons.local_activity_outlined, size: 100),
                 Device(),
                 // Icon(Icons.devices_outlined, size: 100),
-                Icon(Icons.manage_accounts_outlined, size: 100),
+                SaveSavedAccounts(),
+                // Icon(Icons.manage_accounts_outlined, size: 100),
                 History(),
                 // Icon(Icons.history_outlined, size: 100),
               ],

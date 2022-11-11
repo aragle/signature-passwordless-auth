@@ -52,6 +52,7 @@ dependencies:
   qr_code_scanner: ^1.0.1
   camera: ^0.10.0+4
   flutter_app_lock: ^3.0.0
+  reorderable_grid: ^1.0.5
 
 flutter_icons:
   android: true
