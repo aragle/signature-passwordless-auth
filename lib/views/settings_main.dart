@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mailto/mailto.dart';
 import 'package:settings_ui/settings_ui.dart';
-import 'package:signature/models/browser.dart';
+import 'package:signature/features/browser.dart';
 import 'package:signature/views/settings_about.dart';
 import 'package:url_launcher/url_launcher.dart';
 
