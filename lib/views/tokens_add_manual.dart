@@ -117,10 +117,12 @@ class _AddCodeManualState extends State<AddCodeManual> {
                       vertical: 20,
                     ),
                   ),
-                  child: const Text(
-                    'Add Account',
-                    style: TextStyle(
-                      fontSize: 18,
+                  child: const Center(
+                    child: Text(
+                      'Add',
+                      style: TextStyle(
+                        fontSize: 18,
+                      ),
                     ),
                   ),
                 ),
@@ -135,9 +137,9 @@ class _AddCodeManualState extends State<AddCodeManual> {
                     );
                   },
                   child: const Text(
-                    'Add account via QR Scan',
+                    'Add account via QR Scanner',
                     style: TextStyle(
-                      fontSize: 18,
+                      fontSize: 15,
                       color: Colors.black87,
                     ),
                   ),
