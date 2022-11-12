@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'tokens_add_manual.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'package:signature/views/tokens_add_manual.dart';
 
 class AddViaQRCode extends StatefulWidget {
   const AddViaQRCode({super.key});

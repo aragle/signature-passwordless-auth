@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:otp/otp.dart';
 
@@ -133,12 +131,12 @@ class _HistoryState extends State<History> {
     );
   }
 
-  void _showToast(BuildContext context) {
-    final scaffold = ScaffoldMessenger.of(context);
-    scaffold.showSnackBar(
-      const SnackBar(
-        content: Text('Copied to clipboard', textAlign: TextAlign.center),
-      ),
-    );
-  }
+  // void _showToast(BuildContext context) {
+  //   final scaffold = ScaffoldMessenger.of(context);
+  //   scaffold.showSnackBar(
+  //     const SnackBar(
+  //       content: Text('Copied to clipboard', textAlign: TextAlign.center),
+  //     ),
+  //   );
+  // }
 }
