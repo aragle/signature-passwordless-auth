@@ -6,8 +6,6 @@ import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:clipboard/clipboard.dart';
 import 'package:signature/views/homepage.dart';
 import 'tokens_add_manual.dart';
-import 'package:signature/database/local_tokens.dart';
-import 'package:signature/models/token.dart';
 
 class TokenPage extends StatefulWidget {
   const TokenPage({super.key});
@@ -20,6 +18,11 @@ class _TokenPageState extends State<TokenPage> {
   @override
   void initState() {
     super.initState();
+    _updateTokenList();
+  }
+
+  _updateTokenList() {
+    setState(() {});
   }
 
   final code = OTP.generateTOTPCodeString(
