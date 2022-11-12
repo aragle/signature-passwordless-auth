@@ -22,7 +22,7 @@ class _DeviceState extends State<Device> {
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Container(
+              SizedBox(
                 child: ScaledList(
                   itemCount: categories.length,
                   itemColor: (index) {

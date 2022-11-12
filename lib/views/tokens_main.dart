@@ -6,6 +6,8 @@ import 'package:circular_countdown_timer/circular_countdown_timer.dart';
 import 'package:clipboard/clipboard.dart';
 import 'package:signature/views/homepage.dart';
 import 'tokens_add_manual.dart';
+import 'package:signature/database/local_tokens.dart';
+import 'package:signature/models/token.dart';
 
 class TokenPage extends StatefulWidget {
   const TokenPage({super.key});
@@ -15,8 +17,13 @@ class TokenPage extends StatefulWidget {
 }
 
 class _TokenPageState extends State<TokenPage> {
+  @override
+  void initState() {
+    super.initState();
+  }
+
   final code = OTP.generateTOTPCodeString(
-      'JBSWY3DPEHPK3PXP', DateTime.now().millisecondsSinceEpoch);
+      "fdfgggfdgf", DateTime.now().millisecondsSinceEpoch);
 
   int remainingTime = OTP.remainingSeconds();
 
@@ -27,7 +34,6 @@ class _TokenPageState extends State<TokenPage> {
   @override
   Widget build(BuildContext context) {
     bool isFABVisible = true;
-
     return Scaffold(
       body: ListView.builder(
         shrinkWrap: true,
@@ -42,90 +48,94 @@ class _TokenPageState extends State<TokenPage> {
                 ),
               ),
             ),
-            child: ListTile(
-              contentPadding: const EdgeInsets.all(5),
-              leading: Padding(
-                padding: const EdgeInsets.only(left: 16.0, right: 16.0),
-                child: CircularCountDownTimer(
-                  duration: 30,
-                  initialDuration: 30 - remainingTime,
-                  width: 20,
-                  height: 35,
-                  ringColor: Colors.white,
-                  fillColor: Colors.black45,
-                  backgroundColor: Colors.white,
-                  strokeWidth: 3.0,
-                  strokeCap: StrokeCap.round,
-                  textStyle: const TextStyle(
-                    fontSize: 10.0,
-                    color: Colors.black45,
-                    fontWeight: FontWeight.bold,
+            child: Column(
+              children: [
+                ListTile(
+                  contentPadding: const EdgeInsets.all(5),
+                  leading: Padding(
+                    padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+                    child: CircularCountDownTimer(
+                      duration: 30,
+                      initialDuration: 30 - remainingTime,
+                      width: 20,
+                      height: 35,
+                      ringColor: Colors.white,
+                      fillColor: Colors.black45,
+                      backgroundColor: Colors.white,
+                      strokeWidth: 3.0,
+                      strokeCap: StrokeCap.round,
+                      textStyle: const TextStyle(
+                        fontSize: 10.0,
+                        color: Colors.black45,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      textFormat: CountdownTextFormat.S,
+                      isReverse: true,
+                      isReverseAnimation: true,
+                      isTimerTextShown: true,
+                      autoStart: true,
+                      onComplete: () {
+                        Navigator.pushAndRemoveUntil(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) =>
+                                  const HomePage()), // this mymainpage is your page to refresh
+                          (Route<dynamic> route) => false,
+                        );
+                      },
+                      // onChange: () {},
+                    ),
                   ),
-                  textFormat: CountdownTextFormat.S,
-                  isReverse: true,
-                  isReverseAnimation: true,
-                  isTimerTextShown: true,
-                  autoStart: true,
-                  onComplete: () {
-                    Navigator.pushAndRemoveUntil(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              const HomePage()), // this mymainpage is your page to refresh
-                      (Route<dynamic> route) => false,
-                    );
-                  },
-                  // onChange: () {},
-                ),
-              ),
 
-              // Padding(
-              //   padding: EdgeInsets.only(top: 10.0, left: 12.0),
-              //   child: Icon(
-              //     Icons.timer_outlined,
-              //     size: 25,
-              //     color: Colors.black45,
-              //   ),
-              // ),
-              title: Padding(
-                padding: const EdgeInsets.only(top: 4.0),
-                child: Text(
-                  code,
-                  // "${Random().nextInt(1000000)}",
-                  textAlign: TextAlign.left,
-                  style: const TextStyle(
-                    // color: Color.fromARGB(255, 172, 35, 103),
-                    color: Colors.blueGrey,
-                    fontWeight: FontWeight.w500,
-                    fontSize: 28,
+                  // Padding(
+                  //   padding: EdgeInsets.only(top: 10.0, left: 12.0),
+                  //   child: Icon(
+                  //     Icons.timer_outlined,
+                  //     size: 25,
+                  //     color: Colors.black45,
+                  //   ),
+                  // ),
+                  title: Padding(
+                    padding: const EdgeInsets.only(top: 4.0),
+                    child: Text(
+                      code,
+                      // "${Random().nextInt(1000000)}",
+                      textAlign: TextAlign.left,
+                      style: const TextStyle(
+                        // color: Color.fromARGB(255, 172, 35, 103),
+                        color: Colors.blueGrey,
+                        fontWeight: FontWeight.w500,
+                        fontSize: 28,
+                      ),
+                    ),
+                  ),
+                  subtitle: const Padding(
+                    padding: EdgeInsets.only(left: 4.0, bottom: 6.0),
+                    child: Text(
+                      'IssuerName (accountName)',
+                      textAlign: TextAlign.left,
+                      style: TextStyle(
+                        color: Colors.black38,
+                        fontSize: 14,
+                      ),
+                    ),
+                  ),
+                  trailing: Padding(
+                    padding: const EdgeInsets.all(10.0),
+                    child: IconButton(
+                      icon: const Icon(
+                        Icons.copy_outlined,
+                        size: 20.0,
+                        color: Colors.black45,
+                      ),
+                      onPressed: () {
+                        FlutterClipboard.copy(code);
+                        _showToast(context);
+                      },
+                    ),
                   ),
                 ),
-              ),
-              subtitle: const Padding(
-                padding: EdgeInsets.only(left: 4.0, bottom: 6.0),
-                child: Text(
-                  'Company (user_account)',
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    color: Colors.black38,
-                    fontSize: 14,
-                  ),
-                ),
-              ),
-              trailing: Padding(
-                padding: const EdgeInsets.all(10.0),
-                child: IconButton(
-                  icon: const Icon(
-                    Icons.copy_outlined,
-                    size: 20.0,
-                    color: Colors.black45,
-                  ),
-                  onPressed: () {
-                    FlutterClipboard.copy(code);
-                    _showToast(context);
-                  },
-                ),
-              ),
+              ],
             ),
           );
         },
@@ -157,6 +167,7 @@ class _TokenPageState extends State<TokenPage> {
     scaffold.showSnackBar(
       const SnackBar(
         content: Text('Copied to clipboard', textAlign: TextAlign.center),
+        duration: Duration(seconds: 1),
       ),
     );
   }

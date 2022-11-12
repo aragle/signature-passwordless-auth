@@ -1,95 +1,96 @@
-// import 'dart:io';
+import 'dart:io';
 
-// import '../models/token_model.dart';
-// import 'package:path_provider/path_provider.dart';
-// import 'package:sqflite/sqflite.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:signature/models/token.dart';
+import 'package:sqflite/sqflite.dart';
 
-// class DatabaseHelper {
-//   static final DatabaseHelper instance = DatabaseHelper._instance();
-//   static Database _db;
+class TokenDatabase {
+  static final TokenDatabase instance = TokenDatabase._instance();
+  static Database? _db;
+  Future<Database?> get db async {
+    _db ??= await _initiateDatabase();
+    return _db;
+  }
 
-//   DatabaseHelper._instance();
+  TokenDatabase._instance();
 
-//   String tasksTable = 'task_table';
-//   String colId = 'id';
-//   String colTitle = 'title';
-//   String colDate = 'date';
-//   String colPriority = 'priority';
-//   String colStatus = 'status';
+  String tokenTable = 'token_table';
+  String colId = 'id';
+  String colIssuerName = 'issuer_name';
+  String colAccountName = 'account_name';
+  String colSecretCode = 'secret_code';
+  String colType = 'type';
+  String colOtpLength = 'otp_length';
+  String colStatus = 'status';
 
-//   // Task Tables
-//   // Id | Title | Date | Priority | Status
-//   // 0     ''      ''      ''         0
-//   // 1     ''      ''      ''         0
-//   // 2     ''      ''      ''         0
+  // id | issuer_name | account_name | secret_code | type | otp_length | status
+  // 1  | Google      | Google       | 123456789   | TOTP | 6          | 1
+  // 2  | Facebook    | Facebook     | 123456789   | TOTP | 6          | 1
+  // 3  | Twitter     | Twitter      | 123456789   | TOTP | 6          | 1
+  // 4  | Github      | Github       | 123456789   | TOTP | 6          | 1
+  // 5  | Instagram   | Instagram    | 123456789   | TOTP | 6          | 1
 
-//   Future<Database> get db async {
-//     if (_db == null) {
-//       _db = await _initDb();
-//     }
-//     return _db;
-//   }
+  Future<Database> _initiateDatabase() async {
+    Directory dir = await getApplicationDocumentsDirectory();
+    String path = '${dir.path}/local_tokens.db';
+    final tokenListDb =
+        await openDatabase(path, version: 1, onCreate: _createDb);
+    return tokenListDb;
+  }
 
-//   Future<Database> _initDb() async {
-//     Directory dir = await getApplicationDocumentsDirectory();
-//     String path = '${dir.path}/todo_list.db';
-//     final todoListDb =
-//         await openDatabase(path, version: 1, onCreate: _createDb);
-//     return todoListDb;
-//   }
+  void _createDb(Database db, int version) async {
+    await db.execute(
+      'CREATE TABLE $tokenTable ($colId INTEGER PRIMARY KEY AUTOINCREMENT, $colIssuerName TEXT, $colAccountName TEXT, $colSecretCode TEXT, $colType TEXT, $colOtpLength TEXT, $colStatus INTEGER)',
+    );
+  }
 
-//   void _createDb(Database db, int version) async {
-//     await db.execute(
-//       'CREATE TABLE $tasksTable($colId INTEGER PRIMARY KEY AUTOINCREMENT, $colTitle TEXT, $colDate TEXT, $colPriority TEXT, $colStatus INTEGER)',
-//     );
-//   }
+  Future<List<Map<String, dynamic>>> getTokenMapList() async {
+    Database? db = await this.db;
+    final List<Map<String, dynamic>> result = await db!.query(tokenTable);
+    return result;
+  }
 
-//   Future<List<Map<String, dynamic>>> getTaskMapList() async {
-//     Database db = await this.db;
-//     final List<Map<String, dynamic>> result = await db.query(tasksTable);
-//     return result;
-//   }
+  Future<List<Token>> getTokenList() async {
+    final List<Map<String, dynamic>> tokenMapList = await getTokenMapList();
+    final List<Token> tokenList = [];
+    for (var tokenMap in tokenMapList) {
+      tokenList.add(Token.fromMap(tokenMap));
+    }
+    tokenList.sort(
+        (tokenA, tokenB) => tokenA.issuerName.compareTo(tokenB.issuerName));
+    return tokenList;
+  }
 
-//   Future<List<Token>> getTaskList() async {
-//     final List<Map<String, dynamic>> taskMapList = await getTaskMapList();
-//     final List<Token> taskList = [];
-//     taskMapList.forEach((taskMap) {
-//       taskList.add(Token.fromMap(taskMap));
-//     });
-//     taskList.sort((taskA, taskB) => taskA.Token.compareTo(taskB.date));
-//     return taskList;
-//   }
+  Future<int> insertToken(Token token) async {
+    Database? db = await this.db;
+    final int result = await db!.insert(tokenTable, token.toMap());
+    return result;
+  }
 
-//   Future<int> insertTask(Token task) async {
-//     Database db = await this.db;
-//     final int result = await db.insert(tasksTable, task.toMap());
-//     return result;
-//   }
+  Future<int> updateToken(Token token) async {
+    Database? db = await this.db;
+    final int result = await db!.update(
+      tokenTable,
+      token.toMap(),
+      where: '$colId = ?',
+      whereArgs: [token.id],
+    );
+    return result;
+  }
 
-//   Future<int> updateTask(Token task) async {
-//     Database db = await this.db;
-//     final int result = await db.update(
-//       tasksTable,
-//       task.toMap(),
-//       where: '$colId = ?',
-//       whereArgs: [task.id],
-//     );
-//     return result;
-//   }
+  Future<int> deleteToken(int id) async {
+    Database? db = await this.db;
+    final int result = await db!.delete(
+      tokenTable,
+      where: '$colId = ?',
+      whereArgs: [id],
+    );
+    return result;
+  }
 
-//   Future<int> deleteTask(int id) async {
-//     Database db = await this.db;
-//     final int result = await db.delete(
-//       tasksTable,
-//       where: '$colId = ?',
-//       whereArgs: [id],
-//     );
-//     return result;
-//   }
-
-//   Future<int> deleteAllTask() async {
-//     Database db = await this.db;
-//     final int result = await db.delete(tasksTable);
-//     return result;
-//   }
-// }
+  Future<int> deleteAllTask() async {
+    Database? db = await this.db;
+    final int result = await db!.delete(tokenTable);
+    return result;
+  }
+}

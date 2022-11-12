@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:signature/views/applock_main.dart';
+import 'package:signature/views/tokens_add_manual.dart';
+// import 'package:signature/views/applock_main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +19,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       // ignore: prefer_const_constructors
-      home: LockScreen(),
+      // home: LockScreen(),
+      home: const AddCodeManual(),
     );
   }
 }
