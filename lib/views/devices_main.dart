@@ -61,6 +61,41 @@ class _DeviceState extends State<Device> {
                   },
                 ),
               ),
+              Container(
+                margin: const EdgeInsets.only(top: 25),
+                decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.black,
+                    ),
+                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Column(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    children: [
+                      const Text(
+                        'Host/IP: Obsidian (192.168.1.103)',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                      const SizedBox(height: 10),
+                      const Text(
+                        'User : ashiq@Obsidian',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400,
+                        ),
+                        textAlign: TextAlign.left,
+                      ),
+                    ],
+                  ),
+                ),
+              ),
             ],
           ),
           Row(
@@ -97,7 +132,7 @@ class _DeviceState extends State<Device> {
   ];
 
   final List<Category> categories = [
-    Category(image: "assets/images/device.png", name: "Dell-110"),
+    Category(image: "assets/images/device.png", name: "Dell-15"),
     Category(image: "assets/images/device.png", name: "WDC-510"),
     Category(image: "assets/images/device.png", name: "HP-5680"),
     Category(image: "assets/images/device.png", name: "ASUS-2145"),

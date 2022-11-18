@@ -36,7 +36,17 @@ class _SaveSavedAccountsState extends State<SaveSavedAccounts> {
             return Card(
               key: ValueKey(item),
               child: Center(
-                child: Text('Accounts\n${item + 1}'),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.branding_watermark, color: Colors.blue),
+                    const SizedBox(height: 8),
+                    Text(
+                      'Account - $item',
+                      style: Theme.of(context).textTheme.caption,
+                    ),
+                  ],
+                ),
               ),
             );
           }).toList(),
@@ -54,7 +64,7 @@ class _SaveSavedAccountsState extends State<SaveSavedAccounts> {
                 });
               },
               backgroundColor: Colors.black87,
-              child: const Icon(Icons.add_outlined),
+              child: const Icon(Icons.qr_code),
             ),
           ),
         ),
