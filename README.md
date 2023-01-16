@@ -23,7 +23,35 @@ This is an android application to manage signature profile, login history and ot
   </tr>
 </table>
 
+## Project Paths
 
+    │   main.dart
+    │   firebase_options.dart
+    │
+    ├───database
+    │       local_tokens.dart
+    │
+    ├───features
+    │       browser.dart
+    │       toast.dart
+    │
+    ├───models
+    │       token.dart
+    │
+    └───views
+            accounts_main.dart
+            applock_main.dart
+            devices_main.dart
+            histories_main.dart
+            homepage.dart
+            settings_about.dart
+            settings_applock.dart
+            settings_backup.dart
+            settings_devicekey.dart
+            settings_main.dart
+            tokens_add_manual.dart
+            tokens_add_via_qr.dart
+            tokens_main.dart
 
 
 
