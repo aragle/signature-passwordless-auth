@@ -39,11 +39,11 @@ class _SaveSavedAccountsState extends State<SaveSavedAccounts> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Icon(Icons.branding_watermark, color: Colors.blue),
+                    const Icon(Icons.facebook, color: Colors.redAccent),
                     const SizedBox(height: 8),
                     Text(
                       'Account - $item',
-                      style: Theme.of(context).textTheme.caption,
+                      style: Theme.of(context).textTheme.bodySmall,
                     ),
                   ],
                 ),
@@ -53,8 +53,8 @@ class _SaveSavedAccountsState extends State<SaveSavedAccounts> {
         ),
         floatingActionButton: Visibility(
           child: SizedBox(
-            width: 50,
-            height: 50,
+            width: 42,
+            height: 42,
             child: FloatingActionButton(
               shape: const RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(16.0))),
@@ -63,7 +63,7 @@ class _SaveSavedAccountsState extends State<SaveSavedAccounts> {
                   items.add(items.length);
                 });
               },
-              backgroundColor: Colors.black87,
+              backgroundColor: Colors.redAccent,
               child: const Icon(Icons.qr_code),
             ),
           ),

@@ -67,7 +67,7 @@ class _DeviceState extends State<Device> {
                     border: Border.all(
                       color: Colors.black,
                     ),
-                    borderRadius: BorderRadius.all(Radius.circular(20))),
+                    borderRadius: const BorderRadius.all(Radius.circular(20))),
                 child: Padding(
                   padding: const EdgeInsets.all(20.0),
                   child: Column(

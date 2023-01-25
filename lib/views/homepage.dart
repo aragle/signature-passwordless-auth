@@ -1,15 +1,16 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:signature/views/devices_main.dart';
+// import 'package:signature/views/devices_main.dart';
 import 'package:signature/views/histories_main.dart';
-import 'package:signature/views/tokens_main.dart';
+// import 'package:signature/views/tokens_main.dart';
 import 'package:signature/views/settings_main.dart';
 
 import 'accounts_main.dart';
 
 Future<bool> onBackPressed() {
-  return exit(1);
+  // return exit(1);
+  return Future.value(true);
 }
 
 class HomePage extends StatefulWidget {
@@ -65,8 +66,7 @@ class _HomePageState extends State<HomePage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(
-                          builder: (context) => const History()),
+                      MaterialPageRoute(builder: (context) => const History()),
                     );
                   },
                 ),
