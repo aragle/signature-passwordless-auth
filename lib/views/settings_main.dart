@@ -62,7 +62,7 @@ class _SettingsPageState extends State<SettingsPage> {
               },
             ),
           ],
-          backgroundColor: Colors.black87,
+          backgroundColor: Colors.redAccent,
           elevation: 0,
         ),
         body: SettingsList(

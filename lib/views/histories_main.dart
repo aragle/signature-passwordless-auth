@@ -17,6 +17,29 @@ class _HistoryState extends State<History> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Text('History'),
+        actions: <Widget>[
+          PopupMenuButton<String>(
+            itemBuilder: (BuildContext context) {
+              return {'Feedback'}.map((String choice) {
+                return PopupMenuItem<String>(
+                  value: choice,
+                  child: Text('5'),
+                );
+              }).toList();
+            },
+          ),
+        ],
+        backgroundColor: Colors.redAccent,
+        elevation: 0,
+      ),
       body: ListView.builder(
         shrinkWrap: true,
         itemCount: 10,
