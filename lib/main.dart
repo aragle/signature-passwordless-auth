@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:signature/views/applock_main.dart';
+import 'package:signature/applock.dart';
 
 void main() {
   runApp(const MyApp());

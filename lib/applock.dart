@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:signature/views/homepage.dart';
+import 'helpers/applock_helper.dart';
 
 class LockScreen extends StatefulWidget {
   const LockScreen({super.key});
@@ -9,6 +10,20 @@ class LockScreen extends StatefulWidget {
 }
 
 class _LockScreenState extends State<LockScreen> {
+  bool showBiometric = false;
+  bool isAuthenticated = false;
+
+  @override
+  void initState() {
+    isBiometricsAvailable();
+    super.initState();
+  }
+
+  isBiometricsAvailable() async {
+    showBiometric = await AppLockHelper().hasEnrolledBiometrics();
+    setState(() {});
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +31,7 @@ class _LockScreenState extends State<LockScreen> {
         decoration: const BoxDecoration(
           gradient: LinearGradient(
               colors: [
-                Color(0xFF2C3E50),
+                Color(0xF0FC3E50),
                 Color(0xFF000000),
               ],
               begin: FractionalOffset(0.0, 0.0),
@@ -53,6 +68,11 @@ class _LockScreenState extends State<LockScreen> {
                 padding: const EdgeInsets.only(right: 25),
                 margin: const EdgeInsets.only(bottom: 100),
                 child: IconButton(
+                  // onPressed: () async {
+                  //   isAuthenticated = await AppLockHelper().authenticate();
+                  //   setState(() {});
+                  // },
+
                   onPressed: () {
                     Navigator.push(
                       context,

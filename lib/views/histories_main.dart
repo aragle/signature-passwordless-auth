@@ -25,18 +25,6 @@ class _HistoryState extends State<History> {
           },
         ),
         title: const Text('History'),
-        actions: <Widget>[
-          PopupMenuButton<String>(
-            itemBuilder: (BuildContext context) {
-              return {'Feedback'}.map((String choice) {
-                return PopupMenuItem<String>(
-                  value: choice,
-                  child: Text('5'),
-                );
-              }).toList();
-            },
-          ),
-        ],
         backgroundColor: Colors.redAccent,
         elevation: 0,
       ),
