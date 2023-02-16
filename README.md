@@ -1,6 +1,6 @@
-# signature-android
+# signature
 
-This is an android application to manage signature profile, login history and others.
+This is a application to manage signature profile, login history and others.
 
 
 ## Screenshots
