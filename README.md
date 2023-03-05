@@ -25,7 +25,7 @@ This is an android application to manage signature profile, login history and ot
 
 ## Project Paths
 
-    ⟟
+    lib
     │   main.dart
     │   firebase_options.dart
     │
