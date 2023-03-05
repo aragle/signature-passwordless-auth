@@ -24,7 +24,7 @@ This is a application to manage signature profile, login history and others.
 
 ## Project Paths
 
-    ⟟
+    lib
     │   main.dart
     │   firebase_options.dart
     │
