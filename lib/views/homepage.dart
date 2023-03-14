@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 // import 'package:signature/views/devices_main.dart';
 import 'package:signature/views/histories_main.dart';
