@@ -2,6 +2,23 @@
 
 This is a application to manage signature profile, login history and others.
 
+## Screenshots - (current)
+
+<table>
+  <tr>
+    <th>Splash</th>
+    <th>Accounts</th>
+    <th>Histories</th>
+    <th>Settings</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/62181222/225686767-a78ae96f-6fe3-4307-9a25-a5b9552d0b3c.png" width="250"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/225686327-7cbdbe56-5424-45a7-a987-4a356f07de24.png" width="250"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/225686334-9a429178-3f10-41c2-bfff-8ded36bf763e.png" width="250"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/225686364-ffbdd81e-1a93-4371-a460-cf1c7c076faf.png" width="250"></td>
+  </tr>
+</table>
+
 
 ## Screenshots - ([oldDev](https://github.com/aratheunseen/signature/tree/oldDev))
 
