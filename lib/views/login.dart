@@ -27,27 +27,15 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black87,
+        backgroundColor: Colors.grey[900],
         elevation: 0,
-        title: Padding(
-          padding: const EdgeInsets.only(left: 7),
-          child: Image.asset(
-            'assets/images/signature.png',
-            height: 25,
-          ),
-        ),
+        title: const Text('Login',
+            style: TextStyle(
+              color: Colors.white,
+            )),
         actions: [
           IconButton(
-            icon: const Icon(Icons.safety_check_outlined),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Activities()),
-              );
-            },
-          ),
-          IconButton(
-            icon: const Icon(Icons.adjust_rounded),
+            icon: const Icon(Icons.info_outline, color: Colors.white),
             onPressed: () {
               Navigator.push(
                 context,
@@ -57,6 +45,12 @@ class _LoginState extends State<Login> {
           ),
           const Padding(padding: EdgeInsets.only(right: 10)),
         ],
+        leading: IconButton(
+          icon: const Icon(Icons.login, color: Colors.white),
+          onPressed: () {
+            // Navigator.pop(context);
+          },
+        ),
       ),
       body: SizedBox(
         height: MediaQuery.of(context).size.height,
