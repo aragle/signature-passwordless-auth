@@ -27,7 +27,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[900],
+        backgroundColor: Colors.indigo,
         elevation: 0,
         title: const Text('Login',
             style: TextStyle(
@@ -35,11 +35,11 @@ class _LoginState extends State<Login> {
             )),
         actions: [
           IconButton(
-            icon: const Icon(Icons.info_outline, color: Colors.white),
+            icon: const Icon(Icons.skip_next, color: Colors.white),
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => const Settings()),
+                MaterialPageRoute(builder: (context) => const Homepage()),
               );
             },
           ),
@@ -58,12 +58,12 @@ class _LoginState extends State<Login> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
                 colors: [
-                  Color.fromARGB(255, 225, 196, 114),
-                  Color(0xFFacb6e5),
+                  Color.fromARGB(255, 210, 234, 246),
+                  Colors.indigo,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(0.5, 1.3),
-                stops: [0.0, 1.0],
+                stops: [0.5, 1.0],
                 tileMode: TileMode.clamp),
           ),
           child: Padding(
@@ -121,7 +121,8 @@ class _LoginState extends State<Login> {
                   ),
                   MaterialButton(
                     minWidth: double.infinity,
-                    color: Colors.grey[900],
+                    // color: Colors.grey[900],
+                    color: Colors.indigo,
                     height: 50,
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
@@ -166,7 +167,7 @@ class _LoginState extends State<Login> {
           toastLength: Toast.LENGTH_SHORT,
           gravity: ToastGravity.BOTTOM,
           timeInSecForIosWeb: 1,
-          backgroundColor: Colors.red,
+          backgroundColor: Colors.grey[800],
           textColor: Colors.white,
           fontSize: 16.0,
         );
