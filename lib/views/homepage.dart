@@ -25,7 +25,7 @@ class _HomepageState extends State<Homepage> {
           length: 4,
           child: Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.redAccent,
+              backgroundColor: Colors.indigo,
               elevation: 0,
               // bottom: const TabBar(
               //   tabs: [
