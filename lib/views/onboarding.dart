@@ -45,7 +45,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            'One method for\nmultiple websites.',
+                            'One method for\nmultiple websites',
                             textScaleFactor: 1.3,
                             textHeightBehavior: TextHeightBehavior(
                                 applyHeightToFirstAscent: false),
@@ -66,6 +66,9 @@ class _OnBoardingState extends State<OnBoarding> {
                           ),
                         ),
                       ),
+                      const SizedBox(
+                        height: 40,
+                      )
                     ],
                   ),
                 ),
@@ -103,7 +106,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Login with Biometrics',
+                        'Login with\nBiometrics',
                         textScaleFactor: 1.3,
                         style: pageTitleStyle,
                         textAlign: TextAlign.left,
@@ -122,6 +125,9 @@ class _OnBoardingState extends State<OnBoarding> {
                       ),
                     ),
                   ),
+                  const SizedBox(
+                    height: 40,
+                  )
                 ],
               ),
             ),
@@ -157,7 +163,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Safe and Secure',
+                        'Secure and\nPrivate',
                         textScaleFactor: 1.3,
                         style: pageTitleStyle,
                         textAlign: TextAlign.left,
@@ -176,6 +182,9 @@ class _OnBoardingState extends State<OnBoarding> {
                       ),
                     ),
                   ),
+                  const SizedBox(
+                    height: 40,
+                  )
                 ],
               ),
             ),
@@ -203,7 +212,6 @@ class _OnBoardingState extends State<OnBoarding> {
             index = 2;
             setIndex(2);
           }
-          globals.isFirstTime = false;
         },
         child: const Padding(
           padding: defaultSkipButtonPadding,
