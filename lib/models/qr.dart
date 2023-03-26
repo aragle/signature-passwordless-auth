@@ -1,8 +1,5 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
-import 'package:signature/views/confirmation.dart';
 
 class QRScanner extends StatefulWidget {
   const QRScanner({super.key});
@@ -131,11 +128,29 @@ class _QRScannerState extends State<QRScanner> {
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         result = scanData;
-        var data = result!.code;
-        Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => Confirmation(data as Barcode?)),
+        showDialog(
+          context: context,
+          builder: (BuildContext context) {
+            return AlertDialog(
+              title: const Text('Logon Confirmation'),
+              content: Text(
+                  'You are trying to login at ${result!.code} on ${DateTime.now().toIso8601String()}.\n\nDo you want to continue?'),
+              actions: [
+                TextButton(
+                  child: const Text('Cancel'),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                ),
+                TextButton(
+                  child: const Text('Confirm'),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                ),
+              ],
+            );
+          },
         );
       });
     });

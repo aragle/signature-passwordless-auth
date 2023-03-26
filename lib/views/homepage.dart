@@ -2,12 +2,9 @@ import 'dart:convert';
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:qr_code_scanner/src/types/barcode.dart';
-import 'package:signature/views/confirmation.dart';
 import 'package:signature/views/settings.dart';
 import 'package:signature/models/qr.dart';
 import 'package:web_socket_channel/io.dart';
-import 'package:web_socket_channel/status.dart' as status;
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -24,9 +21,8 @@ Future<bool> onBackPressed() {
 int x = Random().nextInt(10);
 
 class _HomepageState extends State<Homepage> {
-  String ws_message = "0";
-  final channel =
-      IOWebSocketChannel.connect('wss://socketsbay.com/wss/v2/1/demo/');
+  String ws_message = 'Waiting for data...';
+  final channel = IOWebSocketChannel.connect('wss://ws.blockchain.info/inv');
   @override
   void initState() {
     super.initState();
@@ -36,8 +32,8 @@ class _HomepageState extends State<Homepage> {
   streamListener() {
     channel.stream.listen((message) {
       channel.sink.add('received!');
-      channel.sink.close(status.goingAway);
-      print(ws_message);
+      // channel.sink.close(status.goingAway);
+      print(x);
       Map getData = jsonDecode(ws_message);
       setState(() {
         ws_message = getData['p'];
@@ -69,6 +65,7 @@ class _HomepageState extends State<Homepage> {
                 IconButton(
                   icon: const Icon(Icons.data_object_outlined),
                   onPressed: () {
+                    streamListener();
                     // Barcode? result;
                     // Navigator.push(
                     //   context,
@@ -123,7 +120,7 @@ class _HomepageState extends State<Homepage> {
                     title: Padding(
                       padding: EdgeInsets.only(top: 3.0),
                       child: Text(
-                        'You are btcUsdtPrice logged in to BrandShop from Windows 10 - Chrome 107.0.5304.87 (Dhaka, Bangladesh)',
+                        'You are logged in to BrandShop from Windows 10 - Chrome 107.0.5304.87 (Dhaka, Bangladesh)',
                         // "${Random().nextInt(1000000)}",
                         textAlign: TextAlign.left,
                         style: TextStyle(
@@ -138,7 +135,7 @@ class _HomepageState extends State<Homepage> {
                       padding:
                           EdgeInsets.only(top: 5.0, left: 4.0, bottom: 5.0),
                       child: Text(
-                        'on 2021-07-01 12:00:00',
+                        'on 2023-07-01 12:00:00',
                         textAlign: TextAlign.left,
                         style: TextStyle(
                           color: Colors.black38,
