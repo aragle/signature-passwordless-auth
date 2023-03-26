@@ -106,7 +106,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Login with\nBiometrics',
+                        'Authentication with\nBiometrics',
                         textScaleFactor: 1.3,
                         style: pageTitleStyle,
                         textAlign: TextAlign.left,
@@ -163,7 +163,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Secure and\nPrivate',
+                        'Safe, Secure and\nPrivate',
                         textScaleFactor: 1.3,
                         style: pageTitleStyle,
                         textAlign: TextAlign.left,

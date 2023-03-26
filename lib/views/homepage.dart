@@ -25,7 +25,7 @@ class _HomepageState extends State<Homepage> {
           length: 4,
           child: Scaffold(
             appBar: AppBar(
-              backgroundColor: Colors.indigo,
+              backgroundColor: Colors.grey[900],
               elevation: 0,
               // bottom: const TabBar(
               //   tabs: [
@@ -44,7 +44,7 @@ class _HomepageState extends State<Homepage> {
               ),
               actions: [
                 IconButton(
-                  icon: const Icon(Icons.safety_check_outlined),
+                  icon: const Icon(Icons.add_outlined),
                   onPressed: () {
                     Navigator.push(
                       context,
