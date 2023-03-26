@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:signature/views/activities.dart';
-import 'package:signature/views/settings.dart';
 import 'package:signature/views/homepage.dart';
 import 'package:signature/controllers/variables.dart' as globals;
 
