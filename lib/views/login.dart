@@ -27,7 +27,7 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.indigo,
+        backgroundColor: Colors.grey[900],
         elevation: 0,
         title: const Text('Login',
             style: TextStyle(
@@ -58,8 +58,8 @@ class _LoginState extends State<Login> {
           decoration: const BoxDecoration(
             gradient: LinearGradient(
                 colors: [
-                  Color.fromARGB(255, 210, 234, 246),
-                  Colors.indigo,
+                  Colors.black26,
+                  Colors.black87,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(0.5, 1.3),
@@ -121,8 +121,7 @@ class _LoginState extends State<Login> {
                   ),
                   MaterialButton(
                     minWidth: double.infinity,
-                    // color: Colors.grey[900],
-                    color: Colors.indigo,
+                    color: Colors.grey[900],
                     height: 50,
                     shape: const RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
