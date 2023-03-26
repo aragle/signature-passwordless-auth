@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:signature/views/activities.dart';
 import 'package:signature/views/settings.dart';
 import 'package:signature/models/qr.dart';
 
