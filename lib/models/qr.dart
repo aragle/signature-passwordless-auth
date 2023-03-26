@@ -1,6 +1,8 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'package:signature/views/confirmation.dart';
 
 class QRScanner extends StatefulWidget {
   const QRScanner({super.key});
@@ -54,23 +56,25 @@ class _QRScannerState extends State<QRScanner> {
             },
           ),
         ],
-        backgroundColor: Colors.black87,
+        backgroundColor: Colors.black12,
         elevation: 0,
       ),
       body: Column(
         children: <Widget>[
           Expanded(flex: 4, child: _buildQrView(context)),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: <Widget>[
-              if (result != null)
-                Text(
-                    'Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}')
-              else
-                const Text('     Result will show here after scan...',
-                    style: TextStyle(fontSize: 15)),
-            ],
-          ),
+
+          // Row(
+          //   mainAxisAlignment: MainAxisAlignment.start,
+          //   children: <Widget>[
+          //     if (result != null)
+          //       Text(
+          //         // 'Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}'),
+          //       )
+          //     else
+          //       const Text('     Result will show here after scan...',
+          //           style: TextStyle(fontSize: 15)),
+          //   ],
+          // ),
         ],
       ),
       floatingActionButton: SizedBox(
@@ -127,6 +131,12 @@ class _QRScannerState extends State<QRScanner> {
     controller.scannedDataStream.listen((scanData) {
       setState(() {
         result = scanData;
+        var data = result!.code;
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => Confirmation(data as Barcode?)),
+        );
       });
     });
     controller.pauseCamera();
