@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:signature/views/homepage.dart';
 
 class Settings extends StatefulWidget {
   const Settings({super.key});
@@ -25,20 +24,32 @@ class _SettingsState extends State<Settings> {
             IconButton(
               icon: const Icon(Icons.feedback_outlined, color: Colors.white),
               onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const Homepage()),
+                showDialog(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return AlertDialog(
+                      title: const Text('About (v1.0.0)'),
+                      content: const Text(
+                          'Signature is a biometric based web auth app developed by\n\n    Ashiqur Rahman Alif\n    @aratheunseen\n\nThis is an open source application and available on GitHub.'),
+                      actions: [
+                        TextButton(
+                          child: const Text('OK'),
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
+                        ),
+                      ],
+                    );
+                  },
                 );
               },
             ),
             const Padding(padding: EdgeInsets.only(right: 10)),
           ],
-          leading: BackButton(
+          leading: IconButton(
+            icon: const Icon(Icons.arrow_back, color: Colors.white),
             onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Homepage()),
-              );
+              Navigator.pop(context);
             },
           ),
         ),

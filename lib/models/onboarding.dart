@@ -45,7 +45,7 @@ class _OnBoardingState extends State<OnBoarding> {
                         child: Align(
                           alignment: Alignment.centerLeft,
                           child: Text(
-                            'One method for\nmultiple websites',
+                            'One method\nfor\nmultiple websites',
                             textScaleFactor: 1.3,
                             textHeightBehavior: TextHeightBehavior(
                                 applyHeightToFirstAscent: false),
@@ -106,7 +106,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Authentication with\nBiometrics',
+                        'Authentication\nwith\nBiometrics',
                         textScaleFactor: 1.3,
                         style: pageTitleStyle,
                         textAlign: TextAlign.left,
@@ -163,7 +163,7 @@ class _OnBoardingState extends State<OnBoarding> {
                     child: Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
-                        'Safe, Secure and\nPrivate',
+                        'Safe, Secure\nand\nPrivate',
                         textScaleFactor: 1.3,
                         style: pageTitleStyle,
                         textAlign: TextAlign.left,
