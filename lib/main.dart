@@ -4,7 +4,7 @@ import 'package:signature/views/applock.dart';
 import 'package:signature/views/homepage.dart';
 import 'package:signature/views/login.dart';
 import 'package:signature/controllers/variables.dart' as globals;
-import 'package:signature/views/onboarding.dart';
+import 'package:signature/models/onboarding.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
