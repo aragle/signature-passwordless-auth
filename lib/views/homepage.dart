@@ -81,13 +81,13 @@ class _HomepageState extends State<Homepage> {
                       child: SizedBox(
                         width: 30,
                         child: Icon(
-                          // Icons.info_outline_rounded, //info
-                          Icons.error_outline_rounded, //error
-                          // Icons.warning_amber_rounded, //warning
+                          Icons.info_outline_rounded, //info
+                          // Icons.error_outline_rounded, //error
+                          // Icons.warning_amber_rounded, //warning)
                           size: 20,
-                          // color: Color.fromARGB(255, 0, 153, 38), //info
+                          color: Color.fromARGB(255, 102, 111, 106), //info
                           // color: Color.fromARGB(255, 177, 152, 10), //warning
-                          color: Color.fromARGB(255, 172, 35, 103), //error
+                          // color: Color.fromARGB(255, 172, 35, 103), //error
                         ),
                       ),
                     ),
@@ -120,9 +120,9 @@ class _HomepageState extends State<Homepage> {
                     trailing: Padding(
                       padding: EdgeInsets.all(10.0),
                       child: Icon(
-                        Icons.keyboard_arrow_right,
+                        Icons.double_arrow_rounded,
                         size: 30,
-                        color: Colors.black45,
+                        color: Colors.black12,
                       ),
                     ),
                   ),

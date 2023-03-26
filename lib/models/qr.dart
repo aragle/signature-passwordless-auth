@@ -73,20 +73,28 @@ class _QRScannerState extends State<QRScanner> {
           ),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () async {
-          await controller?.toggleFlash();
-          setState(() {});
-        },
-        // ignore: sort_child_properties_last
-        child: FutureBuilder(
-          future: controller?.getFlashStatus(),
-          builder: (context, snapshot) {
-            return Icon(
-                snapshot.data == true ? Icons.flash_on : Icons.flash_off);
+      floatingActionButton: SizedBox(
+        width: 42,
+        height: 42,
+        child: FloatingActionButton(
+          shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.all(Radius.circular(16.0)),
+          ),
+          onPressed: () async {
+            await controller?.toggleFlash();
+            setState(() {});
           },
+          // ignore: sort_child_properties_last
+          child: FutureBuilder(
+            future: controller?.getFlashStatus(),
+            builder: (context, snapshot) {
+              return Icon(
+                  snapshot.data == true ? Icons.flash_on : Icons.flash_off,
+                  color: Colors.white);
+            },
+          ),
+          backgroundColor: Colors.grey[700],
         ),
-        backgroundColor: Colors.black87,
       ),
     );
   }
@@ -95,7 +103,7 @@ class _QRScannerState extends State<QRScanner> {
     // For this example we check how width or tall the device is and change the scanArea and overlay accordingly.
     var scanArea = (MediaQuery.of(context).size.width < 400 ||
             MediaQuery.of(context).size.height < 400)
-        ? 150.0
+        ? 280.0
         : 300.0;
     // To ensure the Scanner view is properly sizes after rotation
     // we need to listen for Flutter SizeChanged notification and update controller
@@ -129,7 +137,7 @@ class _QRScannerState extends State<QRScanner> {
     // log('${DateTime.now().toIso8601String()}_onPermissionSet $p');
     if (!p) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('no Permission')),
+        const SnackBar(content: Text('No Permission')),
       );
     }
   }
