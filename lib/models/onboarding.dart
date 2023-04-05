@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding/onboarding.dart';
-import 'package:signature/controllers/variables.dart' as globals;
 import 'package:signature/views/login.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class OnBoarding extends StatefulWidget {
   const OnBoarding({super.key});
@@ -230,8 +230,9 @@ class _OnBoardingState extends State<OnBoarding> {
       color: defaultProceedButtonColor,
       child: InkWell(
         borderRadius: defaultProceedButtonBorderRadius,
-        onTap: () {
-          globals.isFirstTime = false;
+        onTap: () async {
+          await setOnboardingCompleted();
+          // ignore: use_build_context_synchronously
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(
@@ -304,4 +305,14 @@ class _OnBoardingState extends State<OnBoarding> {
       ),
     );
   }
+}
+
+Future<bool> checkIfOnboardingCompleted() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  return prefs.getBool('onboarding_completed') ?? false;
+}
+
+Future<void> setOnboardingCompleted() async {
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  await prefs.setBool('onboarding_completed', true);
 }

@@ -21,6 +21,7 @@ Future<bool> onBackPressed() {
 int x = Random().nextInt(10);
 
 class _HomepageState extends State<Homepage> {
+  // ignore: non_constant_identifier_names
   String ws_message = 'Waiting for data...';
   final channel = IOWebSocketChannel.connect('wss://ws.blockchain.info/inv');
   @override
@@ -33,12 +34,12 @@ class _HomepageState extends State<Homepage> {
     channel.stream.listen((message) {
       channel.sink.add('received!');
       // channel.sink.close(status.goingAway);
-      print(x);
+      // print(x);
       Map getData = jsonDecode(ws_message);
       setState(() {
         ws_message = getData['p'];
       });
-      print(getData['p']);
+      // print(getData['p']);
     });
   }
 
