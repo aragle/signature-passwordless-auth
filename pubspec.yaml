@@ -45,6 +45,7 @@ dependencies:
   settings_ui: ^2.0.2
   web_socket_channel: ^2.3.0
   sqflite: ^2.2.6
+  platform_settings_ui: ^0.1.2
 
 dev_dependencies:
   flutter_test:
