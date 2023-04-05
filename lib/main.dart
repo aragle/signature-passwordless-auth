@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:onboarding/onboarding.dart';
 import 'package:signature/models/onboarding.dart';
-// import 'package:signature/views/applock.dart';
-// import 'package:signature/views/homepage.dart';
 import 'package:signature/views/login.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
