@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:signature/views/homepage.dart';
-import 'package:signature/controllers/variables.dart' as globals;
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -20,6 +19,29 @@ class _LoginState extends State<Login> {
   bool otpVisibility = false;
   User? user;
   String verificationID = "";
+
+  @override
+  void initState() {
+    super.initState();
+    checkCurrentUser();
+  }
+
+  void checkCurrentUser() async {
+    final User user = auth.currentUser!;
+    // ignore: unnecessary_null_comparison
+    if (user != null) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => const Homepage()),
+      );
+    }
+    //  else {
+    //   Navigator.pushReplacement(
+    //     context,
+    //     MaterialPageRoute(builder: (context) => const Login()),
+    //   );
+    // }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -191,7 +213,6 @@ class _LoginState extends State<Login> {
     ).whenComplete(
       () {
         if (user != null) {
-          globals.isAuthenticated = true;
           Fluttertoast.showToast(
             msg: "You are logged in successfully",
             toastLength: Toast.LENGTH_SHORT,
