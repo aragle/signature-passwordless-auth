@@ -147,7 +147,7 @@ class _QRScannerState extends State<QRScanner> {
                     style: TextStyle(color: Colors.black)),
                 content: RichText(
                   text: TextSpan(
-                    text: '\nYou are logging in\n\n',
+                    text: '\nYou are logging in\n',
                     style: TextStyle(fontSize: 16, color: Colors.blueGrey),
                     children: <TextSpan>[
                       // TextSpan(
@@ -182,7 +182,7 @@ class _QRScannerState extends State<QRScanner> {
                         style: TextStyle(fontSize: 16, color: Colors.black),
                       ),
                       TextSpan(
-                        text: DateTime.now().toIso8601String(),
+                        text: DateTime.now().toIso8601String().substring(0, 19),
                         style:
                             TextStyle(fontSize: 16, color: Colors.deepPurple),
                       ),
@@ -217,7 +217,8 @@ class _QRScannerState extends State<QRScanner> {
               );
             },
           );
-        } else {
+        }
+        if (scanned || decodedToken["issuer"] != "signature") {
           showDialog(
               context: context,
               builder: (BuildContext context) {
@@ -225,7 +226,7 @@ class _QRScannerState extends State<QRScanner> {
                   title: const Text('Error!!!',
                       style: TextStyle(color: Colors.red)),
                   content: const Text(
-                      'Invalid QR Code. This is not a signature Authenticator QR Code.'),
+                      'Invalid QR Code. This is not a signature Authenticator\'s QR Code.'),
                   actions: [
                     TextButton(
                       child: const Text('Try Again'),
@@ -241,8 +242,8 @@ class _QRScannerState extends State<QRScanner> {
         }
       });
     });
-    // controller.pauseCamera();
-    // controller.resumeCamera();
+    controller.pauseCamera();
+    controller.resumeCamera();
   }
 
   void _onPermissionSet(BuildContext context, QRViewController ctrl, bool p) {
