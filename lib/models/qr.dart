@@ -218,7 +218,7 @@ class _QRScannerState extends State<QRScanner> {
             },
           );
         }
-        if (scanned || decodedToken["issuer"] != "signature") {
+        if (scanned && decodedToken["issuer"] != "signature") {
           showDialog(
               context: context,
               builder: (BuildContext context) {
@@ -226,7 +226,7 @@ class _QRScannerState extends State<QRScanner> {
                   title: const Text('Error!!!',
                       style: TextStyle(color: Colors.red)),
                   content: const Text(
-                      'Invalid QR Code. This is not a signature Authenticator\'s QR Code.'),
+                      'Invalid QR Code. This is not a Signature\'s QR Code.'),
                   actions: [
                     TextButton(
                       child: const Text('Try Again'),
