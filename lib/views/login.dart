@@ -53,18 +53,18 @@ class _LoginState extends State<Login> {
             style: TextStyle(
               color: Colors.white,
             )),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.skip_next, color: Colors.white),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => const Homepage()),
-              );
-            },
-          ),
-          const Padding(padding: EdgeInsets.only(right: 10)),
-        ],
+        // actions: [
+        //   IconButton(
+        //     icon: const Icon(Icons.skip_next, color: Colors.white),
+        //     onPressed: () {
+        //       Navigator.push(
+        //         context,
+        //         MaterialPageRoute(builder: (context) => const Homepage()),
+        //       );
+        //     },
+        //   ),
+        //   const Padding(padding: EdgeInsets.only(right: 10)),
+        // ],
         leading: IconButton(
           icon: const Icon(Icons.login, color: Colors.white),
           onPressed: () {
