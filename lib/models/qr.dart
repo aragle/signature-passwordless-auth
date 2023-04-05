@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'package:jwt_decoder/jwt_decoder.dart';
 
 class QRScanner extends StatefulWidget {
   const QRScanner({super.key});
@@ -23,7 +24,7 @@ class _QRScannerState extends State<QRScanner> {
             Navigator.pop(context);
           },
         ),
-        title: const Text('Scan QR Code',
+        title: const Text('Authenticate',
             style: TextStyle(
               color: Colors.white,
             )),
@@ -36,9 +37,9 @@ class _QRScannerState extends State<QRScanner> {
                 context: context,
                 builder: (BuildContext context) {
                   return AlertDialog(
-                    title: const Text('How to use QR Scanner?'),
+                    title: const Text('How to Authenticate?'),
                     content: const Text(
-                        '1. Open the QR Scanner.\n2. Point the camera at the QR Code.\n3. The QR Code will be scanned automatically.\n4. The scanned QR Code will be displayed on the screen.'),
+                        '1. Open the website you want to login to.\n2. Scan the QR code with this app.\n3. Click on the "Continue" button.\n4. Scan your fingerprint to complete the authentication.'),
                     actions: [
                       TextButton(
                         child: const Text('OK'),
@@ -121,37 +122,121 @@ class _QRScannerState extends State<QRScanner> {
     );
   }
 
+  bool scanned = false;
+
   void _onQRViewCreated(QRViewController controller) {
     setState(() {
       this.controller = controller;
     });
     controller.scannedDataStream.listen((scanData) {
+      if (!scanned) {
+        scanned = true;
+        controller.pauseCamera();
+      }
       setState(() {
         result = scanData;
-        showDialog(
-          context: context,
-          builder: (BuildContext context) {
-            return AlertDialog(
-              title: const Text('Logon Confirmation'),
-              content: Text(
-                  'You are trying to login at ${result!.code} on ${DateTime.now().toIso8601String()}.\n\nDo you want to continue?'),
-              actions: [
-                TextButton(
-                  child: const Text('Cancel'),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
+        Map<String, dynamic> decodedToken =
+            JwtDecoder.decode(result!.code.toString());
+
+        if (decodedToken["issuer"] == "signature") {
+          showDialog(
+            context: context,
+            builder: (BuildContext context) {
+              return AlertDialog(
+                title: const Text('Confirmation',
+                    style: TextStyle(color: Colors.black)),
+                content: RichText(
+                  text: TextSpan(
+                    text: '\nYou are logging in\n\n',
+                    style: TextStyle(fontSize: 16, color: Colors.blueGrey),
+                    children: <TextSpan>[
+                      // TextSpan(
+                      //   text: '\n\nName: ',
+                      //   style: TextStyle(fontSize: 16, color: Colors.black),
+                      // ),
+                      TextSpan(
+                        text: decodedToken["site_name"],
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                      ),
+                      TextSpan(
+                        text: '\n\nDomain: ',
+                        style: TextStyle(fontSize: 16, color: Colors.black),
+                      ),
+                      TextSpan(
+                        text: decodedToken["url"],
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                      ),
+                      TextSpan(
+                        text: '\nBrowser: ',
+                        style: TextStyle(fontSize: 16, color: Colors.black),
+                      ),
+                      TextSpan(
+                        text: decodedToken["browser"],
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                      ),
+                      TextSpan(
+                        text: '\nDate: ',
+                        style: TextStyle(fontSize: 16, color: Colors.black),
+                      ),
+                      TextSpan(
+                        text: DateTime.now().toIso8601String(),
+                        style:
+                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                      ),
+                      TextSpan(
+                        text: "\n\nDo you want to continue?",
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
+                    ],
+                  ),
                 ),
-                TextButton(
-                  child: const Text('Confirm'),
-                  onPressed: () {
-                    Navigator.of(context).pop();
-                  },
-                ),
-              ],
-            );
-          },
-        );
+
+                // Text(
+                //     'You are trying to login (${decodedToken["email"]}) at
+                //     ${decodedToken["name"]} on ${DateTime.now().toIso8601String()}.
+                //     \n\nDo you want to continue?'),
+                actions: [
+                  TextButton(
+                    child: const Text('Cancel'),
+                    onPressed: () {
+                      controller.resumeCamera();
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                  TextButton(
+                    child: const Text('Confirm'),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            },
+          );
+        } else {
+          showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return AlertDialog(
+                  title: const Text('Error!!!',
+                      style: TextStyle(color: Colors.red)),
+                  content: const Text(
+                      'Invalid QR Code. This is not a signature Authenticator QR Code.'),
+                  actions: [
+                    TextButton(
+                      child: const Text('Try Again'),
+                      onPressed: () {
+                        controller.resumeCamera();
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                  ],
+                );
+              });
+        }
       });
     });
     controller.pauseCamera();
