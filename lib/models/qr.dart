@@ -203,6 +203,7 @@ class _QRScannerState extends State<QRScanner> {
                     child: const Text('Cancel'),
                     onPressed: () {
                       controller.resumeCamera();
+                      scanned = false;
                       Navigator.of(context).pop();
                     },
                   ),
@@ -230,6 +231,7 @@ class _QRScannerState extends State<QRScanner> {
                       child: const Text('Try Again'),
                       onPressed: () {
                         controller.resumeCamera();
+                        scanned = false;
                         Navigator.of(context).pop();
                       },
                     ),
@@ -239,8 +241,8 @@ class _QRScannerState extends State<QRScanner> {
         }
       });
     });
-    controller.pauseCamera();
-    controller.resumeCamera();
+    // controller.pauseCamera();
+    // controller.resumeCamera();
   }
 
   void _onPermissionSet(BuildContext context, QRViewController ctrl, bool p) {
