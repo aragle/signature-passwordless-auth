@@ -60,19 +60,6 @@ class _QRScannerState extends State<QRScanner> {
       body: Column(
         children: <Widget>[
           Expanded(flex: 4, child: _buildQrView(context)),
-
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.start,
-          //   children: <Widget>[
-          //     if (result != null)
-          //       Text(
-          //         // 'Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}'),
-          //       )
-          //     else
-          //       const Text('     Result will show here after scan...',
-          //           style: TextStyle(fontSize: 15)),
-          //   ],
-          // ),
         ],
       ),
       floatingActionButton: SizedBox(
@@ -229,6 +216,8 @@ class _QRScannerState extends State<QRScanner> {
             },
           );
         } else {
+          scanned = true;
+          controller.pauseCamera();
           showDialog(
               context: context,
               builder: (BuildContext context) {
@@ -257,7 +246,6 @@ class _QRScannerState extends State<QRScanner> {
   }
 
   void _onPermissionSet(BuildContext context, QRViewController ctrl, bool p) {
-    // log('${DateTime.now().toIso8601String()}_onPermissionSet $p');
     if (!p) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(content: Text('No Permission')),
