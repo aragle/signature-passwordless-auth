@@ -123,81 +123,92 @@ class _QRScannerState extends State<QRScanner> {
   }
 
   bool scanned = false;
+  bool error = false;
 
   void _onQRViewCreated(QRViewController controller) {
     setState(() {
       this.controller = controller;
     });
     controller.scannedDataStream.listen((scanData) {
-      if (!scanned) {
-        scanned = true;
-        controller.pauseCamera();
-      }
       setState(() {
         result = scanData;
         Map<String, dynamic> decodedToken =
             JwtDecoder.decode(result!.code.toString());
-
-        if (decodedToken["issuer"] == "signature") {
+        try {
+          decodedToken = JwtDecoder.decode(result!.code.toString());
+        } catch (e) {
+          error = true;
+        }
+        // if (!scanned) {
+        //   scanned = true;
+        //   controller.pauseCamera();
+        // }
+        if (!scanned && decodedToken["issuer"] == "signature") {
+          scanned = true;
+          controller.pauseCamera();
           showDialog(
             context: context,
             builder: (BuildContext context) {
               return AlertDialog(
                 title: const Text('Confirmation',
-                    style: TextStyle(color: Colors.black)),
+                    style: TextStyle(color: Colors.black54)),
                 content: RichText(
                   text: TextSpan(
                     text: '\nYou are logging in\n',
-                    style: TextStyle(fontSize: 16, color: Colors.blueGrey),
+                    style:
+                        const TextStyle(fontSize: 16, color: Colors.blueGrey),
                     children: <TextSpan>[
-                      // TextSpan(
-                      //   text: '\n\nName: ',
-                      //   style: TextStyle(fontSize: 16, color: Colors.black),
-                      // ),
                       TextSpan(
                         text: decodedToken["site_name"],
-                        style:
-                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                        style: const TextStyle(
+                            fontSize: 20,
+                            color: Colors.redAccent,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Roboto',
+                            letterSpacing: 1.5,
+                            wordSpacing: 2,
+                            height: 1.5),
                       ),
-                      TextSpan(
+                      const TextSpan(
                         text: '\n\nDomain: ',
-                        style: TextStyle(fontSize: 16, color: Colors.black),
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
                       ),
                       TextSpan(
                         text: decodedToken["url"],
-                        style:
-                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                        style: const TextStyle(
+                            fontSize: 16,
+                            color: Colors.deepPurple,
+                            fontStyle: FontStyle.italic),
                       ),
-                      TextSpan(
+                      const TextSpan(
                         text: '\nBrowser: ',
-                        style: TextStyle(fontSize: 16, color: Colors.black),
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
                       ),
                       TextSpan(
                         text: decodedToken["browser"],
-                        style:
-                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                        style: const TextStyle(
+                            fontSize: 16,
+                            color: Colors.deepPurple,
+                            fontStyle: FontStyle.italic),
                       ),
-                      TextSpan(
+                      const TextSpan(
                         text: '\nDate: ',
-                        style: TextStyle(fontSize: 16, color: Colors.black),
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
                       ),
                       TextSpan(
                         text: DateTime.now().toIso8601String().substring(0, 19),
-                        style:
-                            TextStyle(fontSize: 16, color: Colors.deepPurple),
+                        style: const TextStyle(
+                            fontSize: 16,
+                            color: Colors.deepPurple,
+                            fontStyle: FontStyle.italic),
                       ),
-                      TextSpan(
-                        text: "\n\nDo you want to continue?",
-                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                      const TextSpan(
+                        text: "\n\nDo you want to authenticate?",
+                        style: TextStyle(fontSize: 16, color: Colors.green),
                       ),
                     ],
                   ),
                 ),
-
-                // Text(
-                //     'You are trying to login (${decodedToken["email"]}) at
-                //     ${decodedToken["name"]} on ${DateTime.now().toIso8601String()}.
-                //     \n\nDo you want to continue?'),
                 actions: [
                   TextButton(
                     child: const Text('Cancel'),
@@ -217,8 +228,7 @@ class _QRScannerState extends State<QRScanner> {
               );
             },
           );
-        }
-        if (scanned && decodedToken["issuer"] != "signature") {
+        } else {
           showDialog(
               context: context,
               builder: (BuildContext context) {
