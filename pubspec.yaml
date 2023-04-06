@@ -47,6 +47,7 @@ dependencies:
   sqflite: ^2.2.6
   platform_settings_ui: ^0.1.2
   jwt_decoder: ^2.0.1
+  local_auth: ^2.1.6
 
 dev_dependencies:
   flutter_test:

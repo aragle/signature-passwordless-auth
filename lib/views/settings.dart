@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:settings_ui/settings_ui.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Settings extends StatefulWidget {
   const Settings({super.key});
@@ -8,10 +9,32 @@ class Settings extends StatefulWidget {
   State<Settings> createState() => _SettingsState();
 }
 
+final _auth = FirebaseAuth.instance;
+
 class _SettingsState extends State<Settings> {
-  int groupValue = 1;
-  List<String> subTitle = ["French", "English", "Spanish"];
-  String name = "John";
+  String phoneNumber = _auth.currentUser?.phoneNumber ?? '';
+  String uniqueID = _auth.currentUser?.uid ?? '';
+
+  Function hidePhoneNumber = (String phoneNumber) {
+    String countryCode = phoneNumber.substring(0, 3);
+    String operatorCode = phoneNumber.substring(4, 6);
+    String endDigits = phoneNumber.substring(11, 14);
+    String hiddenPhoneNumber =
+        '$countryCode $operatorCode * * * * * $endDigits';
+    return hiddenPhoneNumber;
+  };
+
+  Function communicationKey = (String uniqueID, String phoneNumber) {
+    String lastDigit = phoneNumber.substring(12, 13);
+    int numberKey = int.parse(lastDigit);
+    String deviceID = uniqueID.substring(numberKey, numberKey + 16);
+
+    deviceID =
+        deviceID.replaceAllMapped(RegExp(r'.{1,2}'), (Match m) => '${m[0]} ');
+
+    return deviceID;
+  };
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -24,32 +47,6 @@ class _SettingsState extends State<Settings> {
               style: TextStyle(
                 color: Colors.white,
               )),
-          // actions: [
-          //   IconButton(
-          //     icon: const Icon(Icons.feedback_outlined, color: Colors.white),
-          //     onPressed: () {
-          //       showDialog(
-          //         context: context,
-          //         builder: (BuildContext context) {
-          //           return AlertDialog(
-          //             title: const Text('About (v1.0.0)'),
-          //             content: const Text(
-          //                 'Signature is a biometric based web auth app developed by\n\n    Ashiqur Rahman Alif\n    @aratheunseen\n\nThis is an open source application and available on GitHub.'),
-          //             actions: [
-          //               TextButton(
-          //                 child: const Text('OK'),
-          //                 onPressed: () {
-          //                   Navigator.of(context).pop();
-          //                 },
-          //               ),
-          //             ],
-          //           );
-          //         },
-          //       );
-          //     },
-          //   ),
-          //   const Padding(padding: EdgeInsets.only(right: 10)),
-          // ],
           leading: IconButton(
             icon: const Icon(Icons.arrow_back, color: Colors.white),
             onPressed: () {
@@ -64,23 +61,25 @@ class _SettingsState extends State<Settings> {
               tiles: <SettingsTile>[
                 SettingsTile.navigation(
                   leading: const Icon(Icons.account_tree_outlined),
-                  title: Text('+880 17 * * * * * 222'.toString()),
+                  title: Text(hidePhoneNumber(phoneNumber).toUpperCase()),
                   value: const Text('Phone number'),
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.private_connectivity_rounded),
-                  title: Text('6b 86 b2 73 ff 34 fc e1'.toUpperCase()),
-                  value: const Text('Device ID'),
+                  title: Text(
+                      communicationKey(uniqueID, phoneNumber).toUpperCase()),
+                  value: const Text('Communication key'),
                 ),
               ],
             ),
             SettingsSection(
               title: const Text('System'),
               tiles: <SettingsTile>[
-                SettingsTile.navigation(
-                  leading: const Icon(Icons.fingerprint_outlined),
+                SettingsTile.switchTile(
+                  leading: const Icon(Icons.lock_outline_rounded),
                   title: const Text('App Lock'),
-                  value: const Text('Disable'),
+                  initialValue: false,
+                  onToggle: (bool value) {},
                 ),
                 SettingsTile.navigation(
                   leading: const Icon(Icons.backup_outlined),
