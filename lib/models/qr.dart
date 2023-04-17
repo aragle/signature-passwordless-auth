@@ -168,11 +168,22 @@ class _QRScannerState extends State<QRScanner> {
                             fontStyle: FontStyle.italic),
                       ),
                       const TextSpan(
-                        text: '\nBrowser: ',
+                        text: '\nBrowser:\n',
                         style: TextStyle(fontSize: 16, color: Colors.grey),
                       ),
                       TextSpan(
                         text: decodedToken["browser"],
+                        style: const TextStyle(
+                            fontSize: 16,
+                            color: Colors.deepPurple,
+                            fontStyle: FontStyle.italic),
+                      ),
+                      const TextSpan(
+                        text: '\nDevice:\n',
+                        style: TextStyle(fontSize: 16, color: Colors.grey),
+                      ),
+                      TextSpan(
+                        text: decodedToken["platform"],
                         style: const TextStyle(
                             fontSize: 16,
                             color: Colors.deepPurple,
