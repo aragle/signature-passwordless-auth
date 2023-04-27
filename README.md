@@ -7,6 +7,18 @@
   A passwordless (biometric based) web authentication system.
 </p>
 
+<p align="center">
+  <a href="https://github.com/aratheunseen/signature-for-developers">
+    <img src="https://img.shields.io/badge/signature%20for%20developers-017CEE.svg?style=for-the-badge&logoColor=white" alt="Signature for Developer" />
+  </a>
+  <a href="https://github.com/aratheunseen/signature-client-demo">
+    <img src="https://img.shields.io/badge/signature%20client%20demo-E6526F.svg?style=for-the-badge&logoColor=white" alt="Signature for Developer" />
+  </a>
+  <a href="https://github.com/aratheunseen/signature-app-landing-page">
+    <img src="https://img.shields.io/badge/Signature%20Website-%232C5263.svg?style=for-the-badge&logoColor=white" alt="Signature for Developer" />
+  </a>
+</p>
+
 <hr/>
 
 <table align="center">
