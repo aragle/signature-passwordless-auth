@@ -43,15 +43,21 @@
     flutter pub get
     ```
 
-4. Connect your Android or iOS device to your computer, or launch an emulator.
+4. Next, you need to create a new Firebase project and configure it for this application. You can follow the instructions in this article: https://firebase.google.com/docs/flutter/setup.
 
-5. Run the app by executing the following command:
+5. Once your Firebase project is set up, you'll need to add your Firebase configuration files to the project. Specifically, you'll need to add your google-services.json file for Android. You can download these files from the Firebase console.
+
+6. After adding the Firebase configuration files, you need to enable Firebase Authentication in your Firebase project. You can do this by going to the Authentication section in the Firebase console and following the instructions to enable authentication. Once Firebase Authentication is enabled, you'll need to set up the Firebase Authentication providers in your Flutter app. Specifically, you'll need to configure the phone authentication provider. You can follow the instructions in this article: https://firebase.google.com/docs/auth/flutter/start.
+
+7. Connect your Android or iOS device to your computer, or launch an emulator.
+
+8. Run the app by executing the following command:
     ```
     flutter run
     ```
     This will launch the app on your device or emulator.
 
-6. If you want to build an APK file, run the following command:
+9. If you want to build an APK file, run the following command:
     ```
     flutter build apk --release
     ```
