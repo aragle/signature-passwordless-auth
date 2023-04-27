@@ -20,7 +20,7 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/actions/workflow/status/aratheunseen/signature-passwordless-web-authenticaton/test.yml?branch=main&color=blue&label=Build&style=flat-square" alt="Build project" />
+  <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/signature-passwordless-web-authenticaton/test.yml?branch=main&color=blue&label=Build&style=for-the-badge">
 </p>
 
 <hr/>
