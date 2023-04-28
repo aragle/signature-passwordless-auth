@@ -36,9 +36,7 @@
     <td><img src="https://user-images.githubusercontent.com/62181222/235098571-dd588f7a-6ab1-4463-8c28-1b562b1086bc.PNG" width="350"></td>
     <td><img src="https://user-images.githubusercontent.com/62181222/235098613-d2f575f8-28e6-4ca4-84e2-471a6fa2eb15.PNG" width="350"></td>
   </tr>
-</table>
 
-<table align="center">
   <tr>
     <th>AuthConfirmation</th>
     <th>Homepage</th>
