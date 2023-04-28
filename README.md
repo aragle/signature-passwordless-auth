@@ -43,7 +43,7 @@
     <th>Settings</th>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235098599-f4a08f82-0018-4e90-8bad-69e57b20eae2.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098599-f4a08f82-0018-4e90-8bad-69e57b20eae2.PNG" width="340"></td>
     <td><img src="https://user-images.githubusercontent.com/62181222/235098625-26b17e4f-f30c-4d12-97e4-f82bdf8ba594.PNG" width="350"></td>
     <td><img src="https://user-images.githubusercontent.com/62181222/235105504-44d328e9-5510-4601-9729-13e960919b25.PNG" width="350"></td>
   </tr>
