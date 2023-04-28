@@ -29,13 +29,11 @@
   <tr>
     <th>Onboarding</th>
     <th>SignUp</th>
-    <th>QRScanner</th>
     <th>AuthConfirmation</th>
   </tr>
   <tr>
     <td><img src="https://user-images.githubusercontent.com/62181222/235098555-e4f869f2-6588-4656-a494-f49135b87e90.PNG" width="350"></td>
     <td><img src="https://user-images.githubusercontent.com/62181222/235098571-dd588f7a-6ab1-4463-8c28-1b562b1086bc.PNG" width="350"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235098588-49e37343-e667-438d-aec7-3c3d229456ec.PNG" width="350"></td>
     <td><img src="https://user-images.githubusercontent.com/62181222/235098599-f4a08f82-0018-4e90-8bad-69e57b20eae2.PNG" width="350"></td>
   </tr>
 </table>
