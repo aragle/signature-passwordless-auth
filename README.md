@@ -12,15 +12,15 @@
     <img src="https://img.shields.io/badge/signature%20for%20developers-017CEE.svg?style=for-the-badge&logoColor=white" alt="Signature for Developer" />
   </a>
   <a href="https://github.com/aratheunseen/signature-client-demo">
-    <img src="https://img.shields.io/badge/signature%20client%20demo-E6526F.svg?style=for-the-badge&logoColor=white" alt="Signature for Developer" />
+    <img src="https://img.shields.io/badge/signature%20client%20demo-E6526F.svg?style=for-the-badge&logoColor=white" alt="Signature Client Demo" />
   </a>
   <a href="https://github.com/aratheunseen/signature-app-landing-page">
-    <img src="https://img.shields.io/badge/Signature%20Website-%232C5263.svg?style=for-the-badge&logoColor=white" alt="Signature for Developer" />
+    <img src="https://img.shields.io/badge/Signature%20Website-%232C5263.svg?style=for-the-badge&logoColor=white" alt="Signature App Landing Page" />
   </a>
 </p>
 
 <p align="center">
-  <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/signature-passwordless-web-authenticaton/test.yml?branch=main&color=blue&label=Build&style=for-the-badge">
+  <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/signature-passwordless-web-authenticaton/test.yml?branch=main&label=Build&style=for-the-badge">
 </p>
 
 <hr/>
