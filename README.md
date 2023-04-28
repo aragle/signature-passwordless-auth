@@ -27,16 +27,26 @@
 
 <table align="center">
   <tr>
-    <th>Splash</th>
-    <th>Accounts</th>
-    <th>Histories</th>
-    <th>Settings</th>
+    <th>Onboarding</th>
+    <th>SignUp</th>
+    <th>QRScanner</th>
+    <th>AuthConfirmation</th>
   </tr>
   <tr>
-    <td><img src="https://user-images.githubusercontent.com/62181222/225686767-a78ae96f-6fe3-4307-9a25-a5b9552d0b3c.png" width="250"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/225686327-7cbdbe56-5424-45a7-a987-4a356f07de24.png" width="250"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/225686334-9a429178-3f10-41c2-bfff-8ded36bf763e.png" width="250"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/225686364-ffbdd81e-1a93-4371-a460-cf1c7c076faf.png" width="250"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098555-e4f869f2-6588-4656-a494-f49135b87e90.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098571-dd588f7a-6ab1-4463-8c28-1b562b1086bc.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098588-49e37343-e667-438d-aec7-3c3d229456ec.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098599-f4a08f82-0018-4e90-8bad-69e57b20eae2.PNG" width="350"></td>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098613-d2f575f8-28e6-4ca4-84e2-471a6fa2eb15.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098625-26b17e4f-f30c-4d12-97e4-f82bdf8ba594.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235105504-44d328e9-5510-4601-9729-13e960919b25.PNG" width="350"></td>
+  </tr>
+  <tr>
+    <th>LockScreen</th>
+    <th>Homepage</th>
+    <th>Settings</th>
   </tr>
 </table>
 
