@@ -36,16 +36,15 @@
     <td><img src="https://user-images.githubusercontent.com/62181222/235098571-dd588f7a-6ab1-4463-8c28-1b562b1086bc.PNG" width="350"></td>
     <td><img src="https://user-images.githubusercontent.com/62181222/235098613-d2f575f8-28e6-4ca4-84e2-471a6fa2eb15.PNG" width="350"></td>
   </tr>
-
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235112057-ec3083e6-9ad1-4446-a550-f5171d44a2e7.PNG" width="350"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235098625-26b17e4f-f30c-4d12-97e4-f82bdf8ba594.PNG" width="350"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235105504-44d328e9-5510-4601-9729-13e960919b25.PNG" width="350"></td>
-  </tr>
   <tr>
     <th>AuthConfirmation</th>
     <th>Homepage</th>
     <th>Settings</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235112057-ec3083e6-9ad1-4446-a550-f5171d44a2e7.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098625-26b17e4f-f30c-4d12-97e4-f82bdf8ba594.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235105504-44d328e9-5510-4601-9729-13e960919b25.PNG" width="350"></td>
   </tr>
 </table>
 
