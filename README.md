@@ -38,15 +38,17 @@
     <td><img src="https://user-images.githubusercontent.com/62181222/235098588-49e37343-e667-438d-aec7-3c3d229456ec.PNG" width="350"></td>
     <td><img src="https://user-images.githubusercontent.com/62181222/235098599-f4a08f82-0018-4e90-8bad-69e57b20eae2.PNG" width="350"></td>
   </tr>
-  <tr>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235098613-d2f575f8-28e6-4ca4-84e2-471a6fa2eb15.PNG" width="350"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235098625-26b17e4f-f30c-4d12-97e4-f82bdf8ba594.PNG" width="350"></td>
-    <td><img src="https://user-images.githubusercontent.com/62181222/235105504-44d328e9-5510-4601-9729-13e960919b25.PNG" width="350"></td>
-  </tr>
+</table>
+<table align="center">
   <tr>
     <th>LockScreen</th>
     <th>Homepage</th>
     <th>Settings</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098613-d2f575f8-28e6-4ca4-84e2-471a6fa2eb15.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235098625-26b17e4f-f30c-4d12-97e4-f82bdf8ba594.PNG" width="350"></td>
+    <td><img src="https://user-images.githubusercontent.com/62181222/235105504-44d328e9-5510-4601-9729-13e960919b25.PNG" width="350"></td>
   </tr>
 </table>
 
