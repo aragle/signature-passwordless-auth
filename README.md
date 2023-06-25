@@ -15,12 +15,14 @@
     <img src="https://img.shields.io/badge/signature%20client%20demo-E6526F.svg?style=for-the-badge&logoColor=white" alt="Signature Client Demo" />
   </a>
   <a href="https://github.com/aratheunseen/signature-app-landing-page">
-    <img src="https://img.shields.io/badge/Signature%20Website-%232C5263.svg?style=for-the-badge&logoColor=white" alt="Signature App Landing Page" />
+    <img src="https://img.shields.io/badge/Signature%20Landing%20Page-%232C5263.svg?style=for-the-badge&logoColor=white" alt="Signature App Landing Page" />
   </a>
 </p>
 
 <p align="center">
-  <img alt="GitHub Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/signature-passwordless-web-authenticaton/test.yml?branch=main&label=Build&style=for-the-badge">
+  <img alt="Signatures' Workflow Status (with branch)" src="https://img.shields.io/github/actions/workflow/status/aratheunseen/signature-passwordless-web-authenticaton/test.yml?branch=main&label=Build&style=for-the-badge">
+    <img alt="Signatures' Code Size" src="https://img.shields.io/github/languages/code-size/aratheunseen/signature?style=for-the-badge">
+    <img alt="Top Language used in Signature" src="https://img.shields.io/github/languages/top/aratheunseen/signature?style=for-the-badge&logo=dart&color=lightblue">
 </p>
 
 <hr/>
